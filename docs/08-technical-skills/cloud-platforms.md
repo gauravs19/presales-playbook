@@ -33,7 +33,7 @@ Known for excellence in data analytics, machine learning, and its contributions 
 
 ---
 
-## 🏗️ Cloud Architectural Models (IaaS, PaaS, SaaS)
+##  Cloud Architectural Models (IaaS, PaaS, SaaS)
 
 Presales Engineers must correctly identify how their product maps to the client's preferred architectural model:
 

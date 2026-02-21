@@ -56,7 +56,7 @@ To keep high-stakes technical meetings on track, SEs must use the **F.A.C.T.** m
 - **Why it matters:** A great meeting with no scheduled next step is a failed meeting.
 - **How to execute it:** Do not ask, "Do you have any more questions?" Ask: "Based on what we've validated today, do you feel this architecture solves the pain point we discussed?" If yes, "Great, the logical next step is a scoping call for the POC."
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Meeting Kickoff     | Sets the agenda and explicitly asks for alignment | Waits awkwardly for the prospect to start talking |
 | Controlling Flow    | Politely parks irrelevant questions for later     | Chases every rabbit hole the prospect brings up |
@@ -109,7 +109,7 @@ Managers and peers use this to audit recorded Gong/Chorus calls.
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: LogisticsCorp                     │
   │  Deal Size: $150K ACV                       │
@@ -140,17 +140,17 @@ Managers and peers use this to audit recorded Gong/Chorus calls.
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Any Questions?" Trap**
+**Mistake #1: The "Any Questions?" Trap**
 - **How it shows up:** The SE monologues for 18 minutes, takes a breath, and says, "So... does anyone have any questions?" The prospect says "No," and the SE assumes they did a brilliant job.
 - **Cost:** You have no idea if they actually understood you, or if they are just too bored or confused to speak up. Silence is a deal killer.
 - **Fix:** Ask directed, open-ended confirmation questions. Instead of "Any questions?", ask: "How does the workload distribution we just looked at impact the SLA targets your team missed last quarter?"
 
-**❌ Mistake #2: The Apologetic Posture**
+**Mistake #2: The Apologetic Posture**
 - **How it shows up:** The prospect's environment is incredibly messy, or they are missing basic prerequisites for the software to work. The SE says, "Oh, I'm so sorry, but you might need to upgrade your firewall before our system can connect. Is that okay?"
 - **Cost:** You sound like a vendor begging for business, not a trusted advisor diagnosing a critical flaw in their architecture.
 - **Fix:** Command the room with authority. "To achieve the high-availability targets you requested, upgrading the firewall to support MTLS is an absolute architectural prerequisite before we can begin the POC. Who on the network team do we need to trigger that change request with today?"
 
-**❌ Mistake #3: Running Out the Clock**
+**Mistake #3: Running Out the Clock**
 - **How it shows up:** The SE shows a cool feature at minute 58. At minute 60, everyone starts dropping off the Zoom call to go to their next meeting. The AE panics and yells, "Wait! What are the next steps?!"
 - **Cost:** You lose all momentum. You fall back into the "chasing" dynamic, sending follow-up emails that get ignored.
 - **Fix:** Set a hard alarm (literally on your phone or smartwatch) for 8 minutes before the end of the meeting. Stop whatever you are showing. Transition immediately: "We have 8 minutes left. Let's pause the tech and align on what we've proven today."
@@ -187,7 +187,7 @@ Run a "Hostile Takeover" role-play. Have an SE try to present a 5-minute slide d
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Send the "Agenda Alignment" email       ║
   ║     template 24 hours before your next big  ║

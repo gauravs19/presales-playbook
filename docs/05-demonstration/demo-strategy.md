@@ -65,7 +65,7 @@ Never open a browser until you have mapped your demo to the **C.R.A.F.T.** metho
 - **Why it matters:** If you demo until minute 60, everyone logs off and you have no momentum.
 - **How to execute it:** "Before we wrap, I want to confirm: based on what you saw today, do you believe this architecture would eliminate the $40k weekly SLA penalties? Great, the next step is the POC scoping call. Does next Tuesday at 2 PM work?"
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Opening the Demo    | Starts with a "Day in the Life" story             | Logs in, says "Here is the dashboard..."       |
 | Navigation          | Hides the sidebar; focuses only on the main pain  | Clicks linearly down every tab in the menu     |
@@ -112,7 +112,7 @@ Managers and peers use this to audit recorded demos. (0 = Failed, 3 = Masterful)
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Sentinel Cyber Analytics          │
   │  Deal Size: $1.2M ACV                       │
@@ -149,17 +149,17 @@ Managers and peers use this to audit recorded demos. (0 = Failed, 3 = Masterful)
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Feature First" Apology**
+**Mistake #1: The "Feature First" Apology**
 - **How it shows up:** The SE says, "So our UI isn't the prettiest right now, we are updating it next quarter, but if you look over here in this menu, you can see how powerful the engine is..."
 - **Cost:** You just planted a massive seed of doubt in the prospect's mind. They wouldn't have noticed the UI was slightly dated until you pointed it out. 
 - **Fix:** Never apologize for your software. Command the room. If there is a legitimate UI quirk, frame it as a power-user feature: "Because our engineers built this specifically for high-volume architects, we prioritized speed and density over flashy graphics..."
 
-**❌ Mistake #2: The "Happy Path" Addiction**
+**Mistake #2: The "Happy Path" Addiction**
 - **How it shows up:** The SE only shows the perfect, golden, flawless workflow where nothing ever goes wrong. The prospect inevitably asks, "What happens if the API connection drops in the middle of that sync?" The SE freezes because they never practiced the failure scenario.
 - **Cost:** You lose technical credibility. Prospects know software breaks. If you can't show them how your software gracefully handles a failure, they won't buy it.
 - **Fix:** Purposely demo a failure. "Now, I'm going to simulate a catastrophic node failure by killing this process. Let me show you how our system automatically detects it, queues the data, and alerts the admin without losing a single packet."
 
-**❌ Mistake #3: Talking to the Screen**
+**Mistake #3: Talking to the Screen**
 - **How it shows up:** The SE stares at their monitor, speaking in a monotone voice, tracking their mouse for 12 minutes straight without ever looking at the camera or checking the faces of the buying committee on Zoom.
 - **Cost:** The prospect is asleep, checking emails, or Slack messaging their colleagues about how boring the presentation is.
 - **Fix:** The 5-Minute Rule. You are forbidden from screen sharing for longer than 5 minutes continuously. Stop the share, look at the camera, and ask a confirming question.
@@ -196,7 +196,7 @@ Run a "Pitch the Boring Stuff" contest. Pick the most mundane, unsexy, backend a
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Print out the "Pre-Flight Checklist"    ║
   ║     and tape it to your monitor. Do not     ║

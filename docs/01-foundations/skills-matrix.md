@@ -55,7 +55,7 @@ To progress from an Associate SE to a Principal SE, you must intentionally level
 - **Why it matters:** You can be the smartest engineer in the building, but if you put the prospect to sleep during the demo, or fail to secure agreement from the economic buyer, the deal is lost.
 - **How to execute it:** Master formal frameworks like MEDDPICC. Learn to tell stories. Practice "active listening" to uncover hidden objections.
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Technical Mastery   | Builds custom Python scripts for POC integrations | Relies entirely on standard, canned demo data  |
 | Domain Expertise    | Speaks the prospect's specific industry language  | Treats a Bank and a Hospital identically       |
@@ -105,7 +105,7 @@ Prepare these stats before your QBR to prove your mastery of the "Sales Executio
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Global Datacom                      │
   │  Deal Size: $2.1M ACV                       │
@@ -136,17 +136,17 @@ Prepare these stats before your QBR to prove your mastery of the "Sales Executio
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Forever Developer" Trap**
+**Mistake #1: The "Forever Developer" Trap**
 - **How it shows up:** The SE spends 30 hours a week building incredibly complex, beautiful code repositories for edge-case integrations that apply to 1% of deals, but refuses to practice their public speaking or read a book on sales negotiation.
 - **Cost:** They become an internal SME (Subject Matter Expert) but never close quota-retiring enterprise deals. They hit a career ceiling because they cannot communicate with C-level executives.
 - **Fix:** Enforce a 70/30 split. 70% of professional development time on soft skills and business acumen, 30% on remaining technically sharp.
 
-**❌ Mistake #2: The Imposter Syndrome Spiral**
+**Mistake #2: The Imposter Syndrome Spiral**
 - **How it shows up:** Newer SEs freeze when faced with a technology they don't know (e.g., a specific flavor of Linux or an obscure database). They panic, assume they are terrible at their job, and try to BS the answer.
 - **Cost:** Utter destruction of credibility. 
 - **Fix:** Memorize this sentence: "I specialize in the architectural data-flow of our platform, not the granular administration of your specific legacy DB. Let me document your exact configuration and have our implementation engineers validate the connector." 
 
-**❌ Mistake #3: Ignoring the Prospect's Industry Context**
+**Mistake #3: Ignoring the Prospect's Industry Context**
 - **How it shows up:** The SE delivers the exact same SaaS marketing pitch to an agile FinTech startup that they delivered to a 100-year-old heavily regulated Insurance conglomerate. 
 - **Cost:** The Insurance conglomerate feels you don't understand their massive auditing and compliance burdens. 
 - **Fix:** Spend 15 minutes reading the specific compliance regulations for the industry you are pitching to (e.g., PCI-DSS for retail, HIPAA for healthcare) before joining the call.
@@ -183,7 +183,7 @@ Have the team take a personality/working style assessment (DiSC, Myers-Briggs, e
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Fill out the Self-Assessment Scorecard  ║
   ║     honestly and bring it to your manager.  ║

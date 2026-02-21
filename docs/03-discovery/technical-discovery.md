@@ -56,7 +56,7 @@ Run every deep technical discovery meeting using the **D.A.R.T.** methodology to
 - **Why it matters:** You must know what success looks like to the engineering team.
 - **How to execute it:** "If we replace this ingestion script, what is the exact millisecond latency target your CTO has mandated for the new architecture?"
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Technical Granularity| Maps specific API endpoints, auth types, and volume| Accepts "We have an API" as an answer           |
 | Blockers            | Discovers fatal security flaws in the first 30 mins| Hides technical gaps from the AE to maintain hope|
@@ -97,7 +97,7 @@ If the answer to any of these is "Yes," the SE must immediately flag the deal to
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Global Retail Bank                │
   │  Deal Size: $800K ACV                       │
@@ -136,17 +136,17 @@ If the answer to any of these is "Yes," the SE must immediately flag the deal to
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The Integration Assumption**
+**Mistake #1: The Integration Assumption**
 - **How it shows up:** The prospect mentions they use "SAP." The SE smiles and says, "Great, we integrate with SAP!" and moves on.
 - **Cost:** SAP has dozens of distinct products, thousands of custom modules, and varying degrees of API availability depending on the version year. During implementation, the engineering team discovers the prospect is running an on-premise 1998 version of SAP R/3 with a highly customized data model that costs $150k in professional services to connect to.
 - **Fix:** Map the metadata. "When you say SAP, which exact module, what version year, and are you leveraging their OData services or relying on flat-file exports?"
 
-**❌ Mistake #2: Fear of InfoSec**
+**Mistake #2: Fear of InfoSec**
 - **How it shows up:** The SE purposely avoids asking deep security or compliance questions early in the cycle because they are "scary" and might slow down the AE's momentum.
 - **Cost:** The deal reaches the finish line, Procurement sends over a 200-question security audit, and the deal stalls for 9 months while Legal fights over indemnification clauses. 
 - **Fix:** Bring the pain forward. Invite the Information Security team to the very first technical discovery call. Send them your SOC2 report and architectural whitepapers *proactively*.
 
-**❌ Mistake #3: Designing the Solution Live on the Call**
+**Mistake #3: Designing the Solution Live on the Call**
 - **How it shows up:** Upon hearing a complex architectural challenge, the SE immediately starts inventing a convoluted workaround on the fly, verbally committing to doing custom development to win the deal.
 - **Cost:** You commit the product and engineering teams to unscalable, unsupportable "Frankenstein" solutions that cause massive tech debt.
 - **Fix:** The SE's mantra: "Listen, Document, Validate offline." Tell the prospect: "I see exactly what you’re trying to achieve with that routing logic. Rather than designing the final architecture live on this call, let me take these specs back to my integration lead to ensure we propose the most elegant, scalable approach."
@@ -183,7 +183,7 @@ Run an "Integration Autopsy." Bring in an Implementation Engineer or CSM to walk
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Deploy the "Pre-Discovery Technical     ║
   ║     Questionnaire" email to the prospect    ║

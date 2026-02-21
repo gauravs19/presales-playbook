@@ -51,7 +51,7 @@ World-class presales is not about knowing every button in the UI. It is governed
 - **Why it matters:** The best technical solution in the world will lose if it does not have an internal **champion** navigating the procurement bureaucracy. 
 - **How to execute it:** Proactively identify the **economic buyer**, the technical evaluators, and potential internal detractors before the first demonstration. 
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Technical Reality   | Openly discusses product limitations upfront      | "Yes-man" who promises every feature is trivial|
 | Business Context    | Focuses 80% of demo on solving 2 specific pains   | Shows 45 features in 60 minutes hoping one sticks|
@@ -104,7 +104,7 @@ Run through this checklist 15 minutes before any major prospect engagement.
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Sentinel Cyber (Pre-IPO)          │
   │  Deal Size: $850K ACV                       │
@@ -138,17 +138,17 @@ Run through this checklist 15 minutes before any major prospect engagement.
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Show-Up and Throw-Up" Syndrome**
+**Mistake #1: The "Show-Up and Throw-Up" Syndrome**
 - **How it shows up:** The SE joins the Zoom call, says "hello," and immediately starts screen sharing, walking through five different tabs without ever asking the prospect a single question about their architecture.
 - **Cost:** The prospect zones out. They feel like they are watching a generic YouTube video rather than receiving a tailored enterprise consultation.
 - **Fix:** Enforce the "5-Minute Context Rule." Never open the software until you have spent 5 minutes confirming the prospect's architecture and their top two pain points out loud.
 
-**❌ Mistake #2: Competing with the AE**
+**Mistake #2: Competing with the AE**
 - **How it shows up:** The SE interrupts the AE constantly, corrects them on minor marketing semantics in front of the prospect, or starts answering pricing questions.
 - **Cost:** It makes your company look fragmented and highly unprofessional, instantly lowering the prospect's trust in both of you.
 - **Fix:** Establish rigid "swimlanes" before the call. The AE handles the commercial, the SE handles the technical. If the AE makes a slight technical error, let it go unless it legally impacts the deal. 
 
-**❌ Mistake #3: Fear of Saying "No"**
+**Mistake #3: Fear of Saying "No"**
 - **How it shows up:** The prospect asks if the system integrates with an obscure, 20-year-old proprietary CRM. The SE, desperate to please, says, "Yes, we have an open API so you can build anything!"
 - **Cost:** During implementation, the prospect realizes the integration will take 600 hours of custom engineering. They churn, demand a refund, and your reputation is ruined. 
 - **Fix:** Say "No" cleanly but pivot. "No, we do not have a native connector for that specific CRM. However, clients in similar situations use our Webhook architecture combined with robust middleware to achieve the data sync."
@@ -186,7 +186,7 @@ Run a "Stump the Chump" role-play in your next team meeting. Have your most seni
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Schedule a 30-minute "Ways of Working"  ║
   ║     sync with your assigned AE to set rigid ║

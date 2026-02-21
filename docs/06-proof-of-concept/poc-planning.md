@@ -20,7 +20,7 @@ Before agreeing to a POC, the Presales Engineer (SE) and Account Executive (AE) 
 
 ---
 
-## 🏗️ The 4 Pillars of POC Planning
+##  The 4 Pillars of POC Planning
 
 ### 1. Scoping the POC (The Goldilocks Rule)
 A POC scope must be "just right." 
@@ -33,12 +33,12 @@ Select **2 to 3 critical use cases** that directly address the prospect's most p
 Success criteria must be entirely objective and binary (Pass/Fail). Subjective criteria ("The software must be easy to use") lead to endless debates at the technical closure meeting.
 
 **Poor Success Criteria:**
-❌ *“The system handles our data ingestion well.”*
-❌ *“The UI is intuitive for our DevOps team.”*
+ *“The system handles our data ingestion well.”*
+ *“The UI is intuitive for our DevOps team.”*
 
 **Excellent Success Criteria:**
-✅ *"The system ingests 500GB of JSON payload within 1 hour without dropping packets."*
-✅ *"A junior engineer can deploy a new microservice via the CI/CD integration in under 5 minutes, as measured during the final workshop."*
+ *"The system ingests 500GB of JSON payload within 1 hour without dropping packets."*
+ *"A junior engineer can deploy a new microservice via the CI/CD integration in under 5 minutes, as measured during the final workshop."*
 
 ### 3. Mutual Evaluation Plan (MEP)
 The MEP (sometimes called a Mutual Close Plan) is the most critical document in a POC. It is a shared timeline (often a spreadsheet or shared project board) detailing every step from kickoff to contract signing.

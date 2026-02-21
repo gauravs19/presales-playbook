@@ -59,7 +59,7 @@ The "Two in a Box" methodology asserts that the AE and SE must act as a single, 
 - **Why it matters:** Without immediate feedback, bad habits compound. 
 - **How to execute it:** Ask each other: What did we miss? Did we uncover the real pain? Did we secure the agreed-upon next step?
 
-| Dimension         | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension         | Done Well                                       | Done Poorly                                   |
 |-------------------|---------------------------------------------------|------------------------------------------------|
 | Preparation       | AE provides SE with detailed discovery notes      | SE joins cold 30 seconds before the Zoom starts|
 | In-Call Dynamic   | Smooth, orchestrated handoffs between topics      | Interrupting each other, contradicting answers |
@@ -102,7 +102,7 @@ SEs must protect their time. Use these questions internally with your AE *before
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Nexus Health Systems              │
   │  Deal Size: $1.2M ACV                       │
@@ -138,17 +138,17 @@ SEs must protect their time. Use these questions internally with your AE *before
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Demo Monkey" Dynamic**
+**Mistake #1: The "Demo Monkey" Dynamic**
 - **How it shows up:** The AE treats the SE like an IT helpdesk. The AE manages the entire call, clicks their fingers, and says, "SE, show them the dashboard now." The SE clicks quietly and stops talking.
 - **Cost:** The prospect views the SE as a subservient button-clicker rather than a trusted technical advisor, making it impossible for the SE to influence the prospect's lead architect.
 - **Fix:** The SE must aggressively assert themselves as a peer. Lead the technical discovery. Co-author the agenda. If the AE tries to relegate you to "Demo Monkey," have a blunt 1-on-1 offline.
 
-**❌ Mistake #2: The Technical Ambush**
+**Mistake #2: The Technical Ambush**
 - **How it shows up:** The AE schedules a "quick intro call," but the prospect brings three hostile Senior DevOps engineers who immediately start grilling the SE on IP whitelisting and container orchestration.
 - **Cost:** The SE looks unprepared, and the vendor loses technical credibility instantly.
 - **Fix:** AEs must explicitly confirm titles and agendas before sending invites. If ambushed, the SE must pause and say, "I love these questions, but to respect your time, I want to ensure I bring our lead integration specialist to accurately map your specific topology. Let's schedule a dedicated 45-minute technical deep dive."
 
-**❌ Mistake #3: Happy Ears**
+**Mistake #3: Happy Ears**
 - **How it shows up:** The prospect smiles during a demo and says, "Wow, this looks cool." The AE immediately updates the CRM to 80% probability. The SE knows the prospect has no budget and no actual technical use case.
 - **Cost:** Wasted SE resources on doomed POCs and wildly inaccurate revenue forecasting.
 - **Fix:** Establish strict, objective exit criteria for every stage of the funnel (e.g., MEDDPICC). If the SE hasn't validated the technical pain, the deal does not advance in the CRM.
@@ -186,7 +186,7 @@ Have your AE leadership and SE leadership run a joint session on "The Perfect De
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Draft your customized AE/SE Rules of    ║
   ║     Engagement Charter today.               ║

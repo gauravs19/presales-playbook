@@ -61,7 +61,7 @@ Your career level is fundamentally tied to how far your influence extends beyond
 - **Why it matters:** Scaling the revenue organization requires leaders who can hire, coach, and retain top technical talent while aligning firmly with Sales VPs.
 - **How to execute it:** Measure pipeline coverage. Coach SEs on soft skills. Manage executive escalations.
 
-| Level               | Deal Focus ✅                                      | Organizational Impact ❌                                  |
+| Level               | Deal Focus                                       | Organizational Impact                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Core SE             | "I execute the standard demo perfectly."          | "I don't have time to mentor the new hire."    |
 | Senior SE           | "I navigate the CTO's objections and own the POC."| "I solved the integration, but kept the code to myself."|
@@ -108,7 +108,7 @@ Best,
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Apex Cloud Infrastructure         │
   │  Situation: Leticia was the top-performing  │
@@ -141,17 +141,17 @@ Best,
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Tenure Entitlement" Trap**
+**Mistake #1: The "Tenure Entitlement" Trap**
 - **How it shows up:** An SE hits their two-year anniversary and immediately demands a promotion to Senior, despite their win rates and execution remaining exactly average.
 - **Cost:** An inflated title structure where "Senior" means nothing, frustrating actual top performers.
 - **Fix:** Organizations must strictly enforce behavior-based matrices. You do not get promoted for doing your current job well for a long time; you get promoted because you are already executing the responsibilities of the next level up.
 
-**❌ Mistake #2: Confusing "Principal" with "Manager"**
+**Mistake #2: Confusing "Principal" with "Manager"**
 - **How it shows up:** A highly technical Principal SE is forced into a Management role because it is the only way to get a pay raise. 
 - **Cost:** The company loses its best technical asset in the field, and gains a miserable, micromanaging boss who hates dealing with HR issues and pipeline forecasts.
 - **Fix:** Ensure the Individual Contributor (IC) track compensation banding overlaps with the Management track. A Principal SE should be able to earn as much as (or more than) a Director of Presales.
 
-**❌ Mistake #3: Hoarding Knowledge (The Anti-Scale)**
+**Mistake #3: Hoarding Knowledge (The Anti-Scale)**
 - **How it shows up:** An SE figures out a brilliant workaround to a complex integration, but keeps the code locally on their laptop to ensure they look like a genius on their own deals.
 - **Cost:** The broader team continues to lose deals to that exact integration challenge.
 - **Fix:** Tie 20% of variable compensation or MBOs (Management by Objectives) directly to "Asset Creation and Team Enablement."
@@ -189,7 +189,7 @@ Run a "Career Mapping Workshop." Have every SE draw their ideal career state 3 y
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Schedule a dedicated 45-minute "Career  ║
   ║     Pathing" sync with your manager,        ║

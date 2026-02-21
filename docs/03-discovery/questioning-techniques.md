@@ -55,7 +55,7 @@ To avoid interrogating the prospect, the SE must use a structured, layered appro
 - **Why it matters:** Economic Buyers only fund projects linked to corporate goals.
 - **How to execute it:** "You mentioned the CEO has a company objective to cut OpEx by 10% this year. How does this reporting delay impact your department's ability to hit that mandate?"
 
-| Dimension           | Done Well ✅                                      | Done Poorly ❌                                  |
+| Dimension           | Done Well                                       | Done Poorly                                   |
 |---------------------|---------------------------------------------------|------------------------------------------------|
 | Question Phrasing   | Open-ended, conversational, and deeply curious    | Rapid-fire, 'Yes/No' robotic checklists        |
 | Uncovering Pain     | Digs 3 layers deep past the initial technical flaw| Accepts the first technical complaint and moves on|
@@ -105,7 +105,7 @@ Managers can score recorded discovery calls using this fast rubric. (0 = Failed,
 ## In the Trenches
 
   ┌─────────────────────────────────────────────┐
-  │  🏟  IN THE FIELD                           │
+  │    IN THE FIELD                           │
   │                                             │
   │  Company: Forge Cloud Analytics             │
   │  Deal Size: $450K ACV                       │
@@ -145,17 +145,17 @@ Managers can score recorded discovery calls using this fast rubric. (0 = Failed,
 
 ## Fatal Traps & Course Corrections
 
-**❌ Mistake #1: The "Premature Pitch"**
+**Mistake #1: The "Premature Pitch"**
 - **How it shows up:** The prospect mentions a problem. Two minutes into the call, the SE gets excited, cuts them off, and says, "Oh! We do exactly that! Let me show you how our module handles that!" and launches into a 10-minute feature monologue.
 - **Cost:** You missed the actual width, depth, and financial cost of the problem. You pitched a $100k solution for what the prospect currently views as a $50 nuisance.
 - **Fix:** Employ the "Hold and Fold" technique. When you hear a buying signal, write it down, fold your hands, and say: "That is interesting. Tell me more about why that is happening."
 
-**❌ Mistake #2: Accepting "Standard" Answers**
+**Mistake #2: Accepting "Standard" Answers**
 - **How it shows up:** The SE asks, "Why are you looking to replace your current system?" The prospect says, "It's just too slow and hard to use." The SE writes down "System is slow" and moves to the next question.
 - **Cost:** "Slow and hard to use" is a symptom, not a disease. A symptom cannot justify a massive enterprise purchase.
 - **Fix:** Never accept the first answer. Use the "Define" challenge. Respond with: "When you say 'hard to use', do you mean it requires too much coding knowledge for your junior staff, or do you mean the UI requires 10 clicks to do a basic task?"
 
-**❌ Mistake #3: Asking Things You Should Already Know**
+**Mistake #3: Asking Things You Should Already Know**
 - **How it shows up:** The SE asks a Fortune 500 CIO, "So, what exactly does your company manufacture?" or "What CRM are you guys currently running?" (when it's blatantly public on their careers page).
 - **Cost:** Immediate loss of peer-to-peer respect. You look like you did zero preparation.
 - **Fix:** Use "Hypothesis-Led" discovery. "I noticed on your Q3 earnings call your CEO mentioned pushing heavily into APAC markets. Based on my experience with companies your size, that expansion usually breaks legacy data sovereignty protocols. Are you experiencing that currently with your AWS setup?"
@@ -192,7 +192,7 @@ Run a "Symptom vs. Disease" whiteboard session. Give the team 10 common technica
 ---
 
   ╔══════════════════════════════════════════════╗
-  ║  ⚡ QUICK WINS — Implement This Week        ║
+  ║   QUICK WINS — Implement This Week        ║
   ╠══════════════════════════════════════════════╣
   ║  1. Save the "Peeling the Onion" talk       ║
   ║     track to your notepad. Use it on        ║
