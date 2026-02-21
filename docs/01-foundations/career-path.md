@@ -7,13 +7,13 @@
 
 ---
 
-## 🏢 EXECUTIVE SUMMARY
+## The Baseline Reality
 
 The Presales Career Path is notoriously opaque. Unlike Account Executives, whose progression is often a simple calculation of revenue generation and quota attainment, SE promotions rely on a complex blend of technical mastery, soft-skill influence, and organizational scale. When SEs do not understand the distinct expectations between a "Senior" and a "Principal" level, they often over-index on raw technical certifications while neglecting the strategic business acumen needed to advance. Organizations that implement transparent, behavior-based career architectures see up to 45% higher SE retention rates and significantly faster ramp times for new hires.
 
 ---
 
-## 🧠 CORE CONCEPT EXPLANATION
+## Deconstructing the Role
 
 To advance in presales, you must understand the **Radius of Impact**.
 
@@ -39,7 +39,7 @@ Your career level is fundamentally tied to how far your influence extends beyond
 
 ---
 
-## 🏗️ FRAMEWORK / MODEL: The "Four Stages of SE Mastery"
+## The Operational Framework: The "Four Stages of SE Mastery"
 
 ### Stage 1: The Core SE (Mastering the Craft)
 - **What it is:** The foundational level where you learn the product inside and out, execute standardized demos, and pass technical certifications.
@@ -69,7 +69,7 @@ Your career level is fundamentally tied to how far your influence extends beyond
 
 ---
 
-## 📑 TEMPLATES & TOOLS
+## Your Execution Toolkit
 
 ### A) TALK TRACK — The "Promotion Read-Out"
 Use this word-for-word script during your quarterly review when you are ready to ask for the Senior/Principal title.
@@ -105,7 +105,7 @@ Best,
 
 ---
 
-## 🏟 IN THE FIELD (War Story)
+## In the Trenches
 
   ┌─────────────────────────────────────────────┐
   │  🏟  IN THE FIELD                           │
@@ -139,7 +139,7 @@ Best,
 
 ---
 
-## ❌ COMMON MISTAKES & HOW TO FIX THEM
+## Fatal Traps & Course Corrections
 
 **❌ Mistake #1: The "Tenure Entitlement" Trap**
 - **How it shows up:** An SE hits their two-year anniversary and immediately demands a promotion to Senior, despite their win rates and execution remaining exactly average.
@@ -158,7 +158,7 @@ Best,
 
 ---
 
-## 📊 METRICS & BENCHMARKS
+## Measuring ROI
 
 How do VPs decide who to promote? They look at the data.
 
@@ -170,7 +170,7 @@ How do VPs decide who to promote? They look at the data.
 
 ---
 
-## 📋 MANAGER'S COACHING GUIDE
+## Leadership Directives
 
 Managers own the career architecture. Failure to provide clear paths to promotion guarantees attrition of your best talent.
 
@@ -204,7 +204,7 @@ Run a "Career Mapping Workshop." Have every SE draw their ideal career state 3 y
 
 ---
 
-## 🔗 CROSS-REFERENCES & DEPENDENCIES
+## Essential Playbook Links
 
 - This section works best when combined with: **[Section 1.3: The Skills Matrix](skills-matrix.md)**.
 - If you are aiming for Management, deeply understand the metrics in **[Section 11: Metrics & Measurement](../11-metrics-measurement/README.md)**.
