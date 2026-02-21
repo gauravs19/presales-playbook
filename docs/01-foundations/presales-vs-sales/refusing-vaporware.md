@@ -1,0 +1,3 @@
+# 1.3.4: Refusing Vaporware
+
+One of the most dangerous dynamics in the AE/SE relationship is the promise of Vaporware...
