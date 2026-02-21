@@ -4,7 +4,6 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://gauravs19.github.io/presales-playbook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
@@ -151,16 +150,6 @@ graph TB
     E --> E4[Case Studies]
 ```
 
-## 🤝 Contributing
-
-We welcome contributions from the presales community! Here's how you can help:
-
-- **💡 Share Knowledge**: Add new content or improve existing pages
-- **🐛 Fix Issues**: Report bugs or broken links
-- **📝 Improve Documentation**: Enhance clarity and examples
-- **🌍 Translate**: Help make this resource available in other languages
-
-See our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## 🏗️ Project Structure
 
@@ -168,7 +157,6 @@ See our [Contributing Guide](CONTRIBUTING.md) for details.
 presales-playbook/
 ├── README.md              # This file
 ├── ARCHITECTURE.md        # Technical architecture
-├── CONTRIBUTING.md        # Contribution guidelines
 ├── _sidebar.md           # Navigation structure
 ├── index.html            # Docsify configuration
 │
@@ -223,7 +211,6 @@ Ready to dive in? Here's your roadmap:
 2. **🎯 Focus** - Choose your learning path above
 3. **🛠️ Practice** - Apply frameworks to your work
 4. **📈 Measure** - Track your improvement
-5. **🤝 Contribute** - Share your learnings
 
 **[Start Learning →](docs/01-foundations/what-is-presales.md)**
 

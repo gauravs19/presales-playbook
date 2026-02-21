@@ -101,7 +101,6 @@
 * **Appendix**
   * [Glossary](docs/appendix/glossary.md)
   * [Further Reading](docs/appendix/further-reading.md)
-  * [Contributing](CONTRIBUTING.md)
   * [License](LICENSE.md)
 
 ---
