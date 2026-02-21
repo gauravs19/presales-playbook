@@ -3,10 +3,12 @@
 * [🏠 Home](/)
 
 * **1. Foundations**
+  * [Overview](docs/01-foundations/README.md)
   * [What is Presales?](docs/01-foundations/what-is-presales.md)
   * [Presales vs Sales](docs/01-foundations/presales-vs-sales.md)
   * [Skills Matrix](docs/01-foundations/skills-matrix.md)
   * [Career Path](docs/01-foundations/career-path.md)
+  * [Customer Engagement](docs/01-foundations/customer-engagement-strategies.md)
 
 * **2. Presales Methodology**
   * [Overview](docs/02-methodology/README.md)
@@ -21,6 +23,7 @@
   * [Overview](docs/03-discovery/README.md)
   * [Preparation](docs/03-discovery/preparation.md)
   * [Questioning Techniques](docs/03-discovery/questioning-techniques.md)
+  * [Technical Discovery](docs/03-discovery/technical-discovery.md)
   * [Stakeholder Mapping](docs/03-discovery/stakeholder-mapping.md)
   * [Pain Point Analysis](docs/03-discovery/pain-point-analysis.md)
   * [Requirements Gathering](docs/03-discovery/requirements-gathering.md)
