@@ -1,3 +1,25 @@
-# 3.5.3 Distinguishing Must-Haves From Smoke Screens
+#### 3.5.3 Distinguishing Must-Haves From Smoke Screens
 
-> *Content coming soon — this section is part of the Enterprise Presales Playbook.*
+Every prospect's requirements list contains a mix of three categories: must-haves (capabilities they genuinely need to solve their problem), nice-to-haves (capabilities they'd prefer but could live without), and smoke screens (capabilities they list because a competitor told them to ask about it, or because someone on their team wants to appear thorough). Your job in discovery is to distinguish between these three — because the SE who tries to satisfy all 50 requirements equally will exhaust their team and dilute their solution.
+
+1. **The "walk me through the use case" test.** For any requirement that feels suspicious, ask: "Can you walk me through the specific use case where you'd need [capability]? I want to understand how it fits into your workflow." A must-have requirement produces a detailed, specific use case. A smoke screen produces vague hand-waving: "Well, we might need it if..." or "Someone on the team mentioned it." If the prospect can't describe a concrete use case, the requirement is either a nice-to-have or a smoke screen — not a deal-defining criterion.
+
+2. **The "what happens without it" test.** "If our solution could address requirements 1 through 8 but not requirement 9, how would that affect your decision?" If the answer is "That would be a deal-breaker — we can't proceed without it," requirement 9 is a genuine must-have. If the answer is "We'd need to understand the workaround options," it's a nice-to-have. If the answer is "Hmm, I'd need to check with the team," it's probably a smoke screen — one person added it to the list but nobody is truly dependent on it.
+
+3. **Look for competitive fingerprints.** If a requirement list includes language that matches a competitor's marketing — "Does your solution support [competitor's proprietary term]?" — the criterion was likely influenced by a competitor. This doesn't mean it's invalid. But it means you should probe: "I notice you've listed [capability]. Can you tell me more about how your team currently uses that, or where the requirement came from?" If the answer traces back to a competitor's demo or sales pitch rather than an internal business need, the requirement is competitive ammunition, not a real need.
+
+4. **Prioritise publicly with the prospect.** Force-rank the requirements with the evaluation team: "If you had to pick your top 5 most critical requirements from this list of 20, which would they be?" This exercise reveals what actually matters. The 15 requirements that don't make the top 5 are, by definition, less critical. This doesn't mean you ignore them — but it means you don't invest equal effort in addressing all 20. Invest heavily in the top 5. Address the remaining 15 adequately but not exhaustively.
+
+5. **Document your understanding and confirm it.** After the prioritisation exercise, send a written summary: "Based on our discussion, here are your top 5 evaluation criteria in priority order. Items 6–20 are important for the evaluation but not deal-defining. Please confirm that this prioritisation reflects your team's thinking." Getting written confirmation protects you later when a stakeholder tries to change the criteria after you've designed your solution.
+
+> **War Story:** A prospect sent an RFP with 85 technical requirements. An SE on the team started methodically addressing all 85. A more experienced SE on the team reviewed the list and flagged 12 requirements that used language identical to a specific competitor's product documentation — including two capabilities that no other product on the market supported because they were proprietary to that competitor. The experienced SE contacted the champion: "Some of these requirements seem designed for a specific vendor. Can we schedule a call to walk through the priority items so we can focus our evaluation on what truly matters to your team?" The champion admitted that a consultant (who had a prior relationship with the competitor) had drafted the RFP requirements. The team re-prioritised: 12 of the 85 items were the genuine must-haves. The ghostwritten requirements were relegated to "nice-to-have." The SE team addressed 12 requirements deeply instead of 85 superficially. They won.
+
+> **Failure Mode:** The SE who treats every requirement as equally important. They build a 100-page response. They demo 50 features. They design a POC that tests 30 criteria. The result: a mediocre job on everything, an excellent job on nothing. The competitor who identified the 5 real must-haves and delivered an exceptional demo of those 5 wins — because depth beats breadth in every competitive evaluation.
+
+**Interview Angle:**
+"How do you manage large or complex requirements lists from prospects?"
+A strong answer describes a prioritisation methodology (force-ranking, use case testing, competitive fingerprint detection). A weak answer describes "addressing every requirement thoroughly."
+
+🟡 **Mid-Level** — Not all requirements are equal. The SE who can identify the 5 that matter from a list of 50 saves time, focuses effort, and wins more deals than the SE who treats them all the same.
+
+---
