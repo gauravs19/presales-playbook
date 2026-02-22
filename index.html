@@ -52,6 +52,7 @@
       // Interactive edit button and feedback link
       plugins: [
         function (hook, vm) {
+          // 1. Add interactive links to top of page
           hook.beforeEach(function (html) {
             var editUrl = 'https://github.com/gauravs19/presales-playbook/tree/main/' + vm.route.file;
             var issueUrl = 'https://github.com/gauravs19/presales-playbook/issues/new?title=Feedback%20on%20' + vm.route.file;
@@ -61,6 +62,48 @@
               + '<a href="' + issueUrl + '" target="_blank">💡 Share Feedback / Request Topic</a>'
               + '</div>\n\n';
             return interactHtml + html;
+          });
+
+          // 2. Add Giscus commenting system at the bottom
+          hook.doneEach(function () {
+            var giscusContainer = document.getElementById('giscus-container');
+
+            if (!giscusContainer) {
+              giscusContainer = document.createElement('div');
+              giscusContainer.id = 'giscus-container';
+              giscusContainer.style.marginTop = '60px';
+              giscusContainer.style.borderTop = '1px solid #eee';
+              giscusContainer.style.paddingTop = '20px';
+
+              var target = document.querySelector('.markdown-section') || document.body;
+              target.appendChild(giscusContainer);
+
+              var script = document.createElement('script');
+              script.src = 'https://giscus.app/client.js';
+              script.setAttribute('data-repo', 'gauravs19/presales-playbook');
+              script.setAttribute('data-repo-id', 'YOUR_REPO_ID_HERE'); // You must replace this!
+              script.setAttribute('data-category', 'General');
+              script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID_HERE'); // You must replace this!
+              script.setAttribute('data-mapping', 'title');
+              script.setAttribute('data-strict', '0');
+              script.setAttribute('data-reactions-enabled', '1');
+              script.setAttribute('data-emit-metadata', '0');
+              script.setAttribute('data-input-position', 'bottom');
+              script.setAttribute('data-theme', 'light');
+              script.setAttribute('data-lang', 'en');
+              script.crossOrigin = 'anonymous';
+              script.async = true;
+              giscusContainer.appendChild(script);
+            } else {
+              // Giscus uses message passing to update the active page dynamically on SPA route changes
+              var iframe = document.querySelector('iframe.giscus-frame');
+              if (iframe) {
+                iframe.contentWindow.postMessage(
+                  { giscus: { setConfig: { term: document.title } } },
+                  'https://giscus.app'
+                );
+              }
+            }
           });
         }
       ]
