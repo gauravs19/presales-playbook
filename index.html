@@ -59,23 +59,30 @@
       // Interactive edit button and feedback link
       plugins: [
         function (hook, vm) {
-          // 1. Add interactive links & reading time to top of page
+          // 1. Add reading time to top of page
           hook.beforeEach(function (html) {
             var words = html.split(/\s+/).length;
             var readTime = Math.max(1, Math.ceil(words / 200));
 
+            var timeHtml = '<div style="color: #888; font-size: 0.9em; margin-bottom: 20px;">⏱️ ' + readTime + ' min read</div>\n\n';
+            return timeHtml + html;
+          });
+
+          // 2. Add interactive links to the bottom of the content
+          hook.afterEach(function (html, next) {
             var editUrl = 'https://github.com/gauravs19/presales-playbook/tree/main/' + vm.route.file;
             var issueUrl = 'https://github.com/gauravs19/presales-playbook/issues/new?title=Feedback%20on%20' + vm.route.file;
 
-            var timeHtml = '<div style="color: #888; font-size: 0.9em; margin-bottom: 20px;">⏱️ ' + readTime + ' min read</div>';
-            var interactHtml = '<div style="display:flex; justify-content:space-between; margin-bottom:20px; font-size: 0.9em;">'
+            var interactHtml = '<hr style="margin-top: 40px; border: 0; border-top: 1px solid #eee;">'
+              + '<div style="display:flex; justify-content:space-between; margin-bottom:20px; font-size: 0.9em;">'
               + '<a href="' + editUrl + '" target="_blank">✍️ Edit this page on GitHub</a>'
               + '<a href="' + issueUrl + '" target="_blank">💡 Share Feedback / Request Topic</a>'
-              + '</div>\n\n';
-            return timeHtml + interactHtml + html;
+              + '</div>';
+
+            next(html + interactHtml);
           });
 
-          // 2. Add Giscus commenting system at the bottom
+          // 3. Add Giscus commenting system at the bottom
           hook.doneEach(function () {
             var giscusContainer = document.getElementById('giscus-container');
 
@@ -130,6 +137,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 
 </html>
