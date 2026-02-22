@@ -2,28 +2,28 @@
 
 * [Home](/)
 
-* **0. The Presales Foundation**
+* **0. Start Here**
   * 0.1 What Even Is Presales?
-    * [0.1.1 Presales in Plain English](docs/00-foundation/what-is-presales.md)
-    * [0.1.2 The Cast of Characters](docs/00-foundation/cast-of-characters.md)
-    * [0.1.3 The Presales Glossary](docs/00-foundation/presales-glossary.md)
-    * [0.1.4 How Presales Differs From Engineering, Support & Consulting](docs/00-foundation/presales-vs-other-roles.md)
+    * [0.1.1 Presales in Plain English](docs/00-start-here/what-is-presales.md)
+    * [0.1.2 The Cast of Characters](docs/00-start-here/cast-of-characters.md)
+    * [0.1.3 The Presales Glossary](docs/00-start-here/presales-glossary.md)
+    * [0.1.4 How Presales Differs From Engineering, Support & Consulting](docs/00-start-here/presales-vs-other-roles.md)
   * 0.2 The Anatomy of an Enterprise Sales Cycle
-    * [0.2.1 The Full Deal Journey](docs/00-foundation/enterprise-sales-cycle.md)
-    * [0.2.2 Short Deals vs. Long Deals](docs/00-foundation/short-vs-long-deals.md)
-    * [0.2.3 Where Deals Die](docs/00-foundation/where-deals-die.md)
-    * [0.2.4 How to Read a CRM Like a Deal Story](docs/00-foundation/reading-a-crm.md)
+    * [0.2.1 The Full Deal Journey](docs/00-start-here/enterprise-sales-cycle.md)
+    * [0.2.2 Short Deals vs. Long Deals](docs/00-start-here/short-vs-long-deals.md)
+    * [0.2.3 Where Deals Die](docs/00-start-here/where-deals-die.md)
+    * [0.2.4 How to Read a CRM Like a Deal Story](docs/00-start-here/reading-a-crm.md)
   * 0.3 Your First 90 Days as a New SE
-    * [0.3.1 Week 1-2: Orient Before You Operate](docs/00-foundation/first-90-days-week-1-2.md)
-    * [0.3.2 Week 3-6: Shadow Before You Lead](docs/00-foundation/first-90-days-week-3-6.md)
-    * [0.3.3 Week 6-10: Lead With a Safety Net](docs/00-foundation/first-90-days-week-6-10.md)
-    * [0.3.4 Week 10-90: Build Your Personal Operating System](docs/00-foundation/first-90-days-week-10-90.md)
+    * [0.3.1 Week 1-2: Orient Before You Operate](docs/00-start-here/first-90-days-week-1-2.md)
+    * [0.3.2 Week 3-6: Shadow Before You Lead](docs/00-start-here/first-90-days-week-3-6.md)
+    * [0.3.3 Week 6-10: Lead With a Safety Net](docs/00-start-here/first-90-days-week-6-10.md)
+    * [0.3.4 Week 10-90: Build Your Personal Operating System](docs/00-start-here/first-90-days-week-10-90.md)
   * 0.4 How to Learn From Senior SEs
-    * [0.4.1 The Art of Strategic Shadowing](docs/00-foundation/strategic-shadowing.md)
-    * [0.4.2 How to Ask for Feedback Without Being Dismissed](docs/00-foundation/asking-for-feedback.md)
-    * [0.4.3 Reverse-Engineering a Senior SE's Deal Approach](docs/00-foundation/reverse-engineering-seniors.md)
-    * [0.4.4 When You Know More Than the Senior SE](docs/00-foundation/when-you-know-more.md)
-  * [0.5 Graduation Checkpoint](docs/00-foundation/graduation-checkpoint-01.md)
+    * [0.4.1 The Art of Strategic Shadowing](docs/00-start-here/strategic-shadowing.md)
+    * [0.4.2 How to Ask for Feedback Without Being Dismissed](docs/00-start-here/asking-for-feedback.md)
+    * [0.4.3 Reverse-Engineering a Senior SE's Deal Approach](docs/00-start-here/reverse-engineering-seniors.md)
+    * [0.4.4 When You Know More Than the Senior SE](docs/00-start-here/when-you-know-more.md)
+  * [0.5 Graduation Checkpoint](docs/00-start-here/graduation-checkpoint-01.md)
 
 * **1. Foundations**
   * 1.1 What Is Presales — Redefined
