@@ -1,3 +1,27 @@
-# 3.3.2 Finding Infrastructure Bottlenecks They Don't Know Exist
+#### 3.3.2 Finding Infrastructure Bottlenecks They Don't Know Exist
 
-> *Content coming soon — this section is part of the Enterprise Presales Playbook.*
+The most valuable discovery finding is the one the prospect didn't know about. When you tell a prospect something they already know — "Your pipeline is slow" — you confirm their understanding. When you tell them something they don't know — "Your pipeline is slow because the third transformation step is re-reading the source data instead of using the cached output from step one, which triples I/O load" — you establish yourself as an expert worth listening to.
+
+Finding hidden bottlenecks requires you to think like a systems engineer while interviewing like a consultant.
+
+1. **Look for symptoms, then trace upstream.** The prospect tells you their reports are delayed. That's a symptom. Trace upstream: what feeds the report? A data warehouse. What feeds the warehouse? An ETL pipeline. What feeds the pipeline? Multiple data sources with different schemas, delivery times, and quality levels. The bottleneck is almost never where the prospect says it is — it's 2–3 steps upstream from the visible problem. "Your reports are delayed because your pipeline is slow" is useful. "Your pipeline is slow because Source #3 delivers data 4 hours after Sources #1 and #2, and your batch process waits for all sources before starting" is actionable.
+
+2. **Ask about the "last time something broke."** "Tell me about the last major data incident. What happened, how long did it take to resolve, and what was the root cause?" Incident narratives reveal the deepest architecture weaknesses because incidents expose the assumptions that broke. The prospect will describe a failure that traces through their architecture, highlighting dependencies, manual steps, and fragile connectors that work under normal conditions but collapse under stress.
+
+3. **Question the batch window assumption.** Many enterprise architectures were designed around batch processing because that was the standard when the architecture was built. Ask: "What would happen if your business required real-time data instead of batch? Which parts of the architecture couldn't support that?" The answers reveal single points of failure, monolithic processing steps, and database locking patterns that the team has worked around for years but never addressed because "batch is fine." Until business requirements change — and they always change.
+
+4. **Probe monitoring and observability.** "How do you know when something goes wrong in your pipeline?" If the answer is "our engineers notice when downstream reports don't appear," the prospect has a monitoring gap — they're using business process failure as their alerting mechanism. If the answer is "we have monitoring on each step with automated alerts," ask "what's your mean time to detect a failure?" and "what's your mean time to resolve?" The gap between detect and resolve often contains manual steps that are invisible to management but well-known to the engineering team.
+
+5. **Ask about the "tribal knowledge" risk.** "If the person who built this pipeline left tomorrow, how long would it take someone else to troubleshoot a failure?" This question surfaces undocumented processes, configuration hidden in scripts, and architectural decisions that exist only in one person's memory. Tribal knowledge is a systemic bottleneck because it makes the organisation dependent on specific individuals rather than documented processes. If the answer is "months," you've identified a risk that goes far beyond pipeline performance.
+
+> **War Story:** An SE was doing technical discovery with a retail company that reported "occasional pipeline delays." Standard problem. The SE asked about their last incident. The Data Engineering Lead described a failure that knocked their recommendation engine offline for 11 hours. The root cause: a single PostgreSQL database was handling both the transaction workload and the analytics queries. Under Black Friday load, the analytics queries locked tables that the transaction pipeline needed, creating a cascading failure. The engineering team knew about this architectural weakness but had never raised it because "it only happens under peak load." The SE calculated the cost: 11 hours of recommendation engine downtime during Black Friday = approximately $2.8M in lost incremental revenue. The prospect's VP of Engineering had never seen that number. It became the deal's central justification. The SE found a bottleneck the prospect knew existed but had never quantified.
+
+> **Failure Mode:** The SE who takes the prospect's self-diagnosis at face value. "Our pipeline is slow" → "Let me show you our fast pipeline." This SE never investigates *why* the pipeline is slow, doesn't trace the bottleneck upstream, and doesn't discover the hidden risks. Their demo shows a fast pipeline running against a clean test dataset — which proves nothing about whether it'll be fast against the prospect's messy, complex real-world environment.
+
+**Interview Angle:**
+"How do you go about understanding the technical root cause of a prospect's stated problem?"
+A strong answer describes upstream tracing, incident analysis, and probing techniques that reveal hidden bottlenecks. A weak answer describes "understanding their requirements."
+
+🟡 **Mid-Level** — The SE who finds bottlenecks the prospect didn't know about earns a fundamentally different level of trust than the SE who confirms bottlenecks the prospect already identified.
+
+---
