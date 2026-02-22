@@ -1,225 +1,106 @@
-# Presales Playbook
+# Enterprise Presales Playbook
 
-> **Your comprehensive guide to presales excellence** — From discovery to close, master the art and science of technical presales.
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://gauravs19.github.io/presales-playbook/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+> The practitioner-built field guide for Solutions Engineers — from your first discovery call to scaling a global presales organisation.
 
 ---
 
-## 🎯 What is This?
+## What This Is
 
-The **Presales Playbook** is an open-source, comprehensive guide for presales professionals at all levels. Whether you're new to presales or a seasoned solutions architect, this playbook provides:
+This is not a training manual. Training manuals are written by people who used to do the job. This playbook is written by people who are still doing it — and who've lost enough deals to know what actually matters versus what sounds good on a slide.
 
-- **📚 Structured Methodology**: Step-by-step frameworks for the entire presales lifecycle
-- **🛠️ Practical Tools**: Templates, checklists, and frameworks you can use immediately
-- **💡 Best Practices**: Industry-proven techniques from successful presales engagements
-- **🔗 Real Examples**: Links to case studies, demos, and real-world implementations
-- **📈 Career Growth**: Guidance for advancing your presales career
+The Enterprise Presales Playbook is a structured, graduated resource that serves everyone from a first-week SE who doesn't know what MEDDPICC stands for, to a VP of Solutions Engineering deciding how to scale their team from 8 to 40.
 
-## 🚀 Quick Start
+Every section contains:
+- **Core content** — Specific, numbered, practitioner-level guidance
+- **War stories** — Real scenarios from real deals, messy and instructive
+- **Failure modes** — What goes wrong, why it seemed reasonable at the time, and what it cost
+- **Interview angles** — The exact questions senior hiring managers ask to probe each competency
+- **Practical references** — Templates, frameworks, checklists, and scripts you can actually use
 
-### Browse Online
+---
 
-Visit the **[Presales Playbook](https://gauravs19.github.io/presales-playbook/)**
+## How the Playbook Is Structured
 
-### Navigate by Chapter
+The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
 
-1. **[Foundations](docs/01-foundations/README.md)** - Understanding the presales role
-2. **[Methodology](docs/02-methodology/README.md)** - The presales process from start to finish
-3. **[Discovery](docs/03-discovery/README.md)** - Mastering customer discovery
-4. **[Solution Design](docs/04-solution-design/README.md)** - Architecting winning solutions
-5. **[Demonstration](docs/05-demonstration/README.md)** - Delivering compelling demos
-6. **[POC Management](docs/06-proof-of-concept/README.md)** - Running successful proof-of-concepts
-7. **[Proposals](docs/07-proposals/README.md)** - Writing winning proposals
-8. **[Technical Skills](docs/08-technical-skills/README.md)** - Essential technical competencies
-9. **[Soft Skills](docs/09-soft-skills/README.md)** - Communication and collaboration
-10. **[Tools & Resources](docs/10-tools-resources/README.md)** - Presales tech stack
-11. **[Metrics](docs/11-metrics-measurement/README.md)** - Measuring presales success
-12. **[Advanced Topics](docs/12-advanced-topics/README.md)** - Enterprise and strategic presales
+| Section | Title | Who It's For |
+|---------|-------|-------------|
+| **0** | [Start Here](docs/00-start-here/what-is-presales.md) | Brand new to presales — no prior experience needed |
+| **1** | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | The SE identity, the AE partnership, and career architecture |
+| **2** | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | Reading, owning, and accelerating deals |
+| **3** | [Discovery Framework](docs/03-discovery/pre-call-research.md) | From preparation to pain quantification |
+| **4** | [Solution Design](docs/04-solution-design/boat-framework.md) | Architecting solutions that win, not just work |
+| **5** | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | From harbor tour to revenue-generating narrative |
+| **6** | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | Control, criteria, execution, and the technical win |
+| **7** | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | Pricing literacy, RFP strategy, and proposal architecture |
+| **8** | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | Cloud, integration, AI/ML, and security fluency |
+| **9** | [Executive Selling & Soft Skills](docs/09-executive-selling/running-executive-briefings.md) | Influence, presence, negotiation, and empathy |
+| **10** | [Tools & Infrastructure](docs/10-tools/revenue-intelligence-tools.md) | The presales tech stack and productivity systems |
+| **11** | [Metrics & Continuous Improvement](docs/11-metrics/demo-to-poc-conversion.md) | Measuring what matters and getting better |
+| **12** | [Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md) | For SE managers and presales leaders |
 
-## 📖 What You'll Learn
+---
 
-### For Beginners
-- What presales is and how it differs from sales
-- Essential skills and knowledge areas
-- How to conduct effective discovery calls
-- Creating your first solution designs
-- Demo preparation and delivery basics
+## Where to Start
 
-### For Intermediate Practitioners
-- Advanced questioning and discovery techniques
-- Solution architecture patterns and best practices
-- Managing complex proof-of-concepts
-- Writing compelling technical proposals
-- Stakeholder management strategies
+### If you're new to presales
+Start at **[Section 0: Start Here](docs/00-start-here/what-is-presales.md)**. It assumes zero prior knowledge. You'll learn what the role actually is (not what the job description says), who the key players are in every deal, what every acronym means, and how to navigate your first 90 days without embarrassing yourself or burning out.
 
-### For Advanced Professionals
-- Enterprise presales strategies
-- Multi-threading complex deals
-- Competitive positioning and differentiation
-- Building and scaling presales teams
-- Value-based selling approaches
+### If you're an experienced SE looking to level up
+Jump to **[Section 1: Foundations](docs/01-foundations/se-as-revenue-architect.md)** or directly to the section that maps to your current gap. If you're losing deals at the demo stage, go to Section 5. If your POCs keep stalling, go to Section 6. If you want to understand pricing and commercial strategy, go to Section 7.
 
-## 🎓 Learning Paths
+### If you're an SE manager or presales leader
+Start at **[Section 12: Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md)** for team architecture, hiring, enablement, and operations. Then work backwards through **Section 11 (Metrics)** and **Section 2 (Deal Orchestration)** to build your management framework.
 
-Choose your path based on your role and goals:
+---
 
-### 🔰 **New to Presales**
-Start here → [What is Presales?](docs/01-foundations/what-is-presales.md)
+## The Graduation Model
 
-**Recommended sequence:**
-1. Foundations (Chapter 1)
-2. Presales Methodology (Chapter 2)
-3. Discovery Framework (Chapter 3)
-4. Soft Skills (Chapter 9)
+The playbook uses a three-tier progression system:
 
-### 🔧 **Solutions Engineer/Consultant**
-Focus here → [Solution Architecture](docs/04-solution-design/README.md)
+- **Beginner** — No prior presales experience. Covers the "what" and the "how" of the SE role at a foundational level.
+- **Mid-Level** — 1–3 years of SE experience. Covers deal strategy, advanced discovery, and commercial influence.
+- **Senior** — 3+ years. Covers executive selling, team scaling, product influence, and leadership.
 
-**Recommended sequence:**
-1. Solution Design (Chapter 4)
-2. Technical Skills (Chapter 8)
-3. POC Management (Chapter 6)
-4. Demo Excellence (Chapter 5)
+Each section is tagged with its level. Graduation checkpoints between tiers help you self-assess whether you're ready to progress.
 
-### 📊 **Presales Manager/Leader**
-Focus here → [Advanced Topics](docs/12-advanced-topics/README.md)
+---
 
-**Recommended sequence:**
-1. Metrics & Measurement (Chapter 11)
-2. Advanced Strategies (Chapter 12)
-3. Tools & Resources (Chapter 10)
-4. Methodology Review (Chapter 2)
+## How to Use This Playbook
 
-## 🔗 Related Resources
+**Don't read it cover to cover.** This isn't a novel. It's a reference manual with a narrative thread. Use it in three ways:
 
-This playbook is part of a larger presales ecosystem:
+1. **Sequential learning** — If you're new, work through Sections 0–3 in order. Each builds on the last.
+2. **Problem-driven lookup** — If you have a specific challenge (e.g., "how do I handle a hostile CTO in a demo"), navigate directly to the relevant subsection.
+3. **Team enablement** — If you're a manager, assign specific sections as pre-reading before deal reviews, SKOs, or onboarding programmes.
 
-- **[Presales Portfolio](../presales/)** - Case studies, demos, and templates
-  - [Cloud Migration Case Study](../presales/case-studies/cloud-migration/README.md)
-  - [AI Implementation Case Study](../presales/case-studies/ai-implementation/README.md)
-  - [Demo Projects](../presales/demo-projects/)
-  - [Templates Library](../presales/templates/)
+---
 
-## 🌟 Key Features
+## Project Details
 
-### ✅ Comprehensive Coverage
-- 12 chapters covering all aspects of presales
-- 50+ individual topic pages
-- 100+ links to external resources and examples
-
-### ✅ Practical & Actionable
-- Real-world frameworks and methodologies
-- Downloadable templates and checklists
-- Step-by-step guides and workflows
-
-### ✅ Continuously Updated
-- Regular content updates
-- Community contributions welcome
-- Industry best practices incorporated
-
-### ✅ Open Source
-- Free to use and share
-- Contribute your expertise
-- Built by the presales community
-
-## 📊 Content Map
-
-```mermaid
-graph TB
-    A[Presales Playbook] --> B[Foundations]
-    A --> C[Process & Methodology]
-    A --> D[Skills & Competencies]
-    A --> E[Tools & Resources]
-    
-    B --> B1[Role Definition]
-    B --> B2[Career Paths]
-    
-    C --> C1[Discovery]
-    C --> C2[Solution Design]
-    C --> C3[Demo & POC]
-    C --> C4[Proposals]
-    
-    D --> D1[Technical Skills]
-    D --> D2[Soft Skills]
-    
-    E --> E1[Templates]
-    E --> E2[Tools]
-    E --> E3[Metrics]
-    E --> E4[Case Studies]
-```
-
-
-## 🏗️ Project Structure
+Built with [Docsify](https://docsify.js.org/) and hosted on [GitHub Pages](https://gauravs19.github.io/presales-playbook/).
 
 ```
 presales-playbook/
-├── README.md              # This file
-├── ARCHITECTURE.md        # Technical architecture
-├── _sidebar.md           # Navigation structure
-├── index.html            # Docsify configuration
-│
-└── docs/                 # All content chapters
-    ├── 01-foundations/
-    ├── 02-methodology/
-    ├── 03-discovery/
-    ├── 04-solution-design/
-    ├── 05-demonstration/
-    ├── 06-proof-of-concept/
-    ├── 07-proposals/
-    ├── 08-technical-skills/
-    ├── 09-soft-skills/
-    ├── 10-tools-resources/
-    ├── 11-metrics-measurement/
-    ├── 12-advanced-topics/
-    └── appendix/
+├── docs/
+│   ├── 00-start-here/        # Section 0 — 17 topics
+│   ├── 01-foundations/        # Section 1 — 20 topics
+│   ├── 02-deal-orchestration/ # Section 2 — 16 topics
+│   ├── 03-discovery/          # Section 3 — 24 topics
+│   ├── 04-solution-design/    # Section 4 — 20 topics
+│   ├── 05-demo-excellence/    # Section 5 — 24 topics
+│   ├── 06-poc-management/     # Section 6 — 20 topics
+│   ├── 07-commercial-influence/ # Section 7 — 20 topics
+│   ├── 08-technical-depth/    # Section 8 — 20 topics
+│   ├── 09-executive-selling/  # Section 9 — 20 topics
+│   ├── 10-tools/              # Section 10 — 16 topics
+│   ├── 11-metrics/            # Section 11 — 16 topics
+│   └── 12-scaling/            # Section 12 — 20 topics
+├── _sidebar.md                # 3-level navigation (253 topics)
+├── index.html                 # Docsify configuration
+└── README.md                  # This page
 ```
 
-## 🛠️ Built With
-
-- **[Docsify](https://docsify.js.org/)** - Documentation site generator
-- **[Mermaid](https://mermaid-js.github.io/)** - Diagrams and flowcharts
-- **[GitHub Pages](https://pages.github.com/)** - Free hosting
-- **Markdown** - Simple, readable content format
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## 📧 Contact & Support
-
-- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/gauravs19/ag-wks/issues)
-- **Discussions**: Join conversations in [GitHub Discussions](https://github.com/gauravs19/ag-wks/discussions)
-- **LinkedIn**: Connect and share feedback
-
-## 🙏 Acknowledgments
-
-This playbook draws from:
-- Years of real-world presales experience
-- Industry best practices and frameworks
-- Contributions from the presales community
-- Insights from successful engagements across multiple industries
-
 ---
 
-## 🚦 Getting Started
-
-Ready to dive in? Here's your roadmap:
-
-1. **📖 Read** - Start with [What is Presales?](docs/01-foundations/what-is-presales.md)
-2. **🎯 Focus** - Choose your learning path above
-3. **🛠️ Practice** - Apply frameworks to your work
-4. **📈 Measure** - Track your improvement
-
-**[Start Learning →](docs/01-foundations/what-is-presales.md)**
-
----
-
-<div align="center">
-
-**Made with ❤️ for presales professionals worldwide**
-
-⭐ Star this repo if you find it helpful! ⭐
-
-</div>
+**[Start Reading →](docs/00-start-here/what-is-presales.md)**
