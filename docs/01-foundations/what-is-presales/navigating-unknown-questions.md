@@ -1,3 +1,0 @@
-# 1.2.3: Navigating Unknown Questions
-
-Use this exact script when a Senior Architect points out a specific edge case...

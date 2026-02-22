@@ -1,3 +1,0 @@
-# 1.3.2: Managing Commission-Breath
-
-"Commission-Breath" occurs when an AE becomes so desperate to close a deal...

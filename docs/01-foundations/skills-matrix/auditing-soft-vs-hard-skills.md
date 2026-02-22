@@ -1,3 +1,0 @@
-# 1.4.2: Auditing Soft vs Hard Skills
-
-A common trap for technical professionals is over-indexing on Hard Skills...

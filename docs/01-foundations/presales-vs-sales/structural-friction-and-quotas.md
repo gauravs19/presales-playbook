@@ -1,3 +1,0 @@
-# 1.3.1: Structural Friction and Quotas
-
-The relationship between sales and presales is inherently fraught due to competing motivations...

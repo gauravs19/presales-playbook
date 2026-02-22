@@ -1,3 +1,0 @@
-# 1.4.1: The 4-Tier Competency Model
-
-Enterprise Presales requires mastering four distinct tiers of knowledge...

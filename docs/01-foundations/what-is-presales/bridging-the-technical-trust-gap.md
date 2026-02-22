@@ -1,3 +1,0 @@
-# 1.2.1: Bridging the Technical Trust Gap
-
-The Presales Engineer (SE) is the bridge between a prospect's unarticulated business pain and the vendor's technical reality...

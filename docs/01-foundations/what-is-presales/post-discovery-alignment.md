@@ -1,3 +1,0 @@
-# 1.2.4: Post-Discovery Alignment
-
-Send this alignment email to your AE immediately following a complex discovery call...

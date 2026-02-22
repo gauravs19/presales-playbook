@@ -1,3 +1,0 @@
-# 1.6.3: De-escalating the CIO
-
-Almost every major deal will feature a Detractor—usually a senior IT person or a CIO...

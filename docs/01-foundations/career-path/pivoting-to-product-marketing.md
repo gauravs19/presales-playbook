@@ -1,3 +1,0 @@
-# 1.5.2: Pivoting to Product Marketing
-
-Because SEs spend thousands of hours listening to exactly what the market wants...

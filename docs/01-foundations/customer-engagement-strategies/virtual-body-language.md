@@ -1,3 +1,0 @@
-# 1.6.2: Virtual Body Language
-
-In the post-2020 era, 90% of your Enterprise presentations will happen on Zoom or Teams...

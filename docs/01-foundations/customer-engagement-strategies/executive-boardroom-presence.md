@@ -1,3 +1,0 @@
-# 1.6.1: Executive Boardroom Presence
-
-Executive Presence is the ability to command a room without shouting...

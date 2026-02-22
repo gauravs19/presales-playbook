@@ -1,3 +1,0 @@
-# 1.2.2: The SE Value Triangle
-
-World-class presales is governed by a framework we call the **SE Value Triangle**...
