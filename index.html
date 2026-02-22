@@ -29,6 +29,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
 </head>
 
@@ -46,22 +47,32 @@
         previousText: '← Previous',
         nextText: 'Next →'
       },
+      notFoundPage: '_404.md',
+      progress: {
+        position: "top",
+        color: "#1e3a8a",
+        height: "3px",
+      },
       // Google Analytics 4 (Replace G-XXXXXXXXXX with your actual Measurement ID)
       ga: 'G-XXXXXXXXXX',
 
       // Interactive edit button and feedback link
       plugins: [
         function (hook, vm) {
-          // 1. Add interactive links to top of page
+          // 1. Add interactive links & reading time to top of page
           hook.beforeEach(function (html) {
+            var words = html.split(/\s+/).length;
+            var readTime = Math.max(1, Math.ceil(words / 200));
+
             var editUrl = 'https://github.com/gauravs19/presales-playbook/tree/main/' + vm.route.file;
             var issueUrl = 'https://github.com/gauravs19/presales-playbook/issues/new?title=Feedback%20on%20' + vm.route.file;
 
+            var timeHtml = '<div style="color: #888; font-size: 0.9em; margin-bottom: 20px;">⏱️ ' + readTime + ' min read</div>';
             var interactHtml = '<div style="display:flex; justify-content:space-between; margin-bottom:20px; font-size: 0.9em;">'
               + '<a href="' + editUrl + '" target="_blank">✍️ Edit this page on GitHub</a>'
               + '<a href="' + issueUrl + '" target="_blank">💡 Share Feedback / Request Topic</a>'
               + '</div>\n\n';
-            return interactHtml + html;
+            return timeHtml + interactHtml + html;
           });
 
           // 2. Add Giscus commenting system at the bottom
@@ -114,6 +125,11 @@
   <!-- GA Plugin -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- Theme, Zoom, Copy, Progress -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
 </body>
 
 </html>
