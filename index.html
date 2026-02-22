@@ -30,6 +30,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
+  <style>
+    :root {
+      --theme-color: #1e3a8a !important;
+    }
+
+    /* Ensure copy button and pagination use the blue/grey theme */
+    .docsify-copy-code-button {
+      background: #f8f8f8 !important;
+      color: #1e3a8a !important;
+    }
+
+    .docsify-pagination-container {
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+    }
+
+    .pagination-item-title,
+    .pagination-item-subtitle {
+      color: #1e3a8a !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,8 +65,10 @@
       sidebarDisplayLevel: 1, // Show top two levels, collapse the deeply nested 1.1.1 sections
       search: 'auto',
       pagination: {
-        previousText: '← Previous',
-        nextText: 'Next →'
+        previousText: '⬅️',
+        nextText: '➡️',
+        crosschapter: true,
+        crosschapterText: false,
       },
       notFoundPage: '_404.md',
       progress: {
@@ -67,21 +91,7 @@
             return timeHtml + html;
           });
 
-          // 2. Add interactive links to the bottom of the content
-          hook.afterEach(function (html, next) {
-            var editUrl = 'https://github.com/gauravs19/presales-playbook/tree/main/' + vm.route.file;
-            var issueUrl = 'https://github.com/gauravs19/presales-playbook/issues/new?title=Feedback%20on%20' + vm.route.file;
-
-            var interactHtml = '<hr style="margin-top: 40px; border: 0; border-top: 1px solid #eee;">'
-              + '<div style="display:flex; justify-content:space-between; margin-bottom:20px; font-size: 0.9em;">'
-              + '<a href="' + editUrl + '" target="_blank">✍️ Edit this page on GitHub</a>'
-              + '<a href="' + issueUrl + '" target="_blank">💡 Share Feedback / Request Topic</a>'
-              + '</div>';
-
-            next(html + interactHtml);
-          });
-
-          // 3. Add Giscus commenting system at the bottom
+          // 2. Add Giscus commenting system at the bottom
           hook.doneEach(function () {
             var giscusContainer = document.getElementById('giscus-container');
 
