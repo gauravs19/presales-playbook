@@ -40,22 +40,6 @@
       background: #f8f8f8 !important;
       color: #1e3a8a !important;
     }
-
-    .docsify-pagination-container {
-      margin-top: 3rem;
-      border-top: 1px solid #eee;
-      padding-top: 1rem;
-    }
-
-    .pagination-item-title,
-    .pagination-item-subtitle {
-      color: #1e3a8a !important;
-    }
-
-    /* Hide the default Previous/Next text and arrows entirely */
-    .pagination-item-label {
-      display: none !important;
-    }
   </style>
 </head>
 
@@ -69,12 +53,6 @@
       subMaxLevel: 0, // Disabled: sidebar now strictly mirrors _sidebar.md without injecting H2/H3 tags
       sidebarDisplayLevel: 1, // Show top two levels, collapse the deeply nested 1.1.1 sections
       search: 'auto',
-      pagination: {
-        previousText: '',
-        nextText: '',
-        crosschapter: true,
-        crosschapterText: false,
-      },
       notFoundPage: '_404.md',
       progress: {
         position: "top",
@@ -146,11 +124,10 @@
   <!-- GA Plugin -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- Zoom, Copy, Progress, Pagination -->
+  <!-- Zoom, Copy, Progress -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 
 </html>
