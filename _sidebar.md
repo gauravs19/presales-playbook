@@ -165,15 +165,15 @@
     * [5.6.3 Building Your Personal Demo Improvement Log](docs/05-demo-excellence/demo-improvement-log.md)
     * [5.6.4 The Demo Benchmark Library](docs/05-demo-excellence/demo-benchmark-library.md)
 
-* **6. POC Management**
-  * 6.1 POC Strategy — Before You Agree
-    * [6.1.1 Paid vs. Free POC](docs/06-poc-management/paid-vs-free-poc.md)
-    * [6.1.2 Pre-Conditions That Must Be Signed](docs/06-poc-management/poc-pre-conditions.md)
-    * [6.1.3 Securing Executive Sponsorship](docs/06-poc-management/executive-sponsorship.md)
-    * [6.1.4 The POC You Should Have Refused](docs/06-poc-management/poc-you-should-refuse.md)
-  * 6.2 Success Criteria Design
-    * [6.2.1 Writing Mathematically Pass/Fail Scorecards](docs/06-poc-management/pass-fail-scorecards.md)
-    * [6.2.2 Excluding Roadmap Features From Current-State Scope](docs/06-poc-management/excluding-roadmap-features.md)
+* **6. POC Execution & Management**
+  * [6.0 Introduction](docs/06-poc-execution/README.md)
+  * 6.1 The POC Philosophy
+    * [6.1.1 The True Cost of a Free POC](docs/06-poc-execution/true-cost-free-poc.md)
+    * [6.1.2 The "Skin in the Game" Principle (Paid POCs)](docs/06-poc-execution/skin-in-the-game.md)
+    * [6.1.3 When to Refuse a Custom Build](docs/06-poc-execution/refusing-custom-builds.md)
+  * 6.2 Structuring the POV (Proof of Value)
+    * [6.2.1 POC vs POV: Shifting from Math to Value](docs/06-poc-execution/poc-vs-pov.md)
+    * [6.2.2 The 3-Mandatory-Requirements Rule](docs/06-poc-execution/3-mandatory-requirements.md)
     * [6.2.3 Locking the Sandbox So Goalposts Can't Move](docs/06-poc-management/locking-the-sandbox.md)
     * [6.2.4 Getting Legal Sign-Off on the Criteria Document](docs/06-poc-management/legal-signoff.md)
   * 6.3 POC Execution & Control
