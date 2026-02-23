@@ -185,6 +185,9 @@
     * [6.4.2 Turning the Technical Win Into Commercial Momentum](docs/06-poc-execution/win-to-commercial-momentum.md)
   * 6.5 When POCs Go Wrong
     * [6.5.1 The POC That Stalls](docs/06-poc-execution/stalled-poc.md)
+    * [6.5.2 When the Prospect Moves the Goalposts](docs/06-poc-execution/moving-goalposts.md)
+    * [6.5.3 Technical Failure During a POC](docs/06-poc-execution/technical-failure-recovery.md)
+    * [6.5.4 Calling a POC Loss Early](docs/06-poc-execution/calling-a-loss-early.md)
 
 * **7. Commercial Influence**
   * 7.1 Pricing & Commercials Literacy
