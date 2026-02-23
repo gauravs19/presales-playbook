@@ -128,6 +128,94 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+
+  <!-- Custom Hero Script for Landing Page -->
+  <script>
+    window.$docsify.plugins = [].concat(window.$docsify.plugins, function (hook) {
+      hook.doneEach(function () {
+        // Typing Animation
+        const subtitle = document.getElementById('animated-subtitle');
+        if (subtitle && !subtitle.dataset.typed) {
+          subtitle.dataset.typed = 'true';
+          const text = "The practitioner-built field guide for Solutions Engineers — from your first discovery call to scaling a global presales organisation.";
+          let i = 0;
+          subtitle.innerHTML = '';
+          function typeWriter() {
+            if (i < text.length) {
+              subtitle.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(typeWriter, 30);
+            }
+          }
+          typeWriter();
+        }
+
+        // Neural Canvas Animation (matching portfolio)
+        const canvas = document.getElementById('neural-canvas');
+        if (canvas && !canvas.dataset.initialized) {
+          canvas.dataset.initialized = 'true';
+          const ctx = canvas.getContext('2d');
+          let particles = [];
+          const particleCount = 60; // Slightly lower for playbook
+
+          const resize = () => {
+            canvas.width = canvas.parentElement.offsetWidth;
+            canvas.height = canvas.parentElement.offsetHeight;
+          };
+
+          window.addEventListener('resize', resize);
+          resize();
+
+          class Particle {
+            constructor() {
+              this.x = Math.random() * canvas.width;
+              this.y = Math.random() * canvas.height;
+              this.vx = (Math.random() - 0.5) * 0.5;
+              this.vy = (Math.random() - 0.5) * 0.5;
+              this.radius = 2;
+            }
+            update() {
+              this.x += this.vx;
+              this.y += this.vy;
+              if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+              if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            draw() {
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+              ctx.fill();
+            }
+          }
+
+          for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+
+          const animate = () => {
+            // Only run if canvas is still in DOM (user didn't navigate away)
+            if (!document.getElementById('neural-canvas')) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, i) => {
+              p.update();
+              p.draw();
+              for (let j = i + 1; j < particles.length; j++) {
+                const p2 = particles[j];
+                const dist = Math.sqrt((p.x - p2.x) ** 2 + (p.y - p2.y) ** 2);
+                if (dist < 100) {
+                  ctx.beginPath();
+                  ctx.moveTo(p.x, p.y);
+                  ctx.lineTo(p2.x, p2.y);
+                  ctx.strokeStyle = `rgba(255, 255, 255, ${0.15 * (1 - dist / 100)})`;
+                  ctx.stroke();
+                }
+              }
+            });
+            requestAnimationFrame(animate);
+          };
+          animate();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

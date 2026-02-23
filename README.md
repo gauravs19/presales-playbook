@@ -1,6 +1,9 @@
-<div style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); color: white; padding: 4rem 2rem; border-radius: 12px; margin-bottom: 2.5rem; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h1 style="color: white; margin: 0; font-size: 3rem; font-weight: 800; letter-spacing: -1px; padding-bottom: 0; border-bottom: none;">The Enterprise Presales Playbook</h1>
-    <p style="font-size: 1.25rem; opacity: 0.9; margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">The practitioner-built field guide for Solutions Engineers — from your first discovery call to scaling a global presales organisation.</p>
+<div id="playbook-hero" style="position: relative; background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); color: white; padding: 5rem 2rem; border-radius: 12px; margin-bottom: 2.5rem; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15); overflow: hidden;">
+    <canvas id="neural-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.6;"></canvas>
+    <div style="position: relative; z-index: 2;">
+        <h1 style="color: white; margin: 0; font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; padding-bottom: 0; border-bottom: none;">The Enterprise Presales Playbook</h1>
+        <p style="font-size: 1.4rem; opacity: 0.9; margin-top: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6; min-height: 4.5rem;" id="animated-subtitle"></p>
+    </div>
 </div>
 
 ---
