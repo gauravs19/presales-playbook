@@ -181,15 +181,10 @@
     * [6.3.3 Shadowing Their IT Staff to Find Hidden Objections](docs/06-poc-execution/shadowing-it-staff.md)
     * [6.3.4 Managing Scope Creep](docs/06-poc-execution/scope-creep.md)
   * 6.4 Securing the Technical Win
-    * [6.4.1 The Formal Technical Win Declaration](docs/06-poc-management/technical-win-declaration.md)
-    * [6.4.2 Turning the Technical Win Into Commercial Momentum](docs/06-poc-management/win-to-commercial-momentum.md)
-    * [6.4.3 Post-POC Debrief](docs/06-poc-management/post-poc-debrief.md)
-    * [6.4.4 Handing the Win Package to the AE](docs/06-poc-management/handing-off-to-ae.md)
+    * [6.4.1 The Formal Technical Win Declaration](docs/06-poc-execution/technical-win-declaration.md)
+    * [6.4.2 Turning the Technical Win Into Commercial Momentum](docs/06-poc-execution/win-to-commercial-momentum.md)
   * 6.5 When POCs Go Wrong
-    * [6.5.1 The POC That Stalls](docs/06-poc-management/stalled-poc.md)
-    * [6.5.2 When the Prospect Moves the Goalposts](docs/06-poc-management/moving-goalposts.md)
-    * [6.5.3 Technical Failure During a POC](docs/06-poc-management/technical-failure-recovery.md)
-    * [6.5.4 Calling a POC Loss Early](docs/06-poc-management/calling-a-loss-early.md)
+    * [6.5.1 The POC That Stalls](docs/06-poc-execution/stalled-poc.md)
 
 * **7. Commercial Influence**
   * 7.1 Pricing & Commercials Literacy
