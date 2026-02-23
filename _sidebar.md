@@ -166,7 +166,6 @@
     * [5.6.4 The Demo Benchmark Library](docs/05-demo-excellence/demo-benchmark-library.md)
 
 * **6. POC Execution & Management**
-  * [6.0 Introduction](docs/06-poc-execution/README.md)
   * 6.1 The POC Philosophy
     * [6.1.1 The True Cost of a Free POC](docs/06-poc-execution/true-cost-free-poc.md)
     * [6.1.2 The "Skin in the Game" Principle (Paid POCs)](docs/06-poc-execution/skin-in-the-game.md)
