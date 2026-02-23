@@ -176,10 +176,10 @@
     * [6.2.3 Locking the Sandbox So Goalposts Can't Move](docs/06-poc-management/locking-the-sandbox.md)
     * [6.2.4 Getting Legal Sign-Off on the Criteria Document](docs/06-poc-management/legal-signoff.md)
   * 6.3 POC Execution & Control
-    * [6.3.1 Running the Daily Stand-Up Without Becoming Free Consulting](docs/06-poc-management/daily-standup.md)
-    * [6.3.2 Forcing Prospect Resource Accountability](docs/06-poc-management/prospect-accountability.md)
-    * [6.3.3 Shadowing Their IT Staff to Find Hidden Objections](docs/06-poc-management/shadowing-it-staff.md)
-    * [6.3.4 Managing Scope Creep](docs/06-poc-management/scope-creep.md)
+    * [6.3.1 Running the Daily Stand-Up Without Becoming Free Consulting](docs/06-poc-execution/daily-standup.md)
+    * [6.3.2 Forcing Prospect Resource Accountability](docs/06-poc-execution/prospect-accountability.md)
+    * [6.3.3 Shadowing Their IT Staff to Find Hidden Objections](docs/06-poc-execution/shadowing-it-staff.md)
+    * [6.3.4 Managing Scope Creep](docs/06-poc-execution/scope-creep.md)
   * 6.4 Securing the Technical Win
     * [6.4.1 The Formal Technical Win Declaration](docs/06-poc-management/technical-win-declaration.md)
     * [6.4.2 Turning the Technical Win Into Commercial Momentum](docs/06-poc-management/win-to-commercial-momentum.md)
