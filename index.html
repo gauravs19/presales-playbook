@@ -40,6 +40,29 @@
       background: #f8f8f8 !important;
       color: #1e3a8a !important;
     }
+
+    /* Hero Banner Animations matching Portfolio */
+    .fade-in {
+      animation: fadeInGlideUp 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .delay-1 {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInGlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -133,23 +156,6 @@
   <script>
     window.$docsify.plugins = [].concat(window.$docsify.plugins, function (hook) {
       hook.doneEach(function () {
-        // Typing Animation
-        const subtitle = document.getElementById('animated-subtitle');
-        if (subtitle && !subtitle.dataset.typed) {
-          subtitle.dataset.typed = 'true';
-          const text = "The practitioner-built field guide for Solutions Engineers — from your first discovery call to scaling a global presales organisation.";
-          let i = 0;
-          subtitle.innerHTML = '';
-          function typeWriter() {
-            if (i < text.length) {
-              subtitle.innerHTML += text.charAt(i);
-              i++;
-              setTimeout(typeWriter, 30);
-            }
-          }
-          typeWriter();
-        }
-
         // Neural Canvas Animation (matching portfolio)
         const canvas = document.getElementById('neural-canvas');
         if (canvas && !canvas.dataset.initialized) {
