@@ -8,22 +8,33 @@
 
 ---
 
-## What This Is
+## The Presales Operating System
 
-This is not a training manual. Training manuals are written by people who used to do the job. This playbook is written by people who are still doing it — and who've lost enough deals to know what actually matters versus what sounds good on a slide.
+This is not a theoretical training manual written by analysts. This playbook is written by practitioners who are still in the trenches—and who have lost enough enterprise deals to know what actually moves revenue versus what sounds good on a corporate slide deck.
 
-The Enterprise Presales Playbook is a structured, graduated resource that serves everyone from a first-week SE who doesn't know what MEDDPICC stands for, to a VP of Solutions Engineering deciding how to scale their team from 8 to 40.
+It is designed to be a living, structured OS for Solutions Engineers, Architects, and Presales Leaders who need to navigate complex technical sales. 
 
-Every section contains:
-- **Core content** — Specific, numbered, practitioner-level guidance
-- **War stories** — Real scenarios from real deals, messy and instructive
-- **Failure modes** — What goes wrong, why it seemed reasonable at the time, and what it cost
-- **Interview angles** — The exact questions senior hiring managers ask to probe each competency
-- **Practical references** — Templates, frameworks, checklists, and scripts you can actually use
+<div class="features-grid">
+  <div class="feature-card">
+    <div class="feature-icon">🛡️</div>
+    <div class="feature-title">Battle-Tested Strategies</div>
+    <div class="feature-desc">Read raw "War Stories" and "Failure Modes" from real enterprise deals. No fluff, just the messy reality of what worked and what cost us the deal.</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🎙️</div>
+    <div class="feature-title">Live Talk Tracks</div>
+    <div class="feature-desc">Stop guessing how to handle hostile objections. Memorize interactive chat dialogues and flashcards engineered to flip the leverage back to you.</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">📋</div>
+    <div class="feature-title">Interview Angles</div>
+    <div class="feature-desc">Decode exactly what senior hiring managers are listening for when they probe for competencies during the SE interview process.</div>
+  </div>
+</div>
 
 ---
 
-## How the Playbook Is Structured
+## 🗺️ How the Playbook Is Structured
 
 The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
 
