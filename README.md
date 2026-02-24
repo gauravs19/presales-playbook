@@ -57,16 +57,93 @@ The content is organised into **13 sections** across **253 individual topics**, 
 
 ---
 
-## Where to Start
+## 🎯 Choose Your Reality
 
-### If you're new to presales
-Start at **[Section 0: Start Here](docs/00-start-here/what-is-presales.md)**. It assumes zero prior knowledge. You'll learn what the role actually is (not what the job description says), who the key players are in every deal, what every acronym means, and how to navigate your first 90 days without embarrassing yourself or burning out.
+What deal challenge are you facing today? Skip the manual and jump straight to the tactical fix.
 
-### If you're an experienced SE looking to level up
-Jump to **[Section 1: Foundations](docs/01-foundations/se-as-revenue-architect.md)** or directly to the section that maps to your current gap. If you're losing deals at the demo stage, go to Section 5. If your POCs keep stalling, go to Section 6. If you want to understand pricing and commercial strategy, go to Section 7.
+<div class="routing-grid">
+  <a href="#/docs/00-start-here/what-is-presales" class="route-card">
+    <div class="route-icon">🚀</div>
+    <div class="route-content">
+      <h4>"I'm new to Presales."</h4>
+      <p>Skip the corporate onboarding fluff. Learn the exact frameworks to survive your first 90 days and build your identity.</p>
+    </div>
+  </a>
 
-### If you're an SE manager or presales leader
-Start at **[Section 12: Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md)** for team architecture, hiring, enablement, and operations. Then work backwards through **Section 11 (Metrics)** and **Section 2 (Deal Orchestration)** to build your management framework.
+  <a href="#/docs/06-poc-execution/stalled-poc" class="route-card">
+    <div class="route-icon">🛑</div>
+    <div class="route-content">
+      <h4>"My POCs keep stalling out."</h4>
+      <p>Stop providing free consulting. Learn how to demand "Skin in the game" and force the prospect to a Technical Win.</p>
+    </div>
+  </a>
+
+  <a href="#/docs/07-commercial-influence/margin-and-discount-literacy" class="route-card">
+    <div class="route-content">
+      <div class="route-icon">💼</div>
+      <h4>"I need to up-level my executive presence."</h4>
+      <p>Move beyond technical depth. Learn commercial influence, pricing architecture, and how to negotiate with the C-Suite.</p>
+    </div>
+  </a>
+
+  <a href="#/docs/12-scaling/ae-to-se-ratio" class="route-card">
+    <div class="route-icon">📈</div>
+    <div class="route-content">
+      <h4>"I'm stepping into Presales Leadership."</h4>
+      <p>Stop managing by gut feel. Learn the operational frameworks to hire, scale, and establish the AE-to-SE ratios that actually work.</p>
+    </div>
+  </a>
+</div>
+
+---
+
+## ⚡ Try The Playbook (Interactive Tools)
+
+We don't just tell you what to say. We build the tools to help you practice saying it.
+
+### Tactic of the Week: The Missing Feature
+*Click the flashcard below to see how a Master-Class SE handles a hostile objection during a live demo.*
+
+<objection-flashcard>
+<front>
+"Competitor X has a drag-and-drop workflow builder. Why do we have to write JSON scripts in your platform?"
+</front>
+<back>
+"Our architects built this for scale. A drag-and-drop UI is great for simple approvals, but it breaks down when you have 10,000 rules. By using JSON, your DevOps team can version-control all routing rules in Git and deploy them via CI/CD. We prioritized enterprise lifecycle management over a simple UI tradeoff."
+</back>
+</objection-flashcard>
+
+### Diagnostics: Why Did Your Deal Die?
+*Is your current technical evaluation dragging on into month six? Take the Autopsy to find out why.*
+
+<deal-autopsy></deal-autopsy>
+
+---
+
+## 🎒 The SE "Cheat Sheet" Quick Links
+
+Bookmark these pages. These are the tools and templates you will need to open 5 minutes before your next customer meeting.
+
+<div class="quick-links-grid">
+  <a href="#/docs/05-demo-excellence/pre-flight-checklist" class="quick-link-btn">
+    <span>✈️ 30-Min Demo Pre-Flight</span>
+    <span>→</span>
+  </a>
+  <a href="#/docs/06-poc-execution/stalled-poc" class="quick-link-btn">
+    <span>📧 The "Takeaway" Email</span>
+    <span>→</span>
+  </a>
+  <a href="#/docs/04-solution-design/boat-framework" class="quick-link-btn">
+    <span>🏗️ The B.O.A.T. Framework</span>
+    <span>→</span>
+  </a>
+  <a href="#/docs/05-demo-excellence/demo-scoring" class="quick-link-btn">
+    <span>📊 The Demo Scoring Matrix</span>
+    <span>→</span>
+  </a>
+</div>
+
+---
 
 ---
 
