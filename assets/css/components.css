@@ -1,0 +1,278 @@
+/* Interview Angle Formatting */
+.interview-angle-card {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1e3a8a;
+  padding: 1.25rem 1.75rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #334155;
+  font-size: 0.95em;
+}
+
+.interview-angle-card strong {
+  color: #1e3a8a;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+/* Email Template Styling */
+.email-template {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #64748b;
+  padding: 1.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+/* Fix hidden checkboxes from Docsify Vue Theme */
+.markdown-section input[type="checkbox"] {
+  -webkit-appearance: checkbox !important;
+  appearance: checkbox !important;
+  cursor: pointer !important;
+  width: 1.1em !important;
+  height: 1.1em !important;
+  margin-right: 0.5em !important;
+  vertical-align: middle !important;
+}
+
+/* Roleplay Script Styling */
+.roleplay-script {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dialogue-row {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.dialogue-row:last-child {
+  margin-bottom: 0;
+}
+
+.speaker-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  margin-right: 12px;
+  font-size: 0.8em;
+  flex-shrink: 0;
+}
+
+.speaker-se .speaker-avatar {
+  background: #1e3a8a;
+}
+
+.speaker-prospect .speaker-avatar,
+.speaker-buyer .speaker-avatar,
+.speaker-customer .speaker-avatar {
+  background: #ef4444;
+}
+
+.speaker-ae .speaker-avatar {
+  background: #10b981;
+}
+
+.speaker-message {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 0.95em;
+  color: #334155;
+  max-width: 85%;
+}
+
+.speaker-prospect .speaker-message,
+.speaker-buyer .speaker-message,
+.speaker-customer .speaker-message {
+  border-radius: 8px 8px 8px 0;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.speaker-message strong {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.dialogue-action {
+  text-align: center;
+  font-style: italic;
+  color: #64748b;
+  font-size: 0.85em;
+  margin: 1rem 0;
+}
+
+/* Deal Autopsy Styling */
+.autopsy-quiz {
+  background: #fff;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.autopsy-quiz h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+.quiz-question label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.quiz-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.quiz-btn {
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #f8fafc;
+  cursor: pointer;
+  font-weight: 600;
+  color: #334155;
+  transition: all 0.2s;
+}
+
+.quiz-btn:hover {
+  background: #e2e8f0;
+}
+
+.quiz-btn.selected {
+  background: #1e3a8a;
+  color: white;
+  border-color: #1e3a8a;
+}
+
+.autopsy-result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  border-radius: 4px;
+  display: none;
+}
+
+.autopsy-result h4 {
+  margin-top: 0;
+  color: #16a34a;
+}
+
+.autopsy-result-bad {
+  background: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.autopsy-result-bad h4 {
+  color: #ef4444;
+}
+
+/* Flashcard Styling */
+.objection-flashcard {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.objection-flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+.flashcard-front {
+  background-color: #fef2f2;
+  border: 2px solid #ef4444;
+  color: #7f1d1d;
+}
+
+.flashcard-front::before {
+  content: '🎯 Objection (Click to flip)';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 0.75em;
+  color: #ef4444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.flashcard-back {
+  background-color: #f0fdf4;
+  border: 2px solid #16a34a;
+  color: #14532d;
+  transform: rotateY(180deg);
+}
+
+.flashcard-back::before {
+  content: '🛡️ Deflection';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 0.75em;
+  color: #16a34a;
+  text-transform: uppercase;
+  font-weight: bold;
+}

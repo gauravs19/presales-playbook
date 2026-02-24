@@ -35,6 +35,15 @@ If the feature is truly a dealbreaker, and you absolutely cannot do it, you must
 
 > **Failure Mode:** "The Roadmap Promise." The SE promises the missing feature will be "in the next sprint" just to silence the objection. Six months later, the feature is still not built, the prospect is furious, and the SE has destroyed the trust of the account and the reputation of the engineering team.
 
+<objection-flashcard>
+<front>
+"Competitor X has a drag-and-drop workflow builder. Why do we have to write JSON scripts in your platform?"
+</front>
+<back>
+"Our architects built this for scale. A drag-and-drop UI is great for simple approvals, but it breaks down when you have 10,000 rules. By using JSON, your DevOps team can version-control all routing rules in Git and deploy them via CI/CD. We prioritized enterprise lifecycle management over a simple UI tradeoff."
+</back>
+</objection-flashcard>
+
 **Interview Angle:**
 "During a demo, an executive points out a feature you clearly lack. How do you respond?"
 A strong answer is: "I acknowledge the gap without apologizing. I immediately transition to the architectural tradeoff that caused the gap ('We prioritized security over that specific convenience feature'), and then I ask them to define the exact business cost of lacking the feature to see if it's truly a dealbreaker."
