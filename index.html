@@ -84,6 +84,170 @@
       margin-right: 0.5em !important;
       vertical-align: middle !important;
     }
+
+    /* Roleplay Script Styling */
+    .roleplay-script {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .dialogue-row {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: flex-start;
+    }
+
+    .dialogue-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .speaker-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      margin-right: 12px;
+      font-size: 0.8em;
+      flex-shrink: 0;
+    }
+
+    .speaker-se .speaker-avatar {
+      background: #1e3a8a;
+      /* SE is Blue */
+    }
+
+    .speaker-prospect .speaker-avatar,
+    .speaker-buyer .speaker-avatar,
+    .speaker-customer .speaker-avatar {
+      background: #ef4444;
+      /* Prospect is Red */
+    }
+
+    .speaker-ae .speaker-avatar {
+      background: #10b981;
+      /* AE is Green */
+    }
+
+    .speaker-message {
+      background: white;
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 8px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      font-size: 0.95em;
+      color: #334155;
+      max-width: 85%;
+    }
+
+    .speaker-prospect .speaker-message,
+    .speaker-buyer .speaker-message,
+    .speaker-customer .speaker-message {
+      border-radius: 8px 8px 8px 0;
+      background: #fef2f2;
+      border-color: #fecaca;
+    }
+
+    .speaker-message strong {
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .dialogue-action {
+      text-align: center;
+      font-style: italic;
+      color: #64748b;
+      font-size: 0.85em;
+      margin: 1rem 0;
+    }
+
+    /* Deal Autopsy Styling */
+    .autopsy-quiz {
+      background: #fff;
+      border: 2px solid #1e3a8a;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .autopsy-quiz h3 {
+      color: #1e3a8a;
+      margin-top: 0;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .quiz-question {
+      margin-bottom: 1rem;
+    }
+
+    .quiz-question label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #334155;
+    }
+
+    .quiz-options {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .quiz-btn {
+      padding: 8px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      background: #f8fafc;
+      cursor: pointer;
+      font-weight: 600;
+      color: #334155;
+      transition: all 0.2s;
+    }
+
+    .quiz-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .quiz-btn.selected {
+      background: #1e3a8a;
+      color: white;
+      border-color: #1e3a8a;
+    }
+
+    .autopsy-result {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      border-radius: 4px;
+      display: none;
+    }
+
+    .autopsy-result h4 {
+      margin-top: 0;
+      color: #16a34a;
+    }
+
+    .autopsy-result-bad {
+      background: #fef2f2;
+      border-left-color: #ef4444;
+    }
+
+    .autopsy-result-bad h4 {
+      color: #ef4444;
+    }
   </style>
 </head>
 
@@ -122,8 +286,88 @@
             return timeHtml + html;
           });
 
-          // 2. Format "Interview Angle" and Add "Share this Chapter"
+          // 2. Format "Interview Angle", "Dialogue/Scripts", and "Deal Autopsy"
           hook.afterEach(function (html, next) {
+
+            // Format Dialogues Element: <dialogue>...</dialogue>
+            html = html.replace(/<dialogue>([\s\S]*?)<\/dialogue>/g, function (match, content) {
+              // Strip paragraph tags docsify might have wrapped around the content
+              content = content.replace(/<\/?p>/g, '\n');
+              var rows = content.trim().split('\n');
+              var dialogueHtml = '<div class="roleplay-script">';
+
+              rows.forEach(function (row) {
+                if (row.trim() === '') return;
+                var parts = row.split(/:\s(.+)/);
+                if (parts.length > 1) {
+                  var speaker = parts[0].replace(/<[^>]*>?/gm, '').trim();
+                  speaker = speaker.replace(/\*/g, '');
+                  var text = parts[1].trim();
+                  var speakerClass = 'speaker-se';
+                  var sLow = speaker.toLowerCase();
+                  if (sLow.includes('prospect') || sLow.includes('buyer') || sLow.includes('customer') || sLow.includes('client')) {
+                    speakerClass = 'speaker-prospect';
+                  } else if (sLow.includes('ae') || sLow.includes('exec')) {
+                    speakerClass = 'speaker-ae';
+                  }
+                  var initials = speaker.substring(0, 2).toUpperCase();
+                  if (speaker.split(' ').length > 1) {
+                    initials = speaker.split(' ')[0][0] + speaker.split(' ')[1][0];
+                  }
+
+                  dialogueHtml += '<div class="dialogue-row ' + speakerClass + '">';
+                  dialogueHtml += '  <div class="speaker-avatar">' + initials + '</div>';
+                  dialogueHtml += '  <div class="speaker-message"><strong>' + speaker + '</strong>' + text + '</div>';
+                  dialogueHtml += '</div>';
+                } else {
+                  dialogueHtml += '<div class="dialogue-action">' + row.trim() + '</div>';
+                }
+              });
+              dialogueHtml += '</div>';
+              return dialogueHtml;
+            });
+
+            // 2b. Format Deal Autopsy <deal-autopsy>...</deal-autopsy>
+            html = html.replace(/<deal-autopsy>([\s\S]*?)<\/deal-autopsy>/g, function (match, content) {
+              return `
+                <div class="autopsy-quiz" id="autopsy-quiz-container">
+                  <h3>🩺 Deal Autopsy Diagnostic</h3>
+                  <p style="color: #64748b; margin-bottom: 20px;">A stalled POC is rarely a technical issue. Answer these 3 questions to diagnose the actual failure point.</p>
+                  
+                  <div class="quiz-question">
+                    <label>1. Did the Executive Sponsor physically attend the final POC technical readout?</label>
+                    <div class="quiz-options">
+                      <button class="quiz-btn" onclick="window.selectAutopsy(1, 'yes', this)">Yes</button>
+                      <button class="quiz-btn" onclick="window.selectAutopsy(1, 'no', this)">No</button>
+                    </div>
+                  </div>
+
+                  <div class="quiz-question">
+                    <label>2. Was the Mutual Success Plan explicitly approved by the prospect before the sandbox was provisioned?</label>
+                    <div class="quiz-options">
+                      <button class="quiz-btn" onclick="window.selectAutopsy(2, 'yes', this)">Yes</button>
+                      <button class="quiz-btn" onclick="window.selectAutopsy(2, 'no', this)">No</button>
+                    </div>
+                  </div>
+
+                  <div class="quiz-question">
+                    <label>3. During the POC, did the prospect's team miss more than two scheduled syncs/stand-ups?</label>
+                    <div class="quiz-options">
+                      <button class="quiz-btn" onclick="window.selectAutopsy(3, 'yes', this)">Yes (They missed them)</button>
+                      <button class="quiz-btn" onclick="window.selectAutopsy(3, 'no', this)">No (They attended)</button>
+                    </div>
+                  </div>
+
+                  <button onclick="window.runAutopsy()" style="margin-top: 15px; background: #1e3a8a; color: white; border: none; padding: 10px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Run Diagnostic</button>
+
+                  <div id="autopsy-result" class="autopsy-result">
+                    <h4 id="autopsy-title">Diagnostic Result</h4>
+                    <p id="autopsy-desc"></p>
+                  </div>
+                </div>
+              `;
+            });
+
             // Replace standard markdown paragraph for Interview Angle with a custom styled div
             var styledHtml = html.replace(/<p><strong>Interview Angle:<\/strong>([\s\S]*?)<\/p>/g, function (match, innerContent) {
               return '<div class="interview-angle-card"><strong>📋 Interview Angle:</strong>' + innerContent + '</div>';
@@ -225,6 +469,48 @@
         }
       ]
     }
+
+    // Global Functions for Deal Autopsy
+    window.autopsyAnswers = { 1: null, 2: null, 3: null };
+    window.selectAutopsy = function (q, answer, btn) {
+      window.autopsyAnswers[q] = answer;
+      var siblings = btn.parentElement.children;
+      for (var i = 0; i < siblings.length; i++) {
+        siblings[i].classList.remove('selected');
+      }
+      btn.classList.add('selected');
+    };
+    window.runAutopsy = function () {
+      var ans = window.autopsyAnswers;
+      var res = document.getElementById('autopsy-result');
+      var title = document.getElementById('autopsy-title');
+      var desc = document.getElementById('autopsy-desc');
+
+      if (!ans[1] || !ans[2] || !ans[3]) {
+        alert("Please answer all 3 questions to run the diagnostic.");
+        return;
+      }
+
+      res.style.display = 'block';
+      res.classList.remove('autopsy-result-bad');
+
+      if (ans[1] === 'no') {
+        res.classList.add('autopsy-result-bad');
+        title.innerText = "Diagnosis: The 'Free Consulting' Trap";
+        desc.innerHTML = "You won the technical battle but lost the commercial war. If the executive sponsor delegated the final read-out entirely to engineers, they never intented to buy; they just wanted free validation of their architecture. <strong>Remedy:</strong> Never hand over sandbox credentials until the Executive commits to attending the final readout.";
+      } else if (ans[2] === 'no') {
+        res.classList.add('autopsy-result-bad');
+        title.innerText = "Diagnosis: The 'Moving Goalposts' Syndrome";
+        desc.innerHTML = "You ran a POC without a success criteria document. Because you didn't define what 'Winning' looked like on Day 1, the prospect was allowed to continuously invent new requirements on Day 14. <strong>Remedy:</strong> See Section 6.2.2 on the 3-Mandatory-Requirements rule.";
+      } else if (ans[3] === 'yes') {
+        res.classList.add('autopsy-result-bad');
+        title.innerText = "Diagnosis: The 'Loss of Leverage'";
+        desc.innerHTML = "The prospect missed syncs because they did not have 'Skin in the Game.' When a prospect stops showing up, the evaluation must be formally paused to force them back to the table. <strong>Remedy:</strong> Use the 'Close the Project' email from Section 6.5.1 to force an immediate response.";
+      } else {
+        title.innerText = "Diagnosis: Pristine Execution (External Factors)";
+        desc.innerHTML = "You executed the mechanics of this POV flawlessly. You had executive alignment, a signed success plan, and active engagement. If this deal stalled, it was due to a macro-level budget freeze or an aggressive competitor. Do not change your methodology; your execution was sound.";
+      }
+    };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>

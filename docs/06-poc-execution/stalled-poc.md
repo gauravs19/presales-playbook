@@ -47,6 +47,8 @@ If the prospect ignores this email, the deal was already dead. You successfully 
 
 > **Failure Mode:** "The Hopium Pipeline." The SE keeps the AWS sandbox running for 9 months because the AE desperately needs a $200k deal in their Q4 commit. The prospect answers one email every three weeks with "Still testing!" The SE wastes $45,000 in AWS compute costs on a prospect who never intended to buy.
 
+<deal-autopsy></deal-autopsy>
+
 **Interview Angle:**
 "Tell me about a time an important technical evaluation completely stalled. What did you do?"
 A strong answer is: "Unresponsiveness indicates a lack of executive priority. I do not beg for updates. I utilize the 'Takeaway' email to force a decision. I clearly state that the technical project will be decommissioned by Friday due to inactivity. Either they panic and re-engage, immediately restoring our leverage, or I successfully disqualify a time-waster and move on to a real opportunity."

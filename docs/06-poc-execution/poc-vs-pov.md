@@ -25,8 +25,10 @@ Instead of checking 85 boxes, you define 1 to 3 massive business outcomes.
 You do not care if they test the API. You do not care if they test the dark mode. The entire 14 days are spent driving towards that single, undeniable metric of value: Time saved. 
 
 **Reframing the Prospect's Demand**
+<dialogue>
 Prospect: "We need a 30-day POC to validate all of these features."
 SE: "We understand. However, we find that broad feature-testing often leads to evaluation fatigue and stalled projects. Instead of a 30-day sandbox, we require a highly structured 14-day Proof of Value. Let's pick the single most painful workflow your team suffers from today. If we dedicate the next 14 days strictly to solving that one problem, and we prove we can reduce the processing time by 80%, would you be ready to move forward commercially?"
+</dialogue>
 
 > **War Story:** An SE was stuck in a 90-day POC spiral with a massive logistics company. The prospect's technical team kept adding new feature tests to the spreadsheet. The SE finally escalated to the VP of Supply Chain. "We've proven the software works. What are we actually trying to solve?" The VP admitted they needed to reduce shipment routing errors by 5% to hit their quarterly bonus. The SE instantly killed the 90-day feature checklist, dumped a localized subset of routing data into the platform, and proved a 7% error reduction in exactly 48 hours. The VP signed the contract that Friday.
 

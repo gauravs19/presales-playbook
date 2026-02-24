@@ -15,12 +15,22 @@ You execute a high-value click in the software. You state the business outcome. 
 
 **2. The Power of "Wait"**
 In sales psychology, the first person to speak after a profound statement loses the leverage. If you speak, you are justifying the feature. If the prospect speaks, they are internalizing the feature. 
-*Prospect Reaction (Breaking the Silence):* "Wait... so my analysts wouldn't have to export the GL data to Excel anymore?" 
+
+<dialogue>
+SE: "So, instead of your team spending three weeks manually closing the books, the platform automatically reconciles all 14,000 journal entries instantly."
+(Silence)
+Prospect: "Wait... so my analysts wouldn't have to export the GL data to Excel anymore?"
+</dialogue>
+
 *(They just sold the software to themselves. You did not have to say a word).*
 
 **3. The Panic of the "Dead Air"**
 Junior SEs hate dead air on Zoom or WebEx. They interpret silence as boredom or confusion. So, after a massive reveal, if the prospect is silent for two seconds, the junior SE panics.
-*SE Panic:* "So, yeah, that's the automated reconciliation. Obviously, you can also export it to PDF if you want. Or CSV. And we have a neat little widget over here..." 
+
+<dialogue>
+SE: "So, yeah, that's the automated reconciliation. Obviously, you can also export it to PDF if you want. Or CSV. And we have a neat little widget over here..." 
+</dialogue>
+
 *(The SE just trampled their own "Aha!" moment and dragged the prospect down into meaningless feature-dumping trivia).*
 
 **4. The Strategic Pause for Objections**

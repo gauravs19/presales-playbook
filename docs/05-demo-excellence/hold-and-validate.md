@@ -12,13 +12,15 @@ When the objection is thrown, stop talking. Do not answer. Do not say "um." Stop
 
 **2. The Validate (Uncovering the Motive)**
 An objection is rarely just a technical question; it is usually a symptom of a hidden business pain, a past trauma, or a competitor trap. You cannot answer the question safely until you know *why* they are asking it.
-*SE Action:* Ask a reverse question to uncover the motive. "Before I show you how our sync architecture handles that, can you tell me what happened with your last implementation that makes bi-directional Oracle sync a priority today?"
 
 **3. The Narrative Pivot (The True Answer)**
 In 90% of cases, the prospect's answer to the validation question changes the nature of the objection entirely.
-*Prospect Response:* "Well, our last vendor claimed they had sync, but it was just a nightly batch job, and we had 4 hours of data latency that caused billing errors."
-*SE Pivot:* Now, instead of just saying "Yes, we support it," you can answer the actual pain. "I understand. Latency causes billing errors. What we do is leverage a real-time event-streaming webhook, not a batch job, so your data latency is measured in milliseconds, not hours. Let me show you exactly where the webhook fires."
 
+<dialogue>
+SE: "Before I show you how our sync architecture handles that, can you tell me what happened with your last implementation that makes bi-directional Oracle sync a priority today?"
+Prospect: "Well, our last vendor claimed they had sync, but it was just a nightly batch job, and we had 4 hours of data latency that caused billing errors."
+SE: "I understand. Latency causes billing errors. What we do is leverage a real-time event-streaming webhook, not a batch job, so your data latency is measured in milliseconds, not hours. Let me show you exactly where the webhook fires."
+</dialogue>
 **4. The "Park and Wait" Technique**
 If the objection is incredibly complex, deep in the weeds, and completely derailed from the value of the demo (e.g., a junior engineer asking about exact cryptographic hashing algorithms while the CEO is in the room), you must validate it and park it to protect the executive narrative.
 *SE Action:* "John, that is a critical question about SHA-256 encryption. It's actually deep enough that I want to pull up our architecture diagram to show you exactly how our keys are managed. Let's bookmark that question for the technical deep-dive QA session at the bottom of the hour, so we can ensure the CEO sees the final dashboard outcome first. Is that fair?"
