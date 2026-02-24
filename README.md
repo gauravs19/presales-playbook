@@ -1,5 +1,4 @@
 <div class="cover-main">
-  <div class="status-pill">✨ Just Added: The Deal Autopsy Diagnostic <a href="#/docs/06-poc-execution/stalled-poc">→</a></div>
   <h1 class="cover-title">The practitioner playbook for<br/><span class="typewriter-text"></span></h1>
   <p class="cover-subtitle">The open-source field guide to orchestrating complex enterprise deals — bridging the gap between technical architecture and commercial value.</p>
   <div class="cover-actions">
@@ -12,83 +11,97 @@
 
 ## The Presales Operating System
 
-The role of the Sales Engineer is fundamentally misunderstood. Startups treat SEs as "demo monkeys." Enterprises treat them as walking data sheets. But in complex B2B sales, the SE is the central architect of revenue.
+The role of the modern Sales Engineer has evolved far beyond technical demonstration. In complex B2B enterprise sales, the SE is the linchpin of the revenue engine—required to interface seamlessly with engineering to assess feasibility, while simultaneously navigating the C-suite to establish business value and urgency.
 
-### The Education Gap
-If you want to be a better Account Executive, there are 10,000 books on MEDDPICC, Challenger Sales, and SPIN selling. But if you want to be a better Solutions Engineer, the prevailing industry advice is simply "learn the product." 
+Yet, while Account Executives are trained rigorously on MEDDPICC, Challenger, and Miller Heiman methodologies, Presales professionals are often merely instructed to "master the product." 
 
-Knowing the product is just the baseline. **Winning the deal requires commercial fluency, executive presence, and the ability to control an architectural narrative.** That is the gap this playbook fills.
+**This asymmetry is the root cause of stalled evaluations, heavy discounting, and technical wins that fail to convert to commercial revenue.**
 
-### The Philosophy
-This is not a theoretical training manual written by analysts. This playbook is written by practitioners who are still in the trenches—and who have lost enough enterprise deals to know what actually moves the needle versus what sounds good on a corporate slide deck. It is designed to be a living, structured OS for Solutions Engineers, Architects, and Presales Leaders. 
+### Beyond Product Mastery
+Knowing your platform is the baseline expectation. Elite presales execution requires a deeper competency model:
+*   **Commercial Fluency:** Translating API limits and architectural tradeoffs into quantifiable business risk and ROI for the CFO.
+*   **Solution Scoping:** Establishing firm boundaries during technical discovery to prevent scope creep and eliminate "free consulting."
+*   **Executive Presence:** Controlling the room during high-stakes demonstrations and defending the solution architecture against hostile objections.
+*   **Deal Orchestration:** Partnering with sales leadership to align the technical evaluation strategy directly with the prospect's procurement timeline.
 
-### The Impact of Elite Presales
-The difference between a "good" SE and an "elite" SE isn't product knowledge—it's execution. Deals featuring elite presales orchestration consistently show:
-*   **3.2x higher Technical Win rates** in highly contested enterprise POCs.
-*   **40% reduction** in post-sales implementation failures due to rigorous initial solution scoping.
-*   **20-30% defense in deal margin** because value was properly insulated against competitor feature-traps.
+### A Practitioner's Playbook
+This repository is not a theoretical framework produced by analysts. It is a codified discipline built by Principal Architects and Presales Leaders who actively construct and defend enterprise deals. It documents the exact tactics required to secure the technical win, insulate the deal margin, and accelerate the sales cycle.
 
 <div class="features-grid">
   <div class="feature-card">
-    <div class="feature-icon">🛡️</div>
-    <div class="feature-title">Battle-Tested Strategies</div>
-    <div class="feature-desc">Read raw "War Stories" and "Failure Modes" from real enterprise deals. No fluff, just the messy reality of what worked and what cost us the deal.</div>
+    <div class="feature-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    </div>
+    <div class="feature-title">Architectural Defense</div>
+    <div class="feature-desc">Frameworks for navigating complex legacy environments, preempting security objections, and steering requirements toward your platform's differentiated strengths.</div>
   </div>
   <div class="feature-card">
-    <div class="feature-icon">🎙️</div>
-    <div class="feature-title">Live Talk Tracks</div>
-    <div class="feature-desc">Stop guessing how to handle hostile objections. Memorize interactive chat dialogues and flashcards engineered to flip the leverage back to you.</div>
+    <div class="feature-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+    </div>
+    <div class="feature-title">Commercial Execution</div>
+    <div class="feature-desc">Actionable methodologies to link technical deliverables directly to executive mandates, thereby defending deal margins and accelerating pipeline velocity.</div>
   </div>
   <div class="feature-card">
-    <div class="feature-icon">📋</div>
-    <div class="feature-title">Interview Angles</div>
-    <div class="feature-desc">Decode exactly what senior hiring managers are listening for when they probe for competencies during the SE interview process.</div>
+    <div class="feature-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+    </div>
+    <div class="feature-title">Leadership & Scale</div>
+    <div class="feature-desc">Operating principles for hiring high-yield talent, establishing effective AE-to-SE ratios, and instituting performance metrics that reflect true impact.</div>
   </div>
 </div>
 
 ---
 
-## 🎯 Choose Your Reality
+## Navigating the Playbook
 
-What deal challenge are you facing today? Skip the manual and jump straight to the tactical fix.
+Whether you are seeking a framework for an upcoming executive briefing or building enablement tracks for your team, select the path that aligns with your current strategic priority.
 
 <div class="routing-grid">
-  <a href="#/docs/00-start-here/what-is-presales" class="route-card">
-    <div class="route-icon">🚀</div>
+  <a href="#/docs/04-solution-design/boat-framework" class="route-card">
+    <div class="route-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+    </div>
     <div class="route-content">
-      <h4>"I'm new to Presales."</h4>
-      <p>Skip the corporate onboarding fluff. Learn the exact frameworks to survive your first 90 days and build your identity.</p>
+      <h4>Solution Architecture</h4>
+      <p>Principles for designing scalable, maintainable solutions that mitigate risk and ensure technical validation.</p>
     </div>
   </a>
 
-  <a href="#/docs/06-poc-execution/stalled-poc" class="route-card">
-    <div class="route-icon">🛑</div>
+  <a href="#/docs/06-poc-management/paid-vs-free-poc" class="route-card">
+    <div class="route-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    </div>
     <div class="route-content">
-      <h4>"My POCs keep stalling out."</h4>
-      <p>Stop providing free consulting. Learn how to demand "Skin in the game" and force the prospect to a Technical Win.</p>
+      <h4>Evaluation Governance</h4>
+      <p>Strategies to mandate mutual success plans, avoid scope creep, and secure the definitive Technical Win.</p>
     </div>
   </a>
 
-  <a href="#/docs/07-commercial-influence/margin-and-discount-literacy" class="route-card">
+  <a href="#/docs/09-executive-selling/running-executive-briefings" class="route-card">
+    <div class="route-icon">
+       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+    </div>
     <div class="route-content">
-      <div class="route-icon">💼</div>
-      <h4>"I need to up-level my executive presence."</h4>
-      <p>Move beyond technical depth. Learn commercial influence, pricing architecture, and how to negotiate with the C-Suite.</p>
+      <h4>Executive Engagement</h4>
+      <p>Techniques for presenting complex architectures to the C-Suite, establishing credibility, and overcoming high-level objections.</p>
     </div>
   </a>
 
   <a href="#/docs/12-scaling/ae-to-se-ratio" class="route-card">
-    <div class="route-icon">📈</div>
+    <div class="route-icon">
+       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+    </div>
     <div class="route-content">
-      <h4>"I'm stepping into Presales Leadership."</h4>
-      <p>Stop managing by gut feel. Learn the operational frameworks to hire, scale, and establish the AE-to-SE ratios that actually work.</p>
+      <h4>Presales Management</h4>
+      <p>Methodologies for defining coverage models, tracking performance metrics, and scaling the Solutions Engineering organization.</p>
     </div>
   </a>
 </div>
 
 ---
 
-## 🗺️ How the Playbook Is Structured
+## How the Playbook Is Structured
 
 The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
 
