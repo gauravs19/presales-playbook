@@ -17,10 +17,17 @@ On the final day of the POV timeline, you host the "Technical Readout." You pres
 
 If they say yes, you follow up immediately after the call with the **Formal Declaration Email:**
 
-> "Hi [Lead Engineer],
-> Thank you for the incredible partnership over the last 14 days. As discussed on today's readout, I am documenting here that we successfully validated the 3 mandatory success criteria required by the Mutual Success Plan. Specifically, we confirmed a 43% reduction in MTTR during the stress-test phase. 
-> 
-> Can you please reply to confirm that your team considers the technical evaluation a success, so [AE Name] can begin the commercial review process with [VP Name]?"
+<div class="email-template">
+
+```text
+Hi [Lead Engineer],
+
+Thank you for the incredible partnership over the last 14 days. As discussed on today's readout, I am documenting here that we successfully validated the 3 mandatory success criteria required by the Mutual Success Plan. Specifically, we confirmed a 43% reduction in MTTR during the stress-test phase. 
+
+Can you please reply to confirm that your team considers the technical evaluation a success, so [AE Name] can begin the commercial review process with [VP Name]?
+```
+
+</div>
 
 **Why you need the email:**
 When the AE asks the VP of Engineering for $300k next week, the VP will invariably ask their lead engineer, "Is this tool actually worth the money?" If the engineer hesitates, the deal dies. 
