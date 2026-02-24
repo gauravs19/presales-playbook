@@ -1,6 +1,6 @@
 <div class="cover-main">
   <h1 class="cover-title">The practitioner playbook for<br/><span class="typewriter-text"></span></h1>
-  <p class="cover-subtitle">The open-source field guide to orchestrating complex enterprise deals — bridging the gap between technical architecture and commercial value.</p>
+  <p class="cover-subtitle">The missing manual for technical sellers. Translating complex system architecture into undeniable commercial value.</p>
   <div class="cover-actions">
     <a href="#/docs/00-start-here/what-is-presales" class="btn-primary">Start Reading →</a>
     <a href="https://github.com/gauravs19/presales-playbook" target="_blank" class="btn-secondary">View on GitHub</a>
