@@ -283,3 +283,8 @@
 .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; color: #1e3a8a; }
 .feature-title { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem; }
 .feature-desc { color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0; }
+
+/* CTA Button Wrapper */
+.cta-wrapper { text-align: center; margin: 4rem 0 2rem; }
+.cta-button { display: inline-block; background: #1e3a8a; color: white !important; font-size: 1.25rem; font-weight: bold; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(30,58,138,0.3); transition: transform 0.2s, box-shadow 0.2s; }
+.cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(30,58,138,0.4); text-decoration: none !important; color: white !important; }

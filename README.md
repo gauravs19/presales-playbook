@@ -118,4 +118,6 @@ presales-playbook/
 
 ---
 
-**[Start Reading →](docs/00-start-here/what-is-presales.md)**
+<div class="cta-wrapper">
+  <a href="#/docs/00-start-here/what-is-presales" class="cta-button">Start Reading the Playbook →</a>
+</div>
