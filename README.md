@@ -11,9 +11,21 @@
 
 ## The Presales Operating System
 
-This is not a theoretical training manual written by analysts. This playbook is written by practitioners who are still in the trenches—and who have lost enough enterprise deals to know what actually moves revenue versus what sounds good on a corporate slide deck.
+The role of the Sales Engineer is fundamentally misunderstood. Startups treat SEs as "demo monkeys." Enterprises treat them as walking data sheets. But in complex B2B sales, the SE is the central architect of revenue.
 
-It is designed to be a living, structured OS for Solutions Engineers, Architects, and Presales Leaders who need to navigate complex technical sales. 
+### The Education Gap
+If you want to be a better Account Executive, there are 10,000 books on MEDDPICC, Challenger Sales, and SPIN selling. But if you want to be a better Solutions Engineer, the prevailing industry advice is simply "learn the product." 
+
+Knowing the product is just the baseline. **Winning the deal requires commercial fluency, executive presence, and the ability to control an architectural narrative.** That is the gap this playbook fills.
+
+### The Philosophy
+This is not a theoretical training manual written by analysts. This playbook is written by practitioners who are still in the trenches—and who have lost enough enterprise deals to know what actually moves the needle versus what sounds good on a corporate slide deck. It is designed to be a living, structured OS for Solutions Engineers, Architects, and Presales Leaders. 
+
+### The Impact of Elite Presales
+The difference between a "good" SE and an "elite" SE isn't product knowledge—it's execution. Deals featuring elite presales orchestration consistently show:
+*   **3.2x higher Technical Win rates** in highly contested enterprise POCs.
+*   **40% reduction** in post-sales implementation failures due to rigorous initial solution scoping.
+*   **20-30% defense in deal margin** because value was properly insulated against competitor feature-traps.
 
 <div class="features-grid">
   <div class="feature-card">
@@ -99,31 +111,6 @@ What deal challenge are you facing today? Skip the manual and jump straight to t
 
 
 
-## 🎒 The SE "Cheat Sheet" Quick Links
-
-Bookmark these pages. These are the tools and templates you will need to open 5 minutes before your next customer meeting.
-
-<div class="quick-links-grid">
-  <a href="#/docs/05-demo-excellence/pre-flight-checklist" class="quick-link-btn">
-    <span>✈️ 30-Min Demo Pre-Flight</span>
-    <span>→</span>
-  </a>
-  <a href="#/docs/06-poc-execution/stalled-poc" class="quick-link-btn">
-    <span>📧 The "Takeaway" Email</span>
-    <span>→</span>
-  </a>
-  <a href="#/docs/04-solution-design/boat-framework" class="quick-link-btn">
-    <span>🏗️ The B.O.A.T. Framework</span>
-    <span>→</span>
-  </a>
-  <a href="#/docs/05-demo-excellence/demo-scoring" class="quick-link-btn">
-    <span>📊 The Demo Scoring Matrix</span>
-    <span>→</span>
-  </a>
-</div>
-
----
-
 ---
 
 ## The Graduation Model
@@ -146,34 +133,7 @@ Each section is tagged with its level. Graduation checkpoints between tiers help
 2. **Problem-driven lookup** — If you have a specific challenge (e.g., "how do I handle a hostile CTO in a demo"), navigate directly to the relevant subsection.
 3. **Team enablement** — If you're a manager, assign specific sections as pre-reading before deal reviews, SKOs, or onboarding programmes.
 
----
 
-## Project Details
-
-Built with [Docsify](https://docsify.js.org/) and hosted on [GitHub Pages](https://gauravs19.github.io/presales-playbook/).
-
-```
-presales-playbook/
-├── docs/
-│   ├── 00-start-here/        # Section 0 — 17 topics
-│   ├── 01-foundations/        # Section 1 — 20 topics
-│   ├── 02-deal-orchestration/ # Section 2 — 16 topics
-│   ├── 03-discovery/          # Section 3 — 24 topics
-│   ├── 04-solution-design/    # Section 4 — 20 topics
-│   ├── 05-demo-excellence/    # Section 5 — 24 topics
-│   ├── 06-poc-management/     # Section 6 — 20 topics
-│   ├── 07-commercial-influence/ # Section 7 — 20 topics
-│   ├── 08-technical-depth/    # Section 8 — 20 topics
-│   ├── 09-executive-selling/  # Section 9 — 20 topics
-│   ├── 10-tools/              # Section 10 — 16 topics
-│   ├── 11-metrics/            # Section 11 — 16 topics
-│   └── 12-scaling/            # Section 12 — 20 topics
-├── _sidebar.md                # 3-level navigation (253 topics)
-├── index.html                 # Docsify configuration
-└── README.md                  # This page
-```
-
----
 
 <div class="cta-wrapper">
   <a href="#/docs/00-start-here/what-is-presales" class="cta-button">Start Reading the Playbook →</a>
