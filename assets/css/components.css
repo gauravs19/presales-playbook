@@ -504,6 +504,7 @@
 
 .route-icon {
   font-size: 2rem;
+  color: #1e3a8a;
 }
 
 .route-content h4 {
@@ -540,7 +541,7 @@
 
 /* Typewriter text styling & blinking cursor */
 .typewriter-text {
-  color: #2563eb;
+  color: #1e3a8a;
 }
 
 .typewriter-text::after {
