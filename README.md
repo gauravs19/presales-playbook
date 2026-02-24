@@ -97,28 +97,7 @@ What deal challenge are you facing today? Skip the manual and jump straight to t
 
 ---
 
-## ⚡ Try The Playbook (Interactive Tools)
 
-We don't just tell you what to say. We build the tools to help you practice saying it.
-
-### Tactic of the Week: The Missing Feature
-*Click the flashcard below to see how a Master-Class SE handles a hostile objection during a live demo.*
-
-<objection-flashcard>
-<front>
-"Competitor X has a drag-and-drop workflow builder. Why do we have to write JSON scripts in your platform?"
-</front>
-<back>
-"Our architects built this for scale. A drag-and-drop UI is great for simple approvals, but it breaks down when you have 10,000 rules. By using JSON, your DevOps team can version-control all routing rules in Git and deploy them via CI/CD. We prioritized enterprise lifecycle management over a simple UI tradeoff."
-</back>
-</objection-flashcard>
-
-### Diagnostics: Why Did Your Deal Die?
-*Is your current technical evaluation dragging on into month six? Take the Autopsy to find out why.*
-
-<deal-autopsy></deal-autopsy>
-
----
 
 ## 🎒 The SE "Cheat Sheet" Quick Links
 
