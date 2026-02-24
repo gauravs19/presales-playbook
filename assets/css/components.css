@@ -288,3 +288,13 @@
 .cta-wrapper { text-align: center; margin: 4rem 0 2rem; }
 .cta-button { display: inline-block; background: #1e3a8a; color: white !important; font-size: 1.25rem; font-weight: bold; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(30,58,138,0.3); transition: transform 0.2s, box-shadow 0.2s; }
 .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(30,58,138,0.4); text-decoration: none !important; color: white !important; }
+
+/* Coverpage / Custom Landing Specific overrides */
+.cover-main { text-align: center; margin: 40px auto; max-width: 900px; padding: 20px; }
+.cover-title { font-size: 3.5rem; font-weight: 800; color: #1e3a8a; letter-spacing: -1px; margin-bottom: 10px; }
+.cover-subtitle { font-size: 1.25rem; color: #64748b; line-height: 1.6; margin-bottom: 40px; }
+.cover-actions { display: flex; gap: 20px; justify-content: center; }
+.btn-primary { background: #1e3a8a; color: white !important; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+.btn-secondary { background: white; color: #1e3a8a !important; border: 2px solid #1e3a8a; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: background 0.2s; }
+.btn-secondary:hover { background: #f8fafc; }
