@@ -10,9 +10,9 @@ You must prevent this before Day 1 even begins by enforcing **strict resource ac
 Just as you have a pre-flight checklist for a live demo (Section 5.5.1), you must mandate a written checklist for the prospect *before* the POC clock starts ticking.
 
 *Action:* Do not hand over the sandbox credentials until the prospect formally signs off that the following are complete:
-1. **Network & Firewall Ports:** Are all required ports open to our IP ranges? Have you validated it with a ping?
-2. **Access Provisioning:** Does your testing team have the correct Admin privileges on your own internal systems (e.g., Salesforce, AWS, Snowflake) to authenticate our integration?
-3. **Data Residency/Sanitization:** If this is a healthcare or financial services POC, has your InfoSec team signed off on the exact subset of sanitized data you will be loading into our tenant? 
+- [ ] **Network & Firewall Ports:** Are all required ports open to our IP ranges? Have you validated it with a ping?
+- [ ] **Access Provisioning:** Does your testing team have the correct Admin privileges on your own internal systems (e.g., Salesforce, AWS, Snowflake) to authenticate our integration?
+- [ ] **Data Residency/Sanitization:** If this is a healthcare or financial services POC, has your InfoSec team signed off on the exact subset of sanitized data you will be loading into our tenant? 
 
 **The "Stop the Clock" Mechanism**
 If you start a 14-day POC and discover on Day 2 that the prospect's InfoSec team is holding up the data load, you must formally "stop the clock."

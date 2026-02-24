@@ -24,12 +24,19 @@ The most effective way to re-engage a stalled prospect is the "Takeaway." When s
 *The Execution:*
 After 3 unanswered check-ins, the SE does not send a 4th "Just bubbling this up!" email. The SE sends the explicit **Project Decommission Email**, CCing the prospect's Executive Sponsor and the AE:
 
-> "Hi [Champion],
-> I hope you are having a great week. We have reached the 21-day mark of our originally scoped 14-day technical validation. As we haven't received telemetry data or feedback from your testing team since last Tuesday, it appears that this initiative has been deprioritized for Q3. 
-> 
-> To ensure we are not unnecessarily consuming your compute resources, we will be formally decommissioning the POC sandbox and securely wiping the test data this Friday at 5 PM EST. 
-> 
-> If the priority of this project shifts back to active status in the future, we would be thrilled to restart an evaluation. Let me know if you have any questions before Friday’s wipe."
+<div class="email-template">
+
+```text
+Hi [Champion],
+
+I hope you are having a great week. We have reached the 21-day mark of our originally scoped 14-day technical validation. As we haven't received telemetry data or feedback from your testing team since last Tuesday, it appears that this initiative has been deprioritized for Q3. 
+
+To ensure we are not unnecessarily consuming your compute resources, we will be formally decommissioning the POC sandbox and securely wiping the test data this Friday at 5 PM EST. 
+
+If the priority of this project shifts back to active status in the future, we would be thrilled to restart an evaluation. Let me know if you have any questions before Friday’s wipe.
+```
+
+</div>
 
 **Why this works:**
 If the prospect is truly "just busy," this email creates instant urgency. They will reply within 10 minutes begging you not to wipe the environment because they "just need one more week." You now have the leverage to enforce the daily stand-up (Section 6.3.1).
