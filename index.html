@@ -40,6 +40,25 @@
       background: #f8f8f8 !important;
       color: #1e3a8a !important;
     }
+
+    /* Interview Angle Formatting */
+    .interview-angle-card {
+      background-color: #f0f7ff;
+      border-left: 4px solid #1e3a8a;
+      padding: 1.25rem 1.75rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      color: #334155;
+      font-size: 0.95em;
+    }
+
+    .interview-angle-card strong {
+      color: #1e3a8a;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.1em;
+    }
   </style>
 </head>
 
@@ -74,7 +93,38 @@
             return timeHtml + html;
           });
 
-          // 2. Add Giscus commenting system at the bottom
+          // 2. Format "Interview Angle" and Add "Share this Chapter"
+          hook.afterEach(function (html, next) {
+            // Replace standard markdown paragraph for Interview Angle with a custom styled div
+            var styledHtml = html.replace(/<p><strong>Interview Angle:<\/strong>([\s\S]*?)<\/p>/g, function (match, innerContent) {
+              return '<div class="interview-angle-card"><strong>📋 Interview Angle:</strong>' + innerContent + '</div>';
+            });
+
+            // Don't add share buttons to the homepage or 404
+            if (window.location.hash.match(/^#\/?$/) || window.location.hash.includes('_404')) {
+              next(styledHtml);
+              return;
+            }
+
+            var shareUrl = encodeURIComponent(window.location.href);
+            var shareHtml = `
+              <div class="share-chapter-container" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
+                <h4 style="margin-bottom: 15px; color: #1e3a8a;">Share this chapter</h4>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}" target="_blank" style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 6px; background: #0a66c2; color: white; text-decoration: none; font-size: 0.9em; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    <svg style="margin-right: 8px;" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> LinkedIn
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=Check out this framework from The Enterprise Presales Playbook:" target="_blank" style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 6px; background: #0f1419; color: white; text-decoration: none; font-size: 0.9em; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    <svg style="margin-right: 8px;" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X (Twitter)
+                  </a>
+                </div>
+              </div>
+            `;
+
+            next(styledHtml + shareHtml);
+          });
+
+          // 3. Add Giscus commenting system at the bottom
           hook.doneEach(function () {
             var giscusContainer = document.getElementById('giscus-container');
 
