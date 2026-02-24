@@ -1,6 +1,7 @@
 <div class="cover-main">
-  <h1 class="cover-title">The Enterprise Presales Playbook</h1>
-  <p class="cover-subtitle">The practitioner-built field guide to orchestrating complex enterprise deals — bridging the gap between technical architecture and commercial value.</p>
+  <div class="status-pill">✨ Just Added: The Deal Autopsy Diagnostic <a href="#/docs/06-poc-execution/stalled-poc">→</a></div>
+  <h1 class="cover-title">The practitioner playbook for<br/><span class="typewriter-text"></span></h1>
+  <p class="cover-subtitle">The open-source field guide to orchestrating complex enterprise deals — bridging the gap between technical architecture and commercial value.</p>
   <div class="cover-actions">
     <a href="#/docs/00-start-here/what-is-presales" class="btn-primary">Start Reading →</a>
     <a href="https://github.com/gauravs19/presales-playbook" target="_blank" class="btn-secondary">View on GitHub</a>
@@ -47,28 +48,6 @@ The difference between a "good" SE and an "elite" SE isn't product knowledge—i
 
 ---
 
-## 🗺️ How the Playbook Is Structured
-
-The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
-
-| Section | Title | Who It's For |
-|---------|-------|-------------|
-| **0** | [Start Here](docs/00-start-here/what-is-presales.md) | Brand new to presales — no prior experience needed |
-| **1** | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | The SE identity, the AE partnership, and career architecture |
-| **2** | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | Reading, owning, and accelerating deals |
-| **3** | [Discovery Framework](docs/03-discovery/pre-call-research.md) | From preparation to pain quantification |
-| **4** | [Solution Design](docs/04-solution-design/boat-framework.md) | Architecting solutions that win, not just work |
-| **5** | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | From harbor tour to revenue-generating narrative |
-| **6** | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | Control, criteria, execution, and the technical win |
-| **7** | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | Pricing literacy, RFP strategy, and proposal architecture |
-| **8** | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | Cloud, integration, AI/ML, and security fluency |
-| **9** | [Executive Selling & Soft Skills](docs/09-executive-selling/running-executive-briefings.md) | Influence, presence, negotiation, and empathy |
-| **10** | [Tools & Infrastructure](docs/10-tools/revenue-intelligence-tools.md) | The presales tech stack and productivity systems |
-| **11** | [Metrics & Continuous Improvement](docs/11-metrics/demo-to-poc-conversion.md) | Measuring what matters and getting better |
-| **12** | [Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md) | For SE managers and presales leaders |
-
----
-
 ## 🎯 Choose Your Reality
 
 What deal challenge are you facing today? Skip the manual and jump straight to the tactical fix.
@@ -106,6 +85,28 @@ What deal challenge are you facing today? Skip the manual and jump straight to t
     </div>
   </a>
 </div>
+
+---
+
+## 🗺️ How the Playbook Is Structured
+
+The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
+
+| Section | Title | Who It's For |
+|---------|-------|-------------|
+| **0** | [Start Here](docs/00-start-here/what-is-presales.md) | Brand new to presales — no prior experience needed |
+| **1** | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | The SE identity, the AE partnership, and career architecture |
+| **2** | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | Reading, owning, and accelerating deals |
+| **3** | [Discovery Framework](docs/03-discovery/pre-call-research.md) | From preparation to pain quantification |
+| **4** | [Solution Design](docs/04-solution-design/boat-framework.md) | Architecting solutions that win, not just work |
+| **5** | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | From harbor tour to revenue-generating narrative |
+| **6** | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | Control, criteria, execution, and the technical win |
+| **7** | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | Pricing literacy, RFP strategy, and proposal architecture |
+| **8** | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | Cloud, integration, AI/ML, and security fluency |
+| **9** | [Executive Selling & Soft Skills](docs/09-executive-selling/running-executive-briefings.md) | Influence, presence, negotiation, and empathy |
+| **10** | [Tools & Infrastructure](docs/10-tools/revenue-intelligence-tools.md) | The presales tech stack and productivity systems |
+| **11** | [Metrics & Continuous Improvement](docs/11-metrics/demo-to-poc-conversion.md) | Measuring what matters and getting better |
+| **12** | [Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md) | For SE managers and presales leaders |
 
 ---
 

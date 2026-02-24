@@ -517,3 +517,38 @@
   font-size: 0.9rem;
   line-height: 1.4;
 }
+
+/* Status Pill */
+.status-pill {
+  display: inline-block;
+  background: #f0f7ff;
+  color: #1e3a8a;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border: 1px solid #bfdbfe;
+}
+
+.status-pill a {
+  color: #1e3a8a;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+/* Typewriter text styling & blinking cursor */
+.typewriter-text {
+  color: #2563eb;
+}
+
+.typewriter-text::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
