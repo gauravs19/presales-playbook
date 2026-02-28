@@ -49,3 +49,15 @@ If the RFP mandates five critical integrations (e.g., legacy SAP instances, prec
 *   **Below 0 Points:** "NO BID." You are going to lose. The SE Manager must block the request and protect their team's capacity to work on winnable deals. 
 
 When you formally submit a "No Bid" citing lack of executive access or misaligned architecture, it occasionally creates a shockwave that forces the prospect to open back up to you. (See "Deciding When to Refuse an RFP").
+
+> **War Story:** An SE Manager implemented the Triage Scoring system across their 8-person team. In the first quarter, they formally declined 4 RFPs that scored below zero (saving roughly 200 SE hours). Of those 4 declined RFPs, 2 prospects came back 60 days later asking for a direct engagement—bypassing the RFP entirely. The team's overall win rate jumped from 22% to 38% in one quarter, purely by refusing to waste time on unwinnable deals.
+
+> **Failure Mode:** "The Democratic SE Manager." This manager lets every AE submit RFP requests without any triage or scoring. The SE team is permanently buried in low-probability RFP responses, has no time for high-value POCs, and burns out. The top SEs quit because they spend 80% of their week on paperwork instead of architecture.
+
+**Interview Angle:**
+"How do you prioritize competing demands on your time when multiple deals need SE support simultaneously?"
+A strong answer is: "I use a qualification framework that scores each opportunity on five criteria: authorship of the RFP, executive access, budget validation, compelling event, and architectural differentiation. Deals scoring above 15 get full custom treatment. Deals below 5 get library-only responses. Deals below zero get a formal No Bid. This framework increased my personal win rate from 25% to 40% because I only invested deeply in deals I could actually win."
+
+🔴 **Senior-Level** — Your time is a finite, non-renewable resource. Scoring RFPs before committing SE hours is not optional; it is survival.
+
+---

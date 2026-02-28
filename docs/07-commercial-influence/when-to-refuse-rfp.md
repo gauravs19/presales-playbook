@@ -54,3 +54,15 @@ Sometimes, you cannot politically refuse an RFP. Instead, you deploy an "RFP Blo
 
 1.  **They say NO:** "Sorry, procurement rules say no calls." → **Result:** You walk away. You just saved 40 hours of your life.
 2.  **They say YES:** → **Result:** You just successfully bypassed the procurement wall, secured a meeting with the real decision-maker, and converted a blind RFP into an actual discovery cycle. You are now in control of the deal.
+
+> **War Story:** An SE team spent 60 hours over two weeks responding to a 300-question RFP from a Fortune 500 bank. The SE Manager later discovered that the bank had already signed a Letter of Intent with a competitor three weeks before the RFP was sent. The bank needed three vendor bids to satisfy their procurement policy. The SE team was column fodder from Day 1. 60 hours of senior engineering time—wasted.
+
+> **Failure Mode:** "The RFP Completionist." This SE treats every inbound RFP as sacred. They answer every question meticulously, build custom architecture diagrams, and submit a 100-page response regardless of win probability. They burn out their team, dilute their focus on winnable deals, and wonder why their win rate is 8%.
+
+**Interview Angle:**
+"Describe a time you recommended your team NOT pursue an opportunity. What was the outcome?"
+A strong answer is: "We received a large RFP from a telco. After triaging it, I identified that the technical requirements were written using our competitor's exact product terminology. We had zero executive access. I recommended a No Bid to my VP, saving 50+ hours of SE time. Three months later, the same prospect came back to us directly for a different project—one where we had genuine differentiation—and we won it."
+
+🔴 **Senior-Level** — Knowing when NOT to pursue a deal is the hallmark of presales maturity. Protect your team's capacity for deals you can actually win.
+
+---

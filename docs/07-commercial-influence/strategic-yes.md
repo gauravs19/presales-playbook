@@ -63,3 +63,15 @@ When you must answer "No," you must immediately attack the premise of the questi
 You just turned a "No" into a massive differentiator. You didn't just fail their requirement; you educated them that their requirement is outdated and insecure. 
 
 When the procurement team reads that, they will likely question the vendor (your competitor) who recommended the VPN tunnel in the first place. You have turned an RFP weakness into a devastating offensive strike.
+
+> **War Story:** During an RFP for a government healthcare agency, the SE encountered a requirement: "System must support real-time, bi-directional sync with Epic EHR." The SE's platform didn't have a native Epic connector. A junior SE would have marked "No." Instead, the senior SE answered "Yes, via our certified HL7 FHIR API and standard healthcare middleware (Rhapsody/Mirth Connect)." The answer was technically accurate, positioned the integration as standards-based rather than proprietary, and the SE won the deal over a competitor who had a "native" Epic connector that was actually a fragile, custom-built script.
+
+> **Failure Mode:** "The Dishonest Yes." The SE marks "Yes" on every single RFP question, even when the platform clearly does not support the requirement. During implementation, the customer discovers that 15 of the "Yes" answers were lies. The implementation fails, the customer churns, and Legal gets involved. The SE's credibility—and their company's reputation—is permanently damaged.
+
+**Interview Angle:**
+"How do you handle an RFP question where your platform doesn't natively meet the requirement?"
+A strong answer is: "I never answer a flat 'No' without offering an alternative. If we don't have a native feature, I explain how we achieve the same outcome through platform extensibility—APIs, webhooks, or certified partner integrations. I always clarify the method in the comments column so the prospect understands exactly how we deliver the capability. Transparency builds more trust than a checkbox."
+
+🟡 **Mid-Level** — A strategic Yes demonstrates architectural creativity. A dishonest Yes destroys your career.
+
+---

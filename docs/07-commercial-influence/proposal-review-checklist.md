@@ -53,3 +53,15 @@ This checklist is designed to be executed jointly by the SE and AE before the pr
 If you cannot check every box in Sections 1 and 2 above, **do not submit the proposal.** It is better to delay a proposal by 3 days to fix a technical inaccuracy than to submit a flawed document that erodes trust, triggers Legal red-lines, or creates a post-sale implementation disaster.
 
 A proposal is not a draft. It is a contract-adjacent document. Treat it with the same rigor you would treat production code: review it, test it, and ship it only when it's ready.
+
+> **War Story:** An SE submitted a proposal for a $280k deal that stated "out-of-the-box integration with Salesforce" in the technical section. During implementation, the customer discovered that the integration required a $15k/yr third-party middleware license and 30 hours of configuration. The customer escalated to their VP, who threatened to cancel the contract. The SE's company absorbed the middleware cost and configuration hours to save the relationship—erasing $45k of the deal's margin. A 5-minute proposal review against the checklist would have caught the inaccuracy.
+
+> **Failure Mode:** "The Rush-to-Submit." The AE pressures the SE to submit the proposal before quarter-end, so the SE skips the internal review. The proposal contains a pricing error (wrong SKU tier), an outdated SLA figure, and a compliance certification that expired 2 months ago. Procurement catches all three errors and sends the proposal back. The deal slips past quarter-end, the AE misses their quota, and the SE is blamed for "sloppy work."
+
+**Interview Angle:**
+"What is your process for ensuring proposal quality before submission?"
+A strong answer is: "I run every proposal through a 5-section pre-submission checklist covering commercial alignment, technical accuracy, security compliance, formatting, and competitive positioning. The checklist requires sign-off from both the AE and a peer SE before submission. This process adds about 2 hours to the proposal cycle but has eliminated every post-submission correction request I've encountered in the last 18 months."
+
+🟡 **Mid-Level** — A proposal is a contract-adjacent document. If you wouldn't ship untested code to production, don't submit an unreviewed proposal to a prospect.
+
+---

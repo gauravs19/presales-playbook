@@ -67,3 +67,15 @@ After the security questionnaire is approved, the deal enters Legal Red-Line—w
 4.  **Liability Cap:** Legal will often try to remove or increase the liability cap. This is purely a commercial/legal negotiation—the SE should not be involved.
 
 **The Golden Rule:** Never make a legal commitment on a technical capability that you have not validated with your own Engineering team. If Legal asks, "Can you guarantee RPO of zero?" and you say "Yes" without checking, you have just created a contractual obligation your infrastructure may not support.
+
+> **War Story:** An SE proactively submitted a pre-populated security questionnaire to a financial services prospect on Day 1 of the POC—before the prospect even asked for it. The InfoSec team was so impressed by the preparedness that they fast-tracked the review, completing it in 8 business days instead of the typical 6 weeks. The SE's competitor, who waited until Week 4 to submit their questionnaire, was still stuck in security review when the SE's deal was already in Legal Redline.
+
+> **Failure Mode:** "The Reactive Security SE." This SE waits until the prospect sends a custom 500-question security questionnaire, then spends 3 weeks answering it from scratch. By the time the questionnaire is submitted, the deal has lost all momentum. The prospect's evaluation committee has moved on to other priorities and the deal enters a 3-month zombie state.
+
+**Interview Angle:**
+"How do you handle the security review process in enterprise deals?"
+A strong answer is: "I maintain a pre-populated master questionnaire library covering 200+ common security controls across SIG, CAIQ, and NIST frameworks. When a new questionnaire arrives, I can auto-map 80% of the answers within hours. I also proactively submit our Security Posture document at the start of every POC so the InfoSec review runs in parallel with the technical evaluation, rather than sequentially—which typically saves 3-4 weeks on the deal timeline."
+
+🟡 **Mid-Level** — The security review is a parallel workstream, not a sequential gate. Start it on Day 1, not after the technical win.
+
+---

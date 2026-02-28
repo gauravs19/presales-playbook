@@ -71,3 +71,15 @@ When you submit your proposal, ask the AE to set up a 15-minute "Procurement Ali
 > *"We want to make your job as easy as possible. Can you tell us exactly what documents, certifications, and contract templates you need from us so we can submit everything in a single package?"*
 
 This simple act of respect and alignment will cut weeks off your procurement cycle. Most vendors treat procurement as an adversary. You just treated them as a partner.
+
+> **War Story:** An AE was 2 weeks from quarter-end with a $250k deal stuck in procurement. The SE suggested they call the procurement officer directly and ask: "What exactly do you need from us to get this approved by Friday?" The procurement officer replied: "I just need your Certificate of Insurance and a completed W-9. Nobody has sent them to me." The AE emailed both documents within the hour. The PO was issued the next day. The deal had been stalled for 3 weeks because of two missing administrative documents.
+
+> **Failure Mode:** "The Procurement Adversary." The AE treats the procurement officer as an enemy—an obstacle trying to slow down the deal and extract discounts. Instead of collaborating, they go around procurement directly to the business sponsor, who then gets reprimanded by their own procurement team for bypassing process. The deal is delayed by 6 weeks as punishment.
+
+**Interview Angle:**
+"Tell me about a time you accelerated a deal that was stuck in procurement."
+A strong answer is: "I identified that the procurement officer needed our SOC 2 report, Certificate of Insurance, and a completed vendor registration form—none of which had been submitted. I proactively compiled a 'Vendor Qualification Pack' containing all three documents and sent it directly to procurement with a note asking if anything else was needed. The review that was projected to take 4 weeks was completed in 5 business days."
+
+🔴 **Senior-Level** — Procurement is not your enemy. They are a stakeholder with different incentives. Align with them, and deals close faster.
+
+---

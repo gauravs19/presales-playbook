@@ -66,3 +66,15 @@ If your SLA commitment, data retention policy, or support hours are buried in th
 
 ### Rule 3: Define All Acronyms on First Use
 Do not assume the procurement officer knows what "RBAC," "SCIM," or "mTLS" means. Define every acronym on its first appearance. This is not about dumbing it down; it is about eliminating friction so the document does not get sent back to you with 30 clarification questions.
+
+> **War Story:** An SE submitted a technically brilliant 60-page proposal to a pharmaceutical company. Procurement sent it back within 48 hours with 42 clarification questions. "What does RBAC mean?" "What is the difference between RPO and RTO?" "Section 4.3 mentions 'real-time'—what is the contractual SLA if it's not real-time?" The SE spent 2 weeks answering clarification emails instead of working on other deals. The rewritten proposal, formatted with executive summaries and defined acronyms, was approved in 3 days.
+
+> **Failure Mode:** "The Engineer's Proposal." The SE writes the proposal as if the only reader is a fellow engineer. It is filled with jargon, undefined acronyms, and assumes deep technical literacy. When the proposal reaches Procurement and Legal, it is incomprehensible. The deal stalls for weeks while the SE fields dozens of clarification emails. Meanwhile, the competitor who wrote a clear, procurement-friendly proposal sails through review.
+
+**Interview Angle:**
+"How do you ensure your technical proposals are accessible to non-technical stakeholders?"
+A strong answer is: "I use a 'Two-Voice' writing rule. Every technical section opens with a 2-3 sentence plain-language executive summary explaining the business outcome, followed by the detailed technical specification. I define all acronyms on first use, extract all SLA commitments into standalone tables, and number every section for easy procurement referencing. This eliminates the back-and-forth clarification cycle that typically delays deals by 2-3 weeks."
+
+🟡 **Mid-Level** — If procurement can't understand your proposal, they can't approve it. Write for the least technical person in the approval chain.
+
+---

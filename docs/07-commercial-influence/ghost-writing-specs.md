@@ -72,3 +72,15 @@ You cannot simply email an Excel file and say, *"Copy these questions into your 
 </div>
 
 When the official RFP finally hits your inbox three months later, you flip to the Architecture section. If you see your specific, multi-region RTO requirement listed on Line 42—**you know you are the Technical Favorite, and the deal is yours to lose.**
+
+> **War Story:** A Principal SE at an integration platform vendor spent 6 months building a relationship with a Fortune 100 retailer's Enterprise Architect. During that time, the SE provided a detailed "Technical Evaluation Framework" document covering API scalability, data sovereignty, and real-time event processing. When the retailer's procurement team published the official RFP 4 months later, 70% of the technical requirements were copied verbatim from the SE's framework document. The SE's company won the $1.2M deal. The two competitors never had a chance.
+
+> **Failure Mode:** "The Obvious Plant." The SE sends an evaluation matrix that is so transparently biased toward their own product that the prospect's IT team immediately recognizes it as a sales tactic. Instead of adopting the criteria, they discard the document and go out of their way to write requirements that exclude the SE's platform. The SE's attempt to ghost-write the RFP backfires catastrophically.
+
+**Interview Angle:**
+"How do you influence a prospect's evaluation criteria before a formal procurement process begins?"
+A strong answer is: "I focus on establishing technical credibility early. After an initial discovery session, I provided the prospect's architecture team with a vendor-neutral evaluation framework that covered scalability, security, and data governance requirements. The framework happened to align with our platform's unique strengths. When the formal RFP was published months later, our differentiators were embedded directly in the requirements."
+
+🔴 **Senior-Level** — The deal is won or lost before the RFP is published. If you are reacting to an RFP, you have already lost control.
+
+---

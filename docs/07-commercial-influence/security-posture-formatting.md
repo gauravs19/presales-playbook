@@ -58,3 +58,15 @@ For maximum impact, attach your security posture as a dedicated **Appendix** to 
 > **Appendix B: Security, Compliance & Data Governance Posture**
 
 This signals to the procurement team that security is a first-class citizen in your organization, not an afterthought buried on page 47. It also makes it trivially easy for the prospect's InfoSec team to extract, review, and approve your proposal independently of the business evaluation—dramatically accelerating the deal timeline.
+
+> **War Story:** An SE submitted a proposal to a major bank. The proposal had excellent technical content but buried the security details across 6 different sections. The bank's InfoSec team sent the proposal back with a note: "We cannot locate your encryption standards, penetration test dates, or data residency options. Please resubmit." The deal was delayed by 3 weeks while the SE reformatted the security content into a standalone appendix. A competitor who had submitted a clean Security Fact Sheet on Day 1 used those 3 weeks to advance their own evaluation.
+
+> **Failure Mode:** "The Scattered Security Response." The SE answers security questions inline throughout the proposal—encryption on page 12, authentication on page 27, data residency on page 45. The InfoSec reviewer cannot efficiently evaluate the vendor's posture and deprioritizes the review. The deal stalls in "Security Review" for 6 weeks.
+
+**Interview Angle:**
+"How do you handle the security review process during an enterprise sales cycle?"
+A strong answer is: "I proactively attach a dedicated Security Posture appendix to every proposal—formatted as a standalone fact sheet with a summary table covering encryption, authentication, compliance certifications, data residency, and incident response SLAs. This allows the prospect's InfoSec team to evaluate our posture independently without reading the entire proposal. It typically cuts the security review timeline in half."
+
+🟡 **Mid-Level** — A clean, standalone security appendix is the difference between a 2-week review and a 2-month review. Format matters.
+
+---

@@ -65,3 +65,15 @@ Before the deal enters Legal Review, the SE and AE should conduct a **Scope Free
 Every item on this checklist must be explicitly documented in the Statement of Work (SOW) so that Legal reviews the *actual* scope, not an inflated version of what the prospect *thinks* was promised.
 
 If the AE or SE cannot answer every item on this checklist, the deal is **not ready for Legal Review.** Sending an un-scoped deal to Legal is a guaranteed recipe for weeks of painful back-and-forth redlines.
+
+> **War Story:** During a $350k deal for an HR tech platform, the prospect's Legal team inserted a clause: "Vendor shall ensure ongoing compatibility with all future versions of Workday HCM." The SE initially overlooked it. Six months post-signature, Workday released a major API overhaul. The SE's integration broke. The customer invoked the contractual clause, demanding an immediate fix. The SE's engineering team spent 400 hours rebuilding the integration—all unbilled—because the SE had agreed to an open-ended compatibility obligation. Total cost to the company: $120k in unplanned engineering.
+
+> **Failure Mode:** "The Invisible SE During Legal Review." The SE declares the Technical Win and immediately moves to the next deal, leaving the AE and Legal to navigate the contract alone. Without SE oversight, Legal accepts technical clauses that the platform cannot fulfill. Post-signature, the Customer Success team inherits impossible commitments, the customer is angry, and the SE is pulled back in to firefight—wasting far more time than if they had simply reviewed the contract.
+
+**Interview Angle:**
+"Describe a time you identified a risk in a contract that would have impacted the implementation."
+A strong answer is: "During Legal Redline, I reviewed a clause that committed us to 'guaranteed sub-100ms API latency at all times.' Our platform typically achieved sub-100ms, but under extreme peak load it could spike to 200ms. I flagged this to Legal and recommended amending the clause to 'sub-100ms API latency under standard operating conditions, with burst tolerance of up to 250ms during peak load events.' The amendment was accepted and prevented a potential SLA breach claim worth $50k."
+
+🔴 **Senior-Level** — Your job does not end at the Technical Win. If you do not review the contract, you will own the consequences.
+
+---

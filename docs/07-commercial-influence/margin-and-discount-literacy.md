@@ -89,3 +89,15 @@ The fastest way to ruin your relationship with an Account Executive is to wait u
 *   [ ] Have I identified any hidden Professional Services costs required to get the customer live?
 
 If you suspect your architecture is going to cost $500k, and the AE thinks they are selling a $100k deal, you must flag it immediately after the discovery call. Do not wait for the proposal review.
+
+> **War Story:** A senior SE designed a beautiful multi-region, HA architecture for a healthcare prospect during a 3-week POC. The demo was flawless. The prospect loved it. When the AE sat down to build the pricing proposal, the architecture required 4 premium SKUs, a dedicated compute cluster, and 80 hours of Professional Services. The total price came to $420k. The prospect's budget was $150k. The deal collapsed in 48 hours. The SE had never once asked the AE what the budget was.
+
+> **Failure Mode:** "The Technically Perfect, Commercially Impossible Architecture." The SE designs the ideal system without any awareness of the customer's budget, the deal's margin target, or the SKU pricing. They build a Rolls-Royce when the customer can only afford a Honda. The AE is forced to either kill the deal or strip the architecture down so aggressively that the prospect loses confidence in the solution.
+
+**Interview Angle:**
+"How do you balance technical excellence with commercial viability when designing a solution?"
+A strong answer is: "During a $300k evaluation for a logistics company, I designed an event-driven architecture that required our premium streaming module. Before presenting it to the prospect, I validated with the AE that the module was within the deal's margin threshold. It wasn't—the module alone would have consumed 60% of the ACV. I redesigned the solution using our standard batch-processing tier, which achieved 90% of the same outcome at one-third of the cost. We closed the deal at full price with healthy margin."
+
+🔴 **Senior-Level** — If you don't understand how your architecture translates to a P&L, you are not a Solutions Engineer; you are a demo jockey.
+
+---

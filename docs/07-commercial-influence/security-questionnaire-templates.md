@@ -71,3 +71,15 @@ The master library is a living document. Schedule a quarterly review cycle:
 *   [ ] Have any infrastructure changes invalidated existing answers (e.g., cloud provider migration)?
 *   [ ] Are there new regulatory requirements that need new entries (e.g., EU AI Act, India DPDP)?
 *   [ ] Have any recent prospect questionnaires introduced new question categories that should be added to the library?
+
+> **War Story:** An SE team of 6 was spending a combined 80 hours per month answering security questionnaires from scratch. After building a Master Questionnaire Library with 250 pre-approved answers, the same team reduced their monthly security paperwork to 15 hours—freeing up 65 hours per month for actual technical selling. Over a year, that reclaimed time translated to 4 additional POCs completed and 2 additional deals closed.
+
+> **Failure Mode:** "The From-Scratch Responder." Every time a new security questionnaire arrives, this SE opens a blank document and starts typing. They waste 20-30 hours per questionnaire because they are re-answering questions they have answered 50 times before. Their answers are inconsistent across deals because there is no single source of truth. InfoSec reviewers notice the inconsistencies and flag the vendor as unreliable.
+
+**Interview Angle:**
+"How do you handle the operational overhead of security questionnaires in a high-volume deals environment?"
+A strong answer is: "I built and maintain a Master Questionnaire Library with pre-approved answers to the 250 most common security questions across SIG, CAIQ, and custom frameworks. When a new questionnaire arrives, I can auto-map 80% of the answers in under 2 hours, then spend another 2 hours on the 20% that require customization. This reduced my average questionnaire turnaround from 3 weeks to 48 hours."
+
+🟡 **Mid-Level** — Answering security questionnaires from scratch is not diligence; it is operational waste. Build a library and reclaim your time.
+
+---

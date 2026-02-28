@@ -75,3 +75,15 @@ Organize the library by objection category, not by product feature. SEs think in
 *   **Quarterly Review:** Every quarter, the SE team should review the library and add new objections encountered during recent deals.
 *   **Win/Loss Attribution:** When a deal is won or lost, tag the specific objections from the library that were used during the cycle. Over time, you will identify which responses have the highest win correlation.
 *   **Peer Contribution:** Encourage every SE to submit new objections and suggested responses. The best snippets come from real-world deal conversations, not from marketing slide decks.
+
+> **War Story:** A new SE joined a team with no objection library. In their first competitive deal, they faced the question "Your product is 3x more expensive than Competitor X." They panicked, fumbled through a vague response about "enterprise-grade quality," and the prospect visibly lost confidence. Two months later, after the team built a shared snippet library, the same SE faced the identical objection. This time, they calmly delivered the pre-approved TCO reframe, backed by a specific customer case study. The prospect nodded and said, "That makes sense." The SE won the deal.
+
+> **Failure Mode:** "The Improviser." This SE believes they are too experienced to use pre-written responses. They "wing it" on every objection, delivering inconsistent, non-validated answers that occasionally contradict what a colleague told the same prospect last week. The prospect notices the inconsistency, loses trust, and demands a "single point of contact"—a sign that the vendor's team is not aligned.
+
+**Interview Angle:**
+"How do you prepare for hostile objections during a competitive evaluation?"
+A strong answer is: "I maintain and contribute to a centralized Objection-to-Answer Snippet Library organized by category—pricing, security, competitive, and technical. Before every major customer-facing meeting, I review the snippets relevant to the deal's likely objections. This ensures my responses are consistent with what my team says, validated by Legal, and refined based on win/loss data from past deals."
+
+🟡 **Mid-Level** — Consistency kills competitors. A shared objection library ensures every SE on the team delivers the same devastating response.
+
+---

@@ -92,3 +92,15 @@ Your response should shift from pre-sales engineering to commercial logic:
 > *"Building a production-ready replica requires comprehensive data-mapping and scoping. We typically execute that phase immediately after the commercial contract is signed during the first week of implementation. To do it pre-signature, we would need to scope a paid Proof-of-Concept."*
 
 By forcing the commercial reality of the technical request, you instantly filter out the "tire kickers" from the actual buyers.
+
+> **War Story:** During a $500k SaaS evaluation for a retail chain, the prospect's VP of IT casually asked the SE on a Friday afternoon Zoom call, "Can your team quickly connect our legacy inventory system to your platform for the POC?" The SE said, "Absolutely, our API handles that." On Monday, the AE received an email from procurement stating: "Per your SE's confirmation, the legacy inventory integration is included in the base subscription at no additional cost." The AE had to either honor the SE's verbal commitment (destroying 30% of deal margin) or retract it (destroying trust). The deal closed 4 months late after a painful re-negotiation.
+
+> **Failure Mode:** "The People-Pleaser SE." This SE cannot say no to any technical request because they are terrified of the prospect choosing a competitor. They say "yes" to every custom build, every integration, and every timeline acceleration. By the time the proposal is drafted, the scope has ballooned so far beyond what was originally budgeted that the AE cannot build a profitable deal. The SE wins the technical evaluation and loses the commercial deal.
+
+**Interview Angle:**
+"Tell me about a time you pushed back on a prospect's technical request during an evaluation."
+A strong answer is: "A prospect demanded we build a custom SSO connector to their proprietary identity system before they would proceed. Instead of agreeing, I validated the technical feasibility, confirmed it was their final blocker, then told them that custom connectors require dedicated Solutions Architecture resources scoped as Professional Services. The AE immediately used that as leverage to secure a firm close date. We closed the deal with the custom build priced into the SOW."
+
+🟡 **Mid-Level** — Every "yes" you give away for free is margin your AE can never recover. Protect scope like you protect production code.
+
+---

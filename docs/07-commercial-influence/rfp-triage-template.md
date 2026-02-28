@@ -98,3 +98,15 @@ Over time, this tracker reveals critical patterns:
 *   How often does a "No Bid" result in a re-engagement?
 
 This data is how SE Managers justify headcount requests and protect their team from burnout.
+
+> **War Story:** After implementing the Triage Template, an SE Manager tracked 12 months of RFP outcomes. The data revealed that deals scoring 15+ had a 62% win rate. Deals scoring 5-14 had a 18% win rate. Deals scoring below 5 had a 3% win rate. The team had been spending 40% of their total SE hours on that bottom tier—the 3% win rate deals. By enforcing a strict No Bid policy for sub-5 scores, the team reallocated 400+ hours per quarter to Must Win deals. Annual revenue attributed to the SE team increased by 28%.
+
+> **Failure Mode:** "The Gut-Feel Manager." The SE Manager approves or rejects RFP requests based on instinct rather than data. They say "yes" to an RFP because the AE "has a good feeling about it" or because the prospect's logo would look impressive on a case study. 60 hours later, the RFP is submitted, and the SE team never hears from the prospect again.
+
+**Interview Angle:**
+"How do you decide which opportunities deserve your team's deepest investment?"
+A strong answer is: "I use a 5-criteria triage scoring model that evaluates every inbound RFP before any SE hours are committed. The criteria are: authorship of requirements, executive access, budget validation, compelling event, and architectural differentiation. Each criterion is scored on a -10 to +5 scale. The total score determines our investment level—from full custom response to formal No Bid. This framework is the single biggest driver of my team's improved win rate."
+
+🔴 **Senior-Level** — Data-driven triage is how SE Managers protect their teams from burnout and maximize revenue per SE hour.
+
+---

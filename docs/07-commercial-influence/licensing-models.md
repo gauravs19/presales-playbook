@@ -61,3 +61,15 @@ Your architectural design must focus on **efficiency and predictability**.
 *   **Efficiency:** Show them how to write better integrations. *"If you switch from a polling architecture to webhook payloads, you'll reduce your API calls by 80%, saving you $40k a year in consumption fees."* 
 
 By actively teaching the prospect how to spend less money on your variable usage model, you establish absolute trust, making it vastly easier for the AE to secure the large, flat platform fee.
+
+> **War Story:** An SE was selling a consumption-based data platform to a manufacturing company. During the POC, the SE optimized the customer's data pipelines so aggressively that the projected annual consumption was only $30k. The AE needed $150k ACV to hit quota. The SE had inadvertently designed an architecture so efficient that the deal wasn't worth closing. The SE learned to always check the AE's commercial target before optimizing the architecture.
+
+> **Failure Mode:** "The Over-Optimizer." In consumption-based models, the SE builds the most efficient architecture possible because they are an engineer at heart. They reduce API calls, minimize compute, and compress storage. The customer loves it. The AE hates it. The deal margin is destroyed because the SE optimized away all the revenue.
+
+**Interview Angle:**
+"How does the pricing model of your product influence the way you design solutions during a POC?"
+A strong answer is: "In my previous role selling a consumption-based platform, I learned early that my architecture decisions directly impacted revenue. I always aligned with the AE on the commercial target before the POC started, then designed the solution to demonstrate value at a consumption level that was both technically sound and commercially viable. I never optimized for efficiency at the expense of the deal."
+
+🔴 **Senior-Level** — You are not just designing an architecture. You are designing a revenue model. Understand the difference.
+
+---

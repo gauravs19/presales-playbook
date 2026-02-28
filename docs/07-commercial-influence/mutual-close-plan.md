@@ -88,3 +88,15 @@ If the prospect's champion refuses to co-build a Mutual Close Plan, it is a mass
 3.  **There is no timeline.** They are "exploring the market" with no urgency to purchase. This is a tire-kicker.
 
 In all three cases, the SE and AE should seriously consider de-prioritizing the deal and reallocating their time to opportunities where the prospect is willing to commit to a mutual plan.
+
+> **War Story:** An AE had been chasing a $400k deal for 5 months with no clear timeline. The SE suggested building a Mutual Close Plan and presenting it to the prospect's VP of Engineering. During the MCP review, the VP revealed that their current vendor's contract expired in 45 days—a compelling event nobody on the sales team had uncovered. The MCP was immediately re-built backward from that date, compressing the remaining milestones into 6 weeks. The deal closed 2 days before the existing contract expired. Without the MCP forcing the conversation, the compelling event would have gone undiscovered and the deal would have slipped another quarter.
+
+> **Failure Mode:** "The Passive Follow-Up." The AE sends weekly "just checking in" emails to the prospect instead of building a joint action plan. The prospect politely replies "still working on it internally" for 4 months. There is no shared accountability, no milestone tracking, and no urgency. The deal dies quietly in the pipeline, and the AE marks it as "Closed Lost — No Decision" at the end of the quarter.
+
+**Interview Angle:**
+"How do you maintain deal momentum after the technical win is secured?"
+A strong answer is: "I co-build a Mutual Close Plan with the prospect's champion immediately after the Technical Win. The plan maps every remaining milestone—security review, legal redline, executive approval, PO issuance—with specific owners and dates on both sides. When a milestone slips, I use the plan as the basis for an accountability conversation. This converts passive follow-up into active project management and typically compresses the post-Technical Win cycle by 30-40%."
+
+🔴 **Senior-Level** — The deal is not won at the Technical Win. It is won when the PO is issued. The MCP is how you get there.
+
+---

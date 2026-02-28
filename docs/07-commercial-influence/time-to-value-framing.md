@@ -81,3 +81,15 @@ Your proposal should follow this narrative arc:
 4.  **Appendix (Feature Matrix):** Bury the feature comparison in the appendix. It's there for the technical evaluator who wants to check boxes, but it is no longer the narrative anchor of the proposal.
 
 By the time the decision-maker reaches the feature comparison (if they ever do), they have already been sold on speed, impact, and financial return.
+
+> **War Story:** Two vendors were competing for a $180k deal at a logistics company. Vendor A submitted a 15-page feature comparison matrix showing 200 capabilities. Vendor B (the SE's team) submitted a 1-page "Value Milestones" table showing that the prospect would have live dashboards in Week 2 and would decommission their legacy system by Month 3—saving $80k/yr in licensing. The CFO chose Vendor B despite having fewer features because the time-to-value narrative directly mapped to a budget line item she could eliminate. Vendor A's feature matrix is still sitting unread in her inbox.
+
+> **Failure Mode:** "The Feature Checklist Warrior." The SE spends 20 hours building a meticulous feature-by-feature comparison matrix, confident that having 200 checkmarks vs. the competitor's 180 will win on merit. The prospect forms a 6-person evaluation committee to score each feature. The deal enters a 4-month analysis paralysis death spiral. Ultimately, the prospect chooses the cheaper vendor because "the features were comparable."
+
+**Interview Angle:**
+"How do you differentiate your solution when a competitor has similar capabilities?"
+A strong answer is: "I shift the conversation from features to outcomes. Instead of comparing checkboxes, I present a Time-to-Value roadmap showing what the prospect can achieve in Week 1, Month 1, and Month 3. I quantify the cost of delay—if the competitor requires a 6-month implementation and we go live in 2 weeks, I calculate the opportunity cost of those 5 lost months. This reframes the evaluation from 'who has more features' to 'who delivers results faster.'"
+
+🟡 **Mid-Level** — Features are commodities. Speed to outcome is the only sustainable differentiator in a crowded market.
+
+---

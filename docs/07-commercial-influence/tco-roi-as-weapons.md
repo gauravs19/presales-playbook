@@ -91,3 +91,15 @@ Instead of presenting a finished spreadsheet at the end of the deal, co-create t
 When the procurement team inevitably demands a 30% discount on that $80,000 proposal, your AE simply points back to the jointly-agreed math:
 
 > *"We are returning $250k in engineering throughput. We've priced our solution at exactly the right threshold to guarantee that delivery. We unfortunately cannot discount the price without stripping the features required to hit that $250k return."*
+
+> **War Story:** An SE at a cybersecurity vendor was about to lose a $200k deal because a competitor was offering a similar product for $120k. Instead of panicking, the SE pulled out the discovery notes and built a live TCO model on the call. The competitor's product required a dedicated analyst to manage their alert triage system (a $90k/yr salary). The SE's platform automated alert triage entirely. Over 3 years, the competitor's actual TCO was $390k vs. the SE's $600k for theirs. The SE reframed the conversation: "You're not paying $80k more for us. You're saving $190k by eliminating a headcount." They won the deal at full price.
+
+> **Failure Mode:** "The Generic ROI Slide." The SE pulls out a Marketing-produced ROI calculator that uses industry averages instead of the prospect's actual data. The CFO immediately spots that the numbers are fictional and dismisses the entire presentation. The SE's credibility is destroyed for the rest of the deal cycle.
+
+**Interview Angle:**
+"How do you quantify the business value of a technical solution for a non-technical audience?"
+A strong answer is: "During a competitive evaluation, I co-built a TCO model live on a call with the prospect's CTO. I used their actual engineering headcount, salary bands, and infrastructure costs—numbers they supplied—to prove that over 3 years, our platform would return $400k in engineering capacity. Because the prospect provided the inputs, they couldn't argue with the output. The CFO approved the budget within a week."
+
+🔴 **Senior-Level** — ROI is not a slide deck. It is a live negotiation weapon built from the prospect's own data.
+
+---
