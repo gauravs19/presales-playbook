@@ -350,40 +350,31 @@
 .cover-main {
   text-align: center;
   margin: 40px auto;
-  max-width: 900px;
-  padding: 20px;
+  max-width: 1000px;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .cover-title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 800;
   color: #1e3a8a;
-  letter-spacing: -1.5px;
-  margin-bottom: 12px;
-  text-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
 }
 
 .cover-subtitle {
   font-size: 1.25rem;
   color: #64748b;
   line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.hero-image-wrapper {
-  margin: 0 auto 40px auto;
-  max-width: 500px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-.hero-illustration {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cover-actions {
