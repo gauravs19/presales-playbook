@@ -350,7 +350,7 @@
 .cover-main {
   text-align: center;
   margin: 40px auto;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 60px 20px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   border-radius: 16px;
@@ -359,19 +359,19 @@
 }
 
 .cover-title {
-  font-size: 5.5rem;
-  line-height: 1.1;
+  font-size: 7rem;
+  line-height: 1.05;
   font-weight: 800;
   color: #1e3a8a;
-  letter-spacing: -2.5px;
-  margin-bottom: 20px;
+  letter-spacing: -3.5px;
+  margin-bottom: 24px;
   text-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
 }
 
 @media (max-width: 768px) {
   .cover-title {
-    font-size: 3.5rem;
-    letter-spacing: -1.5px;
+    font-size: 4rem;
+    letter-spacing: -2px;
   }
 }
 
