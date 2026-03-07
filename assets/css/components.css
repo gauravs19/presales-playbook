@@ -367,7 +367,23 @@
   font-size: 1.25rem;
   color: #64748b;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+}
+
+.hero-image-wrapper {
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.hero-illustration {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .cover-actions {
