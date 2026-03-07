@@ -77,6 +77,28 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
 
+  <!-- Custom Footer Plugin -->
+  <script>
+    window.$docsify.plugins = [].concat(function (hook, vm) {
+      var footer = [
+        '<hr/>',
+        '<footer style="text-align: center; margin-top: 2.5rem; padding-bottom: 1rem; color: #666;">',
+        '  <p>',
+        '    <strong>The Enterprise Presales Playbook</strong> by Gaurav Sharma.<br/>',
+        '    <span style="font-size: 0.9em; margin-top: 0.5rem; display: inline-block;">',
+        '      <a href="https://gauravs19.github.io/portfolio/" target="_blank" style="color: var(--theme-color, #1e3a8a); text-decoration: none; font-weight: 600;">Architecture Portfolio</a> &nbsp;|&nbsp; ',
+        '      <a href="https://www.linkedin.com/in/gauravs19/" target="_blank" style="color: var(--theme-color, #1e3a8a); text-decoration: none; font-weight: 600;">LinkedIn Profile</a>',
+        '    </span>',
+        '  </p>',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function (html) {
+        return html + footer;
+      });
+    }, window.$docsify.plugins);
+  </script>
+
   <!-- Custom Hero Script for Landing Page -->
   <script>
     window.$docsify.plugins = [].concat(window.$docsify.plugins, function (hook) {
