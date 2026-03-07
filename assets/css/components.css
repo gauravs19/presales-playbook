@@ -516,8 +516,8 @@
 .routing-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 2rem 0;
+  gap: 1.5rem;
+  margin: 3rem 0;
 }
 
 @media (min-width: 768px) {
@@ -530,13 +530,11 @@
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 2rem;
   text-decoration: none !important;
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  display: block;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
@@ -547,21 +545,23 @@
 }
 
 .route-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #1e3a8a;
 }
 
 .route-content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
   margin: 0 0 0.5rem 0;
-  color: #1e3a8a;
-  font-size: 1.1rem;
 }
 
 .route-content p {
-  margin: 0;
   color: #64748b;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Status Pill */
