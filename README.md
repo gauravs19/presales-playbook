@@ -1,5 +1,5 @@
 <div class="cover-main">
-  <h1 class="cover-title">The Enterprise Presales Playbook</h1>
+  <h1 class="cover-title">The Enterprise<br/>Presales Playbook</h1>
   <p class="cover-subtitle">The missing manual for technical sellers. Learn how to translate complex system architectures into undeniable commercial value.</p>
   
   <div class="cover-actions">
