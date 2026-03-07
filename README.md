@@ -61,50 +61,17 @@ This repository is not a theoretical framework produced by analysts. It is a cod
 
 ---
 
-## Navigating the Playbook
+## Core Competencies 
 
-Whether you are seeking a framework for an upcoming executive briefing or building enablement tracks for your team, select the path that aligns with your current strategic priority.
-
-<div class="routing-grid">
-  <a href="#/docs/04-solution-design/boat-framework" class="route-card">
-    <div class="route-icon">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-    </div>
-    <div class="route-content">
-      <h4>Solution Architecture</h4>
-      <p>Principles for designing scalable, maintainable solutions that mitigate risk and ensure technical validation.</p>
-    </div>
-  </a>
-
-  <a href="#/docs/06-poc-management/paid-vs-free-poc" class="route-card">
-    <div class="route-icon">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-    </div>
-    <div class="route-content">
-      <h4>Evaluation Governance</h4>
-      <p>Strategies to mandate mutual success plans, avoid scope creep, and secure the definitive Technical Win.</p>
-    </div>
-  </a>
-
-  <a href="#/docs/09-executive-selling/running-executive-briefings" class="route-card">
-    <div class="route-icon">
-       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-    </div>
-    <div class="route-content">
-      <h4>Executive Engagement</h4>
-      <p>Techniques for presenting complex architectures to the C-Suite, establishing credibility, and overcoming high-level objections.</p>
-    </div>
-  </a>
-
-  <a href="#/docs/12-scaling/ae-to-se-ratio" class="route-card">
-    <div class="route-icon">
-       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-    </div>
-    <div class="route-content">
-      <h4>Presales Management</h4>
-      <p>Methodologies for defining coverage models, tracking performance metrics, and scaling the Solutions Engineering organization.</p>
-    </div>
-  </a>
+<div class="skills-grid">
+  <span class="skill-pill">Commercial Discovery</span>
+  <span class="skill-pill">Architecture Defense</span>
+  <span class="skill-pill">Solution Scoping</span>
+  <span class="skill-pill">Executive Presenting</span>
+  <span class="skill-pill">Margin Protection</span>
+  <span class="skill-pill">POC Governance</span>
+  <span class="skill-pill">Deal Orchestration</span>
+  <span class="skill-pill">Technical Win Strategy</span>
 </div>
 
 ---

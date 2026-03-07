@@ -513,55 +513,32 @@
   text-decoration: none;
 }
 
-.routing-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin: 3rem 0;
+/* Core Competencies Skill Pills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0 3rem 0;
 }
 
-@media (min-width: 768px) {
-  .routing-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.route-card {
+.skill-pill {
   background: white;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 2rem;
-  text-decoration: none !important;
-  color: inherit;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-}
-
-.route-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.08), 0 4px 8px rgba(30, 58, 138, 0.04);
-  border-color: #cbd5e1;
-}
-
-.route-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
   color: #1e3a8a;
-}
-
-.route-content h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0 0 0.5rem 0;
-}
-
-.route-content p {
-  color: #64748b;
+  font-weight: 600;
   font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  background: #f0f7ff;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.05);
 }
 
 /* Status Pill */
