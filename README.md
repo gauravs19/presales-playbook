@@ -80,6 +80,8 @@ This repository is not a theoretical framework produced by analysts. It is a cod
 
 The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
 
+<div class="landing-table-wrapper">
+
 | Section | Focus Area | What You Will Master |
 |---------|-------|-------------|
 | 0 | [Start Here](docs/00-start-here/what-is-presales.md) | **For Absolute Beginners:** Grasping the bare-bones definition of the SE role, baseline expectations, and what a "day in the life" actually looks like during an enterprise deal cycle. |
@@ -95,6 +97,8 @@ The content is organised into **13 sections** across **253 individual topics**, 
 | 10 | [Tools & Analytics](docs/10-tools/revenue-intelligence-tools.md) | **The Tech Stack:** Exploring the platforms used by top-tier SEs (Gong, CRM integrations) to analyze win rates, optimize demo delivery, and surface actionable competitive intelligence. |
 | 11 | [Metrics & Improvement](docs/11-metrics/demo-to-poc-conversion.md) | **Data-Driven Growth:** Identifying which metrics actually matter (Demo-to-POC conversion, Technical Win Rate). Building a culture of continuous improvement through ruthless deal post-mortems. |
 | 12 | [Scaling Teams](docs/12-scaling/ae-to-se-ratio.md) | **For Leadership:** Defining optimal AE-to-SE ratios, implementing rigorous hiring templates for top-tier talent, performance management, and building robust technical enablement engines. |
+
+</div>
 
 ---
 

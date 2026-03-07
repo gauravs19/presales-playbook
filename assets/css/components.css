@@ -575,21 +575,21 @@
 }
 
 /* Playbook table specific styling */
-.markdown-section table {
+.landing-table-wrapper table {
   border: none !important;
   box-shadow: none !important;
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.markdown-section table tr,
-.markdown-section table th,
-.markdown-section table td {
+.landing-table-wrapper table tr,
+.landing-table-wrapper table th,
+.landing-table-wrapper table td {
   border: none !important;
   border-bottom: 1px solid #f1f5f9 !important;
 }
 
-.markdown-section table th {
+.landing-table-wrapper table th {
   border-bottom: 2px solid #e2e8f0 !important;
   color: #64748b;
   font-weight: 600;
@@ -599,29 +599,29 @@
   padding: 1.5rem 1rem 0.5rem 0.25rem !important;
 }
 
-.markdown-section table tr:nth-child(odd),
-.markdown-section table tr:nth-child(even) {
+.landing-table-wrapper table tr:nth-child(odd),
+.landing-table-wrapper table tr:nth-child(even) {
   background-color: transparent !important;
 }
 
-.markdown-section table td {
+.landing-table-wrapper table td {
   padding: 1.5rem 1rem 1.5rem 0.25rem !important;
   vertical-align: top;
   line-height: 1.6;
 }
 
-.markdown-section table td:first-child {
+.landing-table-wrapper table td:first-child {
   font-weight: 700;
   color: #cbd5e1;
   font-size: 1.25rem;
   width: 5%;
 }
 
-.markdown-section table td:nth-child(2) {
+.landing-table-wrapper table td:nth-child(2) {
   width: 25%;
 }
 
-.markdown-section table td a {
+.landing-table-wrapper table td a {
   text-decoration: none !important;
   color: #1e293b;
   font-weight: 600;
@@ -631,11 +631,11 @@
   margin-bottom: 0.25rem;
 }
 
-.markdown-section table td a:hover {
+.landing-table-wrapper table td a:hover {
   color: #1e3a8a;
 }
 
-.markdown-section table td strong {
+.landing-table-wrapper table td strong {
   color: #1e3a8a;
   font-weight: 700;
 }
