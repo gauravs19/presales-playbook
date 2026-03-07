@@ -407,6 +407,34 @@
   background: #f8fafc;
 }
 
+/* Trust Metrics styling */
+.trust-metrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.trust-metrics .divider {
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .trust-metrics {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .trust-metrics .divider {
+    display: none;
+  }
+}
+
 /* Landing Page specific component overrides */
 .search-mockup {
   max-width: 600px;

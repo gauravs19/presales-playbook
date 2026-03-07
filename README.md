@@ -1,9 +1,19 @@
 <div class="cover-main">
-  <h1 class="cover-title">The practitioner playbook for<br/><span class="typewriter-text"></span></h1>
-  <p class="cover-subtitle">The missing manual for technical sellers. Translating complex system architecture into undeniable commercial value.</p>
+  <div class="status-pill">
+    A practitioner's guide by <a href="https://gauravs19.github.io/portfolio/" target="_blank">Gaurav Sharma</a>
+  </div>
+  <h1 class="cover-title">The Enterprise<br/>Presales Playbook</h1>
+  <p class="cover-subtitle">The missing manual for technical sellers. Learn how to translate complex system architectures into undeniable commercial value—built from 18 years of defending enterprise deals.</p>
   <div class="cover-actions">
     <a href="#/docs/00-start-here/what-is-presales" class="btn-primary">Start Reading →</a>
     <a href="https://github.com/gauravs19/presales-playbook" target="_blank" class="btn-secondary">View on GitHub</a>
+  </div>
+  <div class="trust-metrics">
+    <span>📚 13 Comprehensive Sections</span>
+    <span class="divider">|</span>
+    <span>⚡ 250+ Real-world Tactics</span>
+    <span class="divider">|</span>
+    <span>🎯 For SEs & Solutions Architects</span>
   </div>
 </div>
 
