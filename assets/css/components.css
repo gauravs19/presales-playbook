@@ -359,12 +359,20 @@
 }
 
 .cover-title {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+  line-height: 1.1;
   font-weight: 800;
   color: #1e3a8a;
-  letter-spacing: -2px;
-  margin-bottom: 16px;
+  letter-spacing: -2.5px;
+  margin-bottom: 20px;
   text-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
+}
+
+@media (max-width: 768px) {
+  .cover-title {
+    font-size: 3.5rem;
+    letter-spacing: -1.5px;
+  }
 }
 
 .cover-subtitle {
@@ -520,22 +528,22 @@
 
 .route-card {
   background: white;
-  border: 2px solid #e2e8f0;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1.5rem;
   text-decoration: none !important;
   color: inherit;
-  transition: all 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .route-card:hover {
-  border-color: #1e3a8a;
-  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.12), 0 3px 6px rgba(30, 58, 138, 0.06);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.08), 0 4px 8px rgba(30, 58, 138, 0.04);
+  border-color: #cbd5e1;
 }
 
 .route-icon {
@@ -589,4 +597,15 @@
   50% {
     opacity: 0;
   }
+}
+
+/* Playbook table specific styling */
+.markdown-section table td a {
+  text-decoration: none !important;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.markdown-section table td a:hover {
+  color: #3b82f6;
 }
