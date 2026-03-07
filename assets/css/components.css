@@ -359,11 +359,11 @@
 }
 
 .markdown-section h1.cover-title {
-  font-size: 4.8rem !important;
+  font-size: 4.2rem !important;
   line-height: 1.05 !important;
   font-weight: 800 !important;
   color: #1e3a8a !important;
-  letter-spacing: -2px !important;
+  letter-spacing: -1.5px !important;
   margin-bottom: 24px !important;
   text-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
   border-bottom: none !important;
