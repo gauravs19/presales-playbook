@@ -347,10 +347,10 @@
 }
 
 /* Coverpage / Custom Landing Specific overrides */
-.cover-main {
+.markdown-section .cover-main {
   text-align: center;
   margin: 40px auto;
-  max-width: 1200px;
+  max-width: 1200px !important;
   padding: 60px 20px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
   border-radius: 16px;
@@ -358,20 +358,21 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
-.cover-title {
-  font-size: 7rem;
-  line-height: 1.05;
-  font-weight: 800;
-  color: #1e3a8a;
-  letter-spacing: -3.5px;
-  margin-bottom: 24px;
+.markdown-section h1.cover-title {
+  font-size: 5.5rem !important;
+  line-height: 1.05 !important;
+  font-weight: 800 !important;
+  color: #1e3a8a !important;
+  letter-spacing: -2px !important;
+  margin-bottom: 24px !important;
   text-shadow: 0 4px 12px rgba(30, 58, 138, 0.12);
+  border-bottom: none !important;
 }
 
 @media (max-width: 768px) {
-  .cover-title {
-    font-size: 4rem;
-    letter-spacing: -2px;
+  .markdown-section h1.cover-title {
+    font-size: 3.5rem !important;
+    letter-spacing: -1.5px !important;
   }
 }
 
