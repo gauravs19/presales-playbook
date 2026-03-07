@@ -1,7 +1,4 @@
 <div class="cover-main">
-  <div class="status-pill">
-    A practitioner's guide by <a href="https://gauravs19.github.io/portfolio/" target="_blank">Gaurav Sharma</a>
-  </div>
   <h1 class="cover-title">The Enterprise<br/>Presales Playbook</h1>
   <p class="cover-subtitle">The missing manual for technical sellers. Learn how to translate complex system architectures into undeniable commercial value—built from 18 years of defending enterprise deals.</p>
   <div class="cover-actions">

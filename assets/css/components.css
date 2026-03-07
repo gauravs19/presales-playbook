@@ -355,11 +355,12 @@
 }
 
 .cover-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #1e3a8a;
-  letter-spacing: -1px;
-  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
 }
 
 .cover-subtitle {
