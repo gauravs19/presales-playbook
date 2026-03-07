@@ -80,21 +80,21 @@ This repository is not a theoretical framework produced by analysts. It is a cod
 
 The content is organised into **13 sections** across **253 individual topics**, each as its own focused page. The sections follow a deliberate progression:
 
-| Section | Title | Who It's For |
+| Section | Focus Area | What You Will Master |
 |---------|-------|-------------|
-| 0 | [Start Here](docs/00-start-here/what-is-presales.md) | Brand new to presales — no prior experience needed |
-| 1 | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | The SE identity, the AE partnership, and career architecture |
-| 2 | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | Reading, owning, and accelerating deals |
-| 3 | [Discovery Framework](docs/03-discovery/pre-call-research.md) | From preparation to pain quantification |
-| 4 | [Solution Design](docs/04-solution-design/boat-framework.md) | Architecting solutions that win, not just work |
-| 5 | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | From harbor tour to revenue-generating narrative |
-| 6 | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | Control, criteria, execution, and the technical win |
-| 7 | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | Pricing literacy, RFP strategy, and proposal architecture |
-| 8 | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | Cloud, integration, AI/ML, and security fluency |
-| 9 | [Executive Selling & Soft Skills](docs/09-executive-selling/running-executive-briefings.md) | Influence, presence, negotiation, and empathy |
-| 10 | [Tools & Infrastructure](docs/10-tools/revenue-intelligence-tools.md) | The presales tech stack and productivity systems |
-| 11 | [Metrics & Continuous Improvement](docs/11-metrics/demo-to-poc-conversion.md) | Measuring what matters and getting better |
-| 12 | [Scaling Presales Teams](docs/12-scaling/ae-to-se-ratio.md) | For SE managers and presales leaders |
+| 0 | [Start Here](docs/00-start-here/what-is-presales.md) | **For Absolute Beginners:** Grasping the bare-bones definition of the SE role, baseline expectations, and what a "day in the life" actually looks like during an enterprise deal cycle. |
+| 1 | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | **The Mindset Shift:** Evolving your identity from a reactive technical resource to a proactive Revenue Architect. Deep dive into career progression and the critical AE/SE partnership. |
+| 2 | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | **Active Selling:** Learning to grade evaluating criteria objectively, spotting pipeline liabilities before they hit the forecast, and actively driving the commercial close alongside the AE. |
+| 3 | [Discovery Framework](docs/03-discovery/pre-call-research.md) | **Root Cause Extraction:** Moving past generic feature checklists. Uncovering quantifiable pain points and establishing unshakeable technical credibility in the first five minutes of a call. |
+| 4 | [Solution Design](docs/04-solution-design/boat-framework.md) | **Architecture Decisions:** Translating unstructured business requirements into a defensible technical blueprint. Structuring architectures that outflank competitors early in the cycle. |
+| 5 | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | **Storytelling at Scale:** Abolishing the standard "harbor tour" format. Designing high-contrast narratives that map platform capabilities directly to executive mandates and business value. |
+| 6 | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | **Evaluation Governance:** Establishing rigid success criteria, averting scope creep, converting free engagements into paid evaluations, and definitively securing the Technical Win. |
+| 7 | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | **Protecting Margins:** Understanding SaaS pricing dynamics, responding to predatory RFPs strategically, and ensuring that technical recommendations never erode long-term deal margins. |
+| 8 | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | **System Fluency:** High-level translations of Cloud architectures, API/Integration standards, Security protocols, and separating real GenAI capabilities from transient market fluff. |
+| 9 | [Executive Selling](docs/09-executive-selling/running-executive-briefings.md) | **The C-Suite Pitch:** Adjusting altitude. How to talk to CIOs and CFOs, handling extreme objections gracefully, and projecting absolute confidence under intense executive scrutiny. |
+| 10 | [Tools & Analytics](docs/10-tools/revenue-intelligence-tools.md) | **The Tech Stack:** Exploring the platforms used by top-tier SEs (Gong, CRM integrations) to analyze win rates, optimize demo delivery, and surface actionable competitive intelligence. |
+| 11 | [Metrics & Improvement](docs/11-metrics/demo-to-poc-conversion.md) | **Data-Driven Growth:** Identifying which metrics actually matter (Demo-to-POC conversion, Technical Win Rate). Building a culture of continuous improvement through ruthless deal post-mortems. |
+| 12 | [Scaling Teams](docs/12-scaling/ae-to-se-ratio.md) | **For Leadership:** Defining optimal AE-to-SE ratios, implementing rigorous hiring templates for top-tier talent, performance management, and building robust technical enablement engines. |
 
 ---
 

@@ -517,28 +517,25 @@
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 1rem;
   margin: 2rem 0 3rem 0;
 }
 
 .skill-pill {
-  background: white;
-  border: 1px solid #e2e8f0;
-  padding: 0.6rem 1.25rem;
-  border-radius: 50px;
+  background-color: #f4f6fc;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
   color: #1e3a8a;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
   transition: all 0.2s;
   cursor: default;
 }
 
 .skill-pill:hover {
-  background: #f0f7ff;
-  border-color: #cbd5e1;
+  background-color: #e2e8f0;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.05);
 }
 
 /* Status Pill */
@@ -577,12 +574,67 @@
 }
 
 /* Playbook table specific styling */
+.markdown-section table {
+  border: none !important;
+  box-shadow: none !important;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.markdown-section table tr,
+.markdown-section table th,
+.markdown-section table td {
+  border: none !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.markdown-section table th {
+  border-bottom: 2px solid #e2e8f0 !important;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 1.5rem 1rem 0.5rem 0.25rem !important;
+}
+
+.markdown-section table tr:nth-child(odd),
+.markdown-section table tr:nth-child(even) {
+  background-color: transparent !important;
+}
+
+.markdown-section table td {
+  padding: 1.5rem 1rem 1.5rem 0.25rem !important;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.markdown-section table td:first-child {
+  font-weight: 700;
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  width: 5%;
+}
+
+.markdown-section table td:nth-child(2) {
+  width: 25%;
+}
+
 .markdown-section table td a {
   text-decoration: none !important;
-  color: #1e3a8a;
-  font-weight: 500;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .markdown-section table td a:hover {
-  color: #3b82f6;
+  color: #1e3a8a;
+}
+
+.markdown-section table td strong {
+  color: #1e3a8a;
+  font-weight: 700;
 }
