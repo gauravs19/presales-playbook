@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POC Plan &amp; Success Criteria — Presales Playbook Template</title>
+<link rel="stylesheet" href="_template.css">
+<style>:root{--accent:#047857;--accent-bg:#d1fae5;}</style>
+</head>
+<body>
+<div class="toolbar">
+  <a href="../../../#/docs/13-templates/poc-plan-success-criteria">&larr; Back to the playbook</a>
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<header class="tpl-head">
+  <span class="badge">Stage 05 · Prove</span>
+  <h1>POC Plan &amp; Success Criteria</h1>
+  <p class="subtitle">The evaluation's contract: what will be proven, how success is measured, who does what, and what happens when it ends. An unstructured POC is free consulting with a deadline nobody agreed to.</p>
+  <div class="meta-grid">
+    <div class="meta-card"><span class="k">Purpose</span><span class="v">Lock criteria, scope, resources, and the commercial decision the POC feeds</span></div>
+    <div class="meta-card"><span class="k">When to use</span><span class="v">Before ANY POC work begins — no signed plan, no sandbox access</span></div>
+    <div class="meta-card"><span class="k">Owner</span><span class="v">SE, co-signed by the prospect's evaluation lead</span></div>
+    <div class="meta-card"><span class="k">Time &amp; output</span><span class="v">~40 min draft + 1 negotiation meeting · to both sponsors, legal if paid</span></div>
+  </div>
+</header>
+
+<div class="guide">
+  <h3>How to use this document</h3>
+  <ul>
+    <li><strong>Three criteria, never ten.</strong> Ten criteria means nobody agreed what matters. Everything else is a demo topic, not an evaluation gate.</li>
+    <li><strong>The decision link in section 1 is the whole document.</strong> A POC that ends in "we'll discuss internally" was never an evaluation — it was a free pilot.</li>
+    <li><strong>Make their commitments as visible as yours.</strong> Named humans and hours turn "we couldn't find time to load the data" into a jointly owned slip.</li>
+    <li><strong>The signature is the point.</strong> Unsigned, this is a wish list. Signed, it's what stops moving goalposts — new asks route through change control, cheerfully.</li>
+  </ul>
+</div>
+
+<div class="field"><span class="lbl">Account:</span> <span class="blank"></span> &nbsp; <span class="lbl">Start:</span> <span class="blank short"></span> &rarr; <span class="lbl">End:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Type:</span> &#9744; free &nbsp; &#9744; paid &nbsp; <span class="lbl">Vendor SE:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Eval lead:</span> <span class="blank short"></span></div>
+
+<h2>1 · Purpose &amp; Decision Link</h2>
+<div class="field">This evaluation exists to answer ONE question:</div>
+<div class="quotebox">"Can <span class="blank short"></span> <span class="blank long"></span> under <span class="blank short"></span>'s conditions?"</div>
+<p class="sec-note"><span class="eg-tag">Worked example</span><em>"Can the platform auto-recover 95% of pipeline failures without operator action, at NorthBridge's production volumes?"</em></p>
+<div class="field"><span class="lbl">If success criteria are met, the account commits to:</span> <span class="blank long"></span></div>
+<div class="field"><span class="lbl">&hellip;by (date):</span> <span class="blank short"></span> <span class="note">— advance to commercial negotiation / executive review. No decision link, no POC.</span></div>
+
+<h2>2 · Success Criteria — the 3 Mandatory Requirements</h2>
+<table>
+  <tr><th style="width:4%">#</th><th>Requirement</th><th style="width:22%">Measured how</th><th style="width:14%">Target</th><th style="width:11%">Pass / Fail</th></tr>
+  <tr class="example"><td>—</td><td><span class="eg-tag">Example</span>Auto-recovery of failed pipeline runs</td><td>Induced-failure test set (20 scenarios), jointly executed wk 2</td><td>&ge; 19 / 20 recovered &lt; 5 min</td><td></td></tr>
+  <tr class="tall"><td>1</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>2</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>3</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+</table>
+<div class="rule">Criteria are <strong>LOCKED</strong> as of <span class="blank short"></span>, signed below. Additions require a <strong>signed change request</strong> and may extend the timeline and/or convert the evaluation to paid.</div>
+
+<h2>3 · Scope</h2>
+<div class="field"><span class="lbl">In scope</span> (datasets, integrations, user count, environments): <span class="blank long"></span></div>
+<div class="field"><span class="blank long"></span></div>
+<div class="field"><span class="lbl">Out of scope</span> (name the likely asks explicitly): <span class="blank long"></span></div>
+<div class="field"><span class="lbl">Data provided by prospect, by:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Format / quality expectations:</span> <span class="blank"></span></div>
+
+<h2>4 · Timeline (max 3 weeks — longer means the criteria are wrong)</h2>
+<table>
+  <tr><th style="width:11%">Week</th><th>Milestone</th><th style="width:32%">Exit gate</th></tr>
+  <tr><td>1</td><td>Environment live, data loaded, access confirmed</td><td>Criterion #1 test ready</td></tr>
+  <tr><td>2</td><td>Core scenarios executed, results logged</td><td>Criteria #1–2 evidenced</td></tr>
+  <tr><td>3</td><td>Edge cases, joint review, wrap</td><td>Scorecard review meeting held</td></tr>
+</table>
+
+<h2>5 · Resource Commitments</h2>
+<table>
+  <tr><th style="width:14%">Side</th><th style="width:20%">Person (named)</th><th>Role in the evaluation</th><th style="width:20%">Committed hrs / wk</th></tr>
+  <tr><td>Vendor</td><td class="fill"></td><td>SE / evaluation owner</td><td class="fill"></td></tr>
+  <tr><td>Prospect</td><td class="fill"></td><td>Evaluation lead — runs their side, collects verdicts</td><td class="fill"></td></tr>
+  <tr><td>Prospect</td><td class="fill"></td><td>Data / infrastructure access owner</td><td class="fill"></td></tr>
+  <tr><td>Prospect</td><td class="fill"></td><td>Hands-on evaluator(s)</td><td class="fill"></td></tr>
+</table>
+<div class="rule"><strong>Stall clause:</strong> if prospect-side tasks slip more than <span class="blank short"></span> business days, the timeline extends day-for-day and <strong>both executive sponsors are notified</strong>.</div>
+
+<h2>6 · Cadence &amp; Communication</h2>
+<ul class="check">
+  <li><span class="blank short"></span>&times;/week 15-minute stand-up — progress vs. criteria ONLY (not a support channel, not free consulting)</li>
+  <li>Weekly scorecard email to both sponsors: &#128994; / &#128993; / &#128308; per criterion, one line of context each</li>
+  <li>Escalation path: <span class="blank long"></span></li>
+</ul>
+
+<h2>7 · End State — <span class="blank short"></span> (no extensions by default)</h2>
+<ul class="check">
+  <li>Criteria met &rarr; <strong>Technical Win Report</strong> issued within 3 business days; next step per &sect;1 executes</li>
+  <li>Criteria not met &rarr; joint findings review; explicit go / no-go — no zombie POC</li>
+  <li>Sandbox decommissioned; prospect data deleted / returned by <span class="blank short"></span>, confirmed by <span class="blank short"></span></li>
+</ul>
+
+<div class="dd">
+  <div class="do"><strong>Do</strong>
+    <ul>
+      <li>Seed criteria from the discovery summary's decision criteria</li>
+      <li>Hold the "signed before sandbox" line — the deal respects it</li>
+      <li>Route every new ask through the change-request clause</li>
+    </ul>
+  </div>
+  <div class="dont"><strong>Don't</strong>
+    <ul>
+      <li>Start building "to keep momentum" while the plan is unsigned</li>
+      <li>Accept vague criteria ("performs well at scale")</li>
+      <li>Let stand-ups become unpaid implementation support</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sig-row">
+  <div class="sig">Vendor SE — name, signature, date</div>
+  <div class="sig">Prospect evaluation lead — name, signature, date</div>
+</div>
+
+<footer class="tpl-foot">Template 13.5.1 · Part of <a href="https://gauravs19.github.io/presales-playbook/">The Enterprise Presales Playbook</a> — free &amp; open source. Companion chapters: <em>The 3-Mandatory-Requirements Rule</em> · <em>Locking the Sandbox</em> · <em>POC vs POV</em>.</footer>
+</body>
+</html>
