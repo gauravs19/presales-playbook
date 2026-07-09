@@ -650,8 +650,8 @@
   margin: 24px auto 48px;
   padding: 80px 24px 64px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #172554 100%);
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.35);
+  background: linear-gradient(135deg, #020617 0%, #0e1c46 55%, #0a1130 100%);
+  box-shadow: 0 20px 50px rgba(2, 6, 23, 0.5);
 }
 
 .hero-dark canvas {
