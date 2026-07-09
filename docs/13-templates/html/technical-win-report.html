@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technical Win Report — Presales Playbook Template</title>
+<link rel="stylesheet" href="_template.css">
+<style>:root{--accent:#047857;--accent-bg:#d1fae5;}</style>
+</head>
+<body>
+<div class="toolbar">
+  <a href="../../../#/docs/13-templates/technical-win-report">&larr; Back to the playbook</a>
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<header class="tpl-head">
+  <span class="badge">Stage 05 · Prove</span>
+  <h1>Technical Win Report</h1>
+  <p class="subtitle">The formal declaration that converts a finished POC into commercial momentum — results vs. signed criteria, stakeholder verdicts in their own words, and the next step their signature already committed to.</p>
+  <div class="meta-grid">
+    <div class="meta-card"><span class="k">Purpose</span><span class="v">Declare the win in writing before its half-life decays; force the committed next step</span></div>
+    <div class="meta-card"><span class="k">When to use</span><span class="v">Within 3 business days of the POC end date</span></div>
+    <div class="meta-card"><span class="k">Owner</span><span class="v">SE</span></div>
+    <div class="meta-card"><span class="k">Time &amp; output</span><span class="v">~20 min · to eval lead + exec sponsor, AE, your leadership</span></div>
+  </div>
+</header>
+
+<div class="guide">
+  <h3>How to use this document</h3>
+  <ul>
+    <li><strong>Collect the verdicts BEFORE writing.</strong> Ask each evaluator "in your own words, did this meet the bar?" while the wins are fresh — their quotes close deals in rooms you'll never enter.</li>
+    <li><strong>Quote the signed plan verbatim.</strong> Criteria and the &sect;1 commitment are copy-pasted, never paraphrased. Nobody argues with their own signature.</li>
+    <li><strong>Put the caveats in yourself.</strong> A report with zero caveats reads as marketing and invites their engineers to supply the caveats for you — in a meeting you're not in.</li>
+    <li><strong>Send it up, not just across.</strong> The eval lead knows you won; this document exists for the economic buyer and procurement, who only ever see artifacts.</li>
+  </ul>
+</div>
+
+<div class="field"><span class="lbl">Account:</span> <span class="blank"></span> &nbsp; <span class="lbl">POC period:</span> <span class="blank short"></span> &rarr; <span class="blank short"></span> &nbsp; <span class="lbl">Signed plan dated:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Author:</span> <span class="blank short"></span></div>
+
+<h2>1 · Verdict</h2>
+<div class="rule">The evaluation defined in the signed POC Plan of <span class="blank short"></span> is <strong>COMPLETE</strong>.<br>
+Result: <strong><span class="blank short"></span> of 3</strong> success criteria met. &nbsp;&rarr;&nbsp; <strong>TECHNICAL WIN &nbsp;&#9744; DECLARED &nbsp;&#9744; NOT DECLARED</strong></div>
+
+<h2>2 · Results vs. Signed Criteria</h2>
+<table>
+  <tr><th style="width:4%">#</th><th>Criterion (verbatim from signed plan)</th><th style="width:13%">Target</th><th style="width:13%">Achieved</th><th style="width:9%">Verdict</th><th style="width:20%">Evidence (link / log / screenshot)</th></tr>
+  <tr class="example"><td>—</td><td><span class="eg-tag">Example</span>Auto-recovery of failed pipeline runs</td><td>&ge; 19/20 &lt; 5 min</td><td>20/20, median 2m 40s</td><td>&#9989;</td><td>Joint test log, 14 Aug, signed by eval lead</td></tr>
+  <tr class="tall"><td>1</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>2</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>3</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+</table>
+
+<h2>3 · What This Proves in Business Terms</h2>
+<p class="sec-note">One sentence per criterion. Numbers from discovery, results from the POC. <span class="eg-tag">Example</span><em>"Criterion #1 met means the ~40 engineer-hours/month currently lost to pipeline firefighting (your VP Eng's figure, 12 Mar) is recoverable from day one."</em></p>
+<div class="field">Criterion #1 met means: <span class="blank long"></span></div>
+<div class="field">Criterion #2 met means: <span class="blank long"></span></div>
+<div class="field">Criterion #3 met means: <span class="blank long"></span></div>
+
+<h2>4 · Evaluation Team Verdicts (collected before this report was sent)</h2>
+<table>
+  <tr><th style="width:18%">Name</th><th style="width:22%">Role</th><th>Verdict, in their words</th></tr>
+  <tr class="example"><td><span class="eg-tag">Example</span>A. Datta</td><td>Evaluation lead</td><td>"It did everything we defined, faster than we specified. I'm recommending it."</td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill">"</td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill">"</td></tr>
+</table>
+
+<h2>5 · Observations &amp; Caveats</h2>
+<p class="sec-note">Candour builds trust; hiding these kills it later. Workarounds used, config caveats, anything roadmap-dependent — stated plainly.</p>
+<div class="field">&bull; <span class="blank long"></span></div>
+<div class="field">&bull; <span class="blank long"></span></div>
+
+<h2>6 · Agreed Next Step (per &sect;1 of the signed POC Plan)</h2>
+<div class="field">The plan states: <em>"If success criteria are met, <span class="blank short"></span> commits to <span class="blank long"></span>."</em></div>
+<div class="field">Criteria are met. <span class="lbl">Proposed date for that step:</span> <span class="blank short"></span> <span class="note">(within 10 business days — momentum decays)</span></div>
+
+<h2>7 · Environment Close-Out</h2>
+<div class="field"><span class="lbl">Sandbox decommissioned:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Prospect data deleted / returned:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Confirmed by:</span> <span class="blank short"></span></div>
+
+<div class="dd">
+  <div class="do"><strong>Do</strong>
+    <ul>
+      <li>Ship within 3 days — the win has a half-life measured in days</li>
+      <li>Attach evidence to every criterion row</li>
+      <li>Send to the executive layer, via the champion</li>
+    </ul>
+  </div>
+  <div class="dont"><strong>Don't</strong>
+    <ul>
+      <li>Wait for the prospect to "socialise it internally"</li>
+      <li>Paraphrase the signed criteria</li>
+      <li>Ship a zero-caveat report — nobody believes those</li>
+    </ul>
+  </div>
+</div>
+
+<div class="checklist-final">
+  <h3>Before this report ships</h3>
+  <ul class="check">
+    <li>Verdicts collected verbally and quoted with permission</li>
+    <li>Criteria text matches the signed plan word-for-word</li>
+    <li>Caveats section has at least one honest entry</li>
+    <li>Next-step date proposed, AE aligned on the follow-through</li>
+  </ul>
+</div>
+
+<footer class="tpl-foot">Template 13.5.2 · Part of <a href="https://gauravs19.github.io/presales-playbook/">The Enterprise Presales Playbook</a> — free &amp; open source. Companion chapters: <em>The Formal Technical Win Declaration</em> · <em>Turning the Technical Win Into Commercial Momentum</em>.</footer>
+</body>
+</html>
