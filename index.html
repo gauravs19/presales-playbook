@@ -124,23 +124,23 @@
     }, window.$docsify.plugins);
   </script>
 
-  <!-- Custom Hero Script for Landing Page: deal-flow pipeline animation -->
+  <!-- Custom Hero Script for Landing Page: radar sweep animation -->
   <script>
     window.$docsify.plugins = [].concat(window.$docsify.plugins, function (hook) {
       hook.doneEach(function () {
-        // Deal-flow pipeline: streams of deals flowing left-to-right through
-        // 7 faint stage gates (Qualify ... Close), mirroring the journey strip below.
-        const canvas = document.getElementById('deal-flow-canvas');
+        // Radar sweep: a slow rotating beam over faint range rings; blips (deals)
+        // light up as the beam passes them, then fade until the next revolution.
+        const canvas = document.getElementById('hero-radar-canvas');
         if (!canvas || canvas.dataset.initialized) return;
         canvas.dataset.initialized = 'true';
 
         const ctx = canvas.getContext('2d');
-        const GATES = 7;
-        const LANES = 6;
-        const DOTS_PER_LANE = 3;
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const REV_MS = 18000;          // one revolution ~18s
+        const TAU = Math.PI * 2;
+        const BLIP_COUNT = 14;
 
-        let W = 0, H = 0, gateXs = [], laneYs = [];
+        let W = 0, H = 0, CX = 0, CY = 0, R = 0;
 
         const resize = () => {
           const dpr = window.devicePixelRatio || 1;
@@ -151,94 +151,105 @@
           canvas.style.width = W + 'px';
           canvas.style.height = H + 'px';
           ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-          const pad = W * 0.06;
-          gateXs = Array.from({ length: GATES }, (_, i) => pad + (i * (W - 2 * pad)) / (GATES - 1));
-          laneYs = Array.from({ length: LANES }, (_, i) => H * (0.14 + (i * 0.72) / (LANES - 1)));
+          CX = W / 2;
+          CY = H / 2;
+          R = Math.sqrt(CX * CX + CY * CY); // reach the hero corners
         };
         window.addEventListener('resize', resize);
         resize();
 
-        // Each dot: lane index, x position, base speed, phase for wobble
-        const dots = [];
-        for (let l = 0; l < LANES; l++) {
-          for (let d = 0; d < DOTS_PER_LANE; d++) {
-            dots.push({
-              lane: l,
-              x: Math.random() * W,
-              speed: 0.5 + Math.random() * 0.7,
-              phase: Math.random() * Math.PI * 2,
-            });
-          }
-        }
+        // Blips: fixed polar positions, re-randomized occasionally on wrap
+        const blips = Array.from({ length: BLIP_COUNT }, () => ({
+          angle: Math.random() * TAU,
+          radius: 0.25 + Math.random() * 0.68, // fraction of R
+          size: 1.6 + Math.random() * 1.6,
+        }));
 
-        const SLOW_RADIUS = 46; // px around a gate where dots decelerate ("the stage takes work")
+        const drawStatic = () => {
+          // Range rings
+          ctx.lineWidth = 1;
+          [0.22, 0.42, 0.62, 0.82].forEach((f) => {
+            ctx.beginPath();
+            ctx.arc(CX, CY, R * f, 0, TAU);
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.055)';
+            ctx.stroke();
+          });
+          // Crosshair lines
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.035)';
+          ctx.beginPath(); ctx.moveTo(0, CY); ctx.lineTo(W, CY); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(CX, 0); ctx.lineTo(CX, H); ctx.stroke();
+        };
 
         const drawFrame = (t) => {
           ctx.clearRect(0, 0, W, H);
+          drawStatic();
 
-          // Lane guide lines — barely visible
-          ctx.lineWidth = 1;
-          laneYs.forEach((y) => {
-            ctx.beginPath();
-            ctx.moveTo(0, y);
-            ctx.lineTo(W, y);
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.045)';
-            ctx.stroke();
-          });
+          const beam = reducedMotion ? TAU * 0.12 : ((t % REV_MS) / REV_MS) * TAU;
 
-          // Stage gates — faint rings with a slow breathing pulse
-          gateXs.forEach((x, i) => {
-            const pulse = reducedMotion ? 0 : Math.sin(t / 900 + i * 0.9) * 0.03;
-            ctx.beginPath();
-            ctx.moveTo(x, H * 0.06);
-            ctx.lineTo(x, H * 0.94);
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
-            ctx.stroke();
-            laneYs.forEach((y) => {
+          if (!reducedMotion) {
+            // Sweep wedge: thin trailing gradient behind the beam edge
+            const TRAIL = TAU * 0.16;
+            const STEPS = 26;
+            for (let s = 0; s < STEPS; s++) {
+              const a0 = beam - (TRAIL * (s + 1)) / STEPS;
+              const a1 = beam - (TRAIL * s) / STEPS;
               ctx.beginPath();
-              ctx.arc(x, y, 5, 0, Math.PI * 2);
-              ctx.strokeStyle = 'rgba(255, 255, 255, ' + (0.13 + pulse) + ')';
-              ctx.stroke();
-            });
-          });
-
-          // Deal dots — drift right, slow near gates, small trailing tail
-          dots.forEach((p) => {
-            const y = laneYs[p.lane] + (reducedMotion ? 0 : Math.sin(t / 1400 + p.phase) * 2.5);
-            if (!reducedMotion) {
-              let nearest = Infinity;
-              gateXs.forEach((gx) => {
-                const dist = Math.abs(p.x - gx);
-                if (dist < nearest) nearest = dist;
-              });
-              const factor = nearest < SLOW_RADIUS ? 0.22 + 0.78 * (nearest / SLOW_RADIUS) : 1;
-              p.x += p.speed * factor;
-              if (p.x > W + 12) { p.x = -12; p.speed = 0.5 + Math.random() * 0.7; }
+              ctx.moveTo(CX, CY);
+              ctx.arc(CX, CY, R, a0, a1);
+              ctx.closePath();
+              ctx.fillStyle = 'rgba(147, 197, 253, ' + (0.05 * (1 - s / STEPS)) + ')';
+              ctx.fill();
             }
-            const grad = ctx.createLinearGradient(p.x - 26, y, p.x, y);
-            grad.addColorStop(0, 'rgba(147, 197, 253, 0)');
-            grad.addColorStop(1, 'rgba(147, 197, 253, 0.35)');
-            ctx.strokeStyle = grad;
+            // Beam leading edge
+            ctx.beginPath();
+            ctx.moveTo(CX, CY);
+            ctx.lineTo(CX + Math.cos(beam) * R, CY + Math.sin(beam) * R);
+            ctx.strokeStyle = 'rgba(191, 219, 254, 0.28)';
             ctx.lineWidth = 1.5;
-            ctx.beginPath();
-            ctx.moveTo(p.x - 26, y);
-            ctx.lineTo(p.x, y);
             ctx.stroke();
+          }
+
+          // Blips: brightest just after the beam passes, fading until next pass
+          blips.forEach((b) => {
+            const x = CX + Math.cos(b.angle) * R * b.radius;
+            const y = CY + Math.sin(b.angle) * R * b.radius;
+            let alpha;
+            if (reducedMotion) {
+              alpha = 0.3;
+            } else {
+              let behind = beam - b.angle;         // how far past the blip the beam is
+              behind = ((behind % TAU) + TAU) % TAU;
+              alpha = Math.max(0, 0.85 * (1 - behind / (TAU * 0.55)));
+            }
+            if (alpha <= 0.02) return;
+            const glow = ctx.createRadialGradient(x, y, 0, x, y, b.size * 5);
+            glow.addColorStop(0, 'rgba(147, 197, 253, ' + alpha * 0.5 + ')');
+            glow.addColorStop(1, 'rgba(147, 197, 253, 0)');
+            ctx.fillStyle = glow;
             ctx.beginPath();
-            ctx.arc(p.x, y, 2.2, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.65)';
+            ctx.arc(x, y, b.size * 5, 0, TAU);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(x, y, b.size, 0, TAU);
+            ctx.fillStyle = 'rgba(255, 255, 255, ' + alpha + ')';
             ctx.fill();
           });
+
+          // Center hub
+          ctx.beginPath();
+          ctx.arc(CX, CY, 2.5, 0, TAU);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.18)';
+          ctx.fill();
         };
 
         if (reducedMotion) {
-          drawFrame(0); // single static frame — gates, lanes, resting dots
+          drawFrame(0); // static frame: rings, crosshair, resting blips
           return;
         }
 
         const animate = (t) => {
           // Stop cleanly if the user navigated away from the landing page
-          if (!document.getElementById('deal-flow-canvas')) return;
+          if (!document.getElementById('hero-radar-canvas')) return;
           drawFrame(t);
           requestAnimationFrame(animate);
         };
