@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-demo">Stage 04 · Demo</span>
+  <a class="stage-badge" href="docs/13-templates/html/demo-storyboard.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 A demo without a storyboard defaults to a harbor tour — every feature gets thirty seconds, and no feature gets remembered. This template operationalises [Abolishing the Harbor Tour](docs/05-demo-excellence/abolishing-harbor-tour.md), the [5-Minute Aha! Rule](docs/05-demo-excellence/aha-moment.md), [Day in the Life Narrative Construction](docs/05-demo-excellence/day-in-the-life-narrative.md), and the [30-Minute Pre-Flight Checklist](docs/05-demo-excellence/pre-flight-checklist.md).

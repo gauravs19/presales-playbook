@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-poc">Stage 05 · Prove</span>
+  <a class="stage-badge" href="docs/13-templates/html/poc-plan-success-criteria.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 An unstructured POC is free consulting with a deadline nobody agreed to. This document is the evaluation's contract: what will be proven, how success is measured, who does what, and what happens when it ends. It operationalises the [3-Mandatory-Requirements Rule](docs/06-poc-execution/3-mandatory-requirements.md), [Locking the Sandbox](docs/06-poc-management/locking-the-sandbox.md), [POC vs POV](docs/06-poc-execution/poc-vs-pov.md), and [Prospect Resource Accountability](docs/06-poc-execution/prospect-accountability.md).

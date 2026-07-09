@@ -6,6 +6,7 @@ This section contains **twelve copy-paste templates**, one for every stage of th
 
 - **Stage-tagged** — you always know *when* in the deal it applies.
 - **Plain markdown** — paste it into your notes tool, wiki, doc editor, or CRM. No proprietary formats.
+- **Printable** — every template also ships as a rich **HTML version** with worked examples, guidance, and fill-in fields, ready to print or save as PDF. Look for the 🖨️ link at the top of each page.
 - **Time-boxed** — every artifact is designed to be completed in under 45 minutes.
 - **Cross-referenced** — each links back to the playbook chapters that teach the thinking behind it.
 

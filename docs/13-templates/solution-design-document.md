@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-design">Stage 03 · Design</span>
+  <a class="stage-badge" href="docs/13-templates/html/solution-design-document.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 A deal-grade design document is not an implementation spec — it's a persuasion instrument with an audit trail. It must survive three audiences: the architect who attacks it, the CFO who skims it, and the delivery team who inherits it. This template operationalises the [B.O.A.T. Framework](docs/04-solution-design/boat-framework.md), [Defending Your Design Choices](docs/04-solution-design/defending-design-choices.md), and [Version Controlling Designs Across a Long Sales Cycle](docs/04-solution-design/version-controlling-designs.md).

@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-discover">Stage 02 · Discover</span>
+  <a class="stage-badge" href="docs/13-templates/html/discovery-call-plan.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Improvisation in enterprise sales is a polite word for unpreparedness. This plan compresses [Pre-Call Research](docs/03-discovery/pre-call-research.md), [Hypothesis-Led Discovery](docs/03-discovery/hypothesis-led-discovery.md), and the [Pre-Flight AE Alignment Checklist](docs/03-discovery/ae-alignment-checklist.md) into one page you and the AE agree on before dialing in.

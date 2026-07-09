@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution Design Document — Presales Playbook Template</title>
+<link rel="stylesheet" href="_template.css">
+<style>:root{--accent:#6d28d9;--accent-bg:#ede9fe;}</style>
+</head>
+<body>
+<div class="toolbar">
+  <a href="../../../#/docs/13-templates/solution-design-document">&larr; Back to the playbook</a>
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<header class="tpl-head">
+  <span class="badge">Stage 03 · Design</span>
+  <h1>Solution Design Document</h1>
+  <p class="subtitle">A deal-grade design: current state, target state, decision log, assumptions register — built to survive the architect who attacks it, the CFO who skims it, and the delivery team who inherits it.</p>
+  <div class="meta-grid">
+    <div class="meta-card"><span class="k">Purpose</span><span class="v">A defensible technical blueprint that traces every choice back to a quantified pain</span></div>
+    <div class="meta-card"><span class="k">When to use</span><span class="v">After discovery is documented, before the first tailored demo; update at every scope change</span></div>
+    <div class="meta-card"><span class="k">Owner</span><span class="v">SE / Solutions Architect</span></div>
+    <div class="meta-card"><span class="k">Time &amp; output</span><span class="v">~45 min for v0.1 · to prospect tech team, champion, delivery review</span></div>
+  </div>
+</header>
+
+<div class="guide">
+  <h3>How to use this document</h3>
+  <ul>
+    <li><strong>The decision log is your armor.</strong> When their architect asks "why not event-driven?", the answer is already written — considered, rejected, reasons documented. Nothing builds trust faster than showing you rejected your own first idea.</li>
+    <li><strong>The assumptions register is your insurance.</strong> Every unverified assumption gets a name and a date; when scope explodes in month four, the register proves it was flagged in month one.</li>
+    <li><strong>Out-of-scope is a commercial clause.</strong> It's what the AE points at when the prospect asks for "one small addition." Write it as specifically as the inclusions.</li>
+    <li><strong>Version on every change.</strong> A design that silently mutates across a nine-month cycle is a Frankenstein build in progress.</li>
+  </ul>
+</div>
+
+<div class="field"><span class="lbl">Account:</span> <span class="blank"></span> &nbsp; <span class="lbl">Version:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Date:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Author:</span> <span class="blank short"></span> &nbsp; <span class="lbl">Reviewed by:</span> <span class="blank short"></span></div>
+
+<h2>0 · Executive Summary (write LAST, read FIRST — max 5 sentences)</h2>
+<p class="sec-note"><span class="eg-tag">Worked example</span><em>"Manual reconciliation costs NorthBridge ~$1.8M/yr and delays financial close by 3 days. The proposed design automates matching via our streaming engine, keeping the ERP as system of record. It delivers same-day close within 10 weeks at an estimated $350–420K yr-1 cost. Key risks are data quality at the Chennai plant and SSO integration, both mitigated by phase gates. Decision requested: approve phase 1 scope by 25 July."</em></p>
+<div class="quotebox">
+  <span class="blank short"></span> costs <span class="blank short"></span> approximately <span class="blank short"></span> per <span class="blank short"></span>.
+  The proposed design <span class="blank"></span> by <span class="blank"></span>.
+  It delivers <span class="blank"></span> within <span class="blank short"></span>, at an estimated <span class="blank short"></span>.
+  Key risks are <span class="blank short"></span> and <span class="blank short"></span>, mitigated by <span class="blank"></span>.
+  Decision requested: <span class="blank long"></span>
+</div>
+
+<h2>1 · Business Context (from discovery — link, don't repeat)</h2>
+<div class="field"><span class="lbl">Pains addressed:</span> #1 <span class="blank"></span> #2 <span class="blank"></span> #3 <span class="blank"></span></div>
+<div class="field"><span class="lbl">Success criteria this design must satisfy:</span> <span class="blank long"></span></div>
+<div class="field"><span class="lbl">Discovery summary reference / date:</span> <span class="blank"></span></div>
+
+<h2>2 · Current State ("as-is")</h2>
+<p class="sec-note">One diagram + one paragraph. <strong>Name what works</strong> — you're replacing a bottleneck, not insulting their team.</p>
+<div style="border:1.5px dashed var(--line); border-radius:8px; height:150px; display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:13px; margin:10px 0 12px;">[ as-is diagram — max 8 boxes, their terminology ]</div>
+<div class="field"><span class="blank long"></span></div>
+<div class="field"><span class="blank long"></span></div>
+
+<h2>3 · Target State ("to-be")</h2>
+<div style="border:1.5px dashed var(--line); border-radius:8px; height:150px; display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:13px; margin:10px 0 10px;">[ to-be diagram — same visual grammar as the as-is, so the delta is legible ]</div>
+<table>
+  <tr><th style="width:22%">Component</th><th>Role in the solution</th><th style="width:22%">New / existing / replaced</th></tr>
+  <tr class="example"><td><span class="eg-tag">Example</span>Streaming match engine</td><td>Replaces the nightly batch reconciliation job; consumes ERP events in real time</td><td>New (our platform)</td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+</table>
+
+<h2>4 · Minimum Viable Transformation</h2>
+<div class="field"><span class="lbl">Phase 1 (proves value):</span> <span class="blank long"></span> — live in <span class="blank short"></span> weeks</div>
+<div class="field"><span class="lbl">Phase 2 (scales it):</span> <span class="blank long"></span></div>
+<div class="field"><span class="lbl">Explicitly OUT of scope:</span> <span class="blank long"></span></div>
+<div class="field"><span class="blank long"></span></div>
+
+<h2>5 · Key Design Decisions</h2>
+<table>
+  <tr><th style="width:4%">#</th><th style="width:20%">Decision</th><th style="width:25%">Alternatives considered</th><th style="width:24%">Why this one</th><th>Trade-off accepted</th></tr>
+  <tr class="example"><td>—</td><td><span class="eg-tag">Example</span>Keep ERP as system of record</td><td>(a) Migrate ledger to platform (b) dual-write</td><td>Lowest risk; their audit process is ERP-anchored</td><td>+150ms read latency on lookups</td></tr>
+  <tr class="tall"><td>1</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>2</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td>3</td><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+</table>
+
+<h2>6 · Assumptions Register</h2>
+<p class="sec-note">Every unverified assumption is a deal risk with a fuse. Architect-suggested alternatives also get logged here, <strong>by name</strong> — their fingerprints on the document are your best review defense.</p>
+<table>
+  <tr><th style="width:4%">#</th><th>Assumption</th><th style="width:25%">Impact if wrong</th><th style="width:20%">Verified? (date / by)</th></tr>
+  <tr class="example"><td>—</td><td><span class="eg-tag">Example</span>SSO is standard SAML 2.0, not a custom LDAP fork</td><td>+3 weeks integration effort, phase-1 date slips</td><td>&#9744; open — verify with IT by 18 Jul</td></tr>
+  <tr class="tall"><td>1</td><td class="fill"></td><td class="fill"></td><td class="fill">&#9744;</td></tr>
+  <tr class="tall"><td>2</td><td class="fill"></td><td class="fill"></td><td class="fill">&#9744;</td></tr>
+  <tr class="tall"><td>3</td><td class="fill"></td><td class="fill"></td><td class="fill">&#9744;</td></tr>
+</table>
+
+<h2>7 · Integration &amp; Security Posture</h2>
+<div class="field"><span class="lbl">Authentication:</span> <span class="blank"></span> &nbsp; <span class="lbl">Data residency:</span> <span class="blank"></span></div>
+<div class="field"><span class="lbl">Encryption:</span> at rest <span class="blank short"></span> / in transit <span class="blank short"></span> &nbsp; <span class="lbl">Key management:</span> <span class="blank"></span></div>
+<div class="field"><span class="lbl">Compliance touchpoints (SOC2 / ISO 27001 / GDPR / DPDP / sector-specific):</span> <span class="blank long"></span></div>
+
+<h2>8 · Sizing &amp; Commercial Envelope (bands, not quotes)</h2>
+<div class="field"><span class="lbl">Licensing basis:</span> <span class="blank"></span> &nbsp; <span class="lbl">Infrastructure order-of-magnitude:</span> <span class="blank"></span></div>
+<div class="field"><span class="lbl">Services effort (T-shirt):</span> S / M / L / XL &nbsp;&asymp;&nbsp; <span class="blank short"></span> person-weeks &nbsp; <span class="lbl">Contingency:</span> 15% well-understood / 30% ambiguous scope</div>
+
+<h2>Version Log</h2>
+<table>
+  <tr><th style="width:9%">Ver</th><th style="width:15%">Date</th><th>What changed</th><th style="width:25%">Triggered by</th></tr>
+  <tr><td>0.1</td><td class="fill"></td><td>Initial draft</td><td>Discovery summary v1</td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  <tr class="tall"><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+</table>
+
+<div class="dd">
+  <div class="do"><strong>Do</strong>
+    <ul>
+      <li>Trace every section back to a pain with a number on it</li>
+      <li>Log the alternatives you rejected — and why</li>
+      <li>Invite their architect to break the design in a working session</li>
+    </ul>
+  </div>
+  <div class="dont"><strong>Don't</strong>
+    <ul>
+      <li>Write forty pages to impress engineers — decoration loses deals</li>
+      <li>Leave assumptions implicit "to keep it clean"</li>
+      <li>Let the design mutate without a version-log entry</li>
+    </ul>
+  </div>
+</div>
+
+<div class="checklist-final">
+  <h3>Before this design ships</h3>
+  <ul class="check">
+    <li>Executive summary written last, reads in under 60 seconds</li>
+    <li>Every decision row has at least one rejected alternative</li>
+    <li>Every assumption has an impact and a verification owner</li>
+    <li>Out-of-scope list reviewed with the AE (it's their negotiation armor)</li>
+    <li>Version log updated; previous version archived</li>
+  </ul>
+</div>
+
+<footer class="tpl-foot">Template 13.3.1 · Part of <a href="https://gauravs19.github.io/presales-playbook/">The Enterprise Presales Playbook</a> — free &amp; open source. Companion chapters: <em>B.O.A.T. Framework</em> · <em>Defending Your Design Choices</em> · <em>Version Controlling Designs</em>.</footer>
+</body>
+</html>
