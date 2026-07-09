@@ -1,5 +1,5 @@
 <div class="hero-dark">
-  <canvas id="neural-canvas"></canvas>
+  <canvas id="deal-flow-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-pill">Open Source · Practitioner-Built · Always Free</div>
     <h1 class="hero-title">The Enterprise<br/><em>Presales Playbook</em></h1>
