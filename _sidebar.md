@@ -340,3 +340,25 @@
     * [12.5.2 The Rise of the Technical GTM Function](docs/12-scaling/technical-gtm-future.md)
     * [12.5.3 Building a Personal Brand Outside Your Company](docs/12-scaling/personal-brand-for-ses.md)
     * [12.5.4 What the Best Presales Leaders Do](docs/12-scaling/what-best-presales-leaders-do.md)
+
+* **13. Templates & Artifacts**
+  * [13.0 The Template Library](docs/13-templates/README.md)
+  * 13.1 Qualify
+    * [13.1.1 Deal Qualification Scorecard](docs/13-templates/deal-qualification-scorecard.md)
+  * 13.2 Discover
+    * [13.2.1 Discovery Call Plan](docs/13-templates/discovery-call-plan.md)
+    * [13.2.2 Discovery Summary](docs/13-templates/discovery-summary.md)
+  * 13.3 Design
+    * [13.3.1 Solution Design Document](docs/13-templates/solution-design-document.md)
+  * 13.4 Demo
+    * [13.4.1 Demo Storyboard](docs/13-templates/demo-storyboard.md)
+  * 13.5 Prove
+    * [13.5.1 POC Plan & Success Criteria](docs/13-templates/poc-plan-success-criteria.md)
+    * [13.5.2 Technical Win Report](docs/13-templates/technical-win-report.md)
+  * 13.6 Commercial
+    * [13.6.1 Business Case One-Pager](docs/13-templates/business-case-one-pager.md)
+    * [13.6.2 RFP Response Matrix](docs/13-templates/rfp-response-matrix.md)
+  * 13.7 Close
+    * [13.7.1 Executive Briefing One-Pager](docs/13-templates/executive-briefing-one-pager.md)
+    * [13.7.2 Mutual Close Plan](docs/13-templates/mutual-close-plan.md)
+    * [13.7.3 SE-to-Delivery Handoff](docs/13-templates/se-to-delivery-handoff.md)
