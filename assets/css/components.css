@@ -639,3 +639,376 @@
   color: #1e3a8a;
   font-weight: 700;
 }
+
+/* ============================================================
+   Landing v2 — Dark Hero
+   ============================================================ */
+.hero-dark {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 24px auto 48px;
+  padding: 80px 24px 64px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #172554 100%);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.35);
+}
+
+.hero-dark #neural-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero-pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #bfdbfe;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  backdrop-filter: blur(4px);
+}
+
+.markdown-section h1.hero-title {
+  font-size: 3.8rem !important;
+  line-height: 1.12 !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: -1.5px !important;
+  margin: 0 0 20px !important;
+  border-bottom: none !important;
+}
+
+.markdown-section h1.hero-title em {
+  font-style: normal;
+  background: linear-gradient(90deg, #93c5fd, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  max-width: 680px;
+  margin: 0 auto 36px;
+}
+
+.btn-hero-primary {
+  background: #ffffff;
+  color: #1e3a8a !important;
+  padding: 13px 32px;
+  border-radius: 50px;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.btn-hero-ghost {
+  background: transparent;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 11px 30px;
+  border-radius: 50px;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-hero-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.hero-metrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 42px;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.hero-metrics .divider {
+  color: #334155;
+}
+
+.hero-metrics strong {
+  color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .hero-dark {
+    padding: 56px 16px 44px;
+    border-radius: 14px;
+  }
+
+  .markdown-section h1.hero-title {
+    font-size: 2.6rem !important;
+    letter-spacing: -1px !important;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero-metrics .divider {
+    display: none;
+  }
+
+  .cover-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ============================================================
+   Deal Journey — stage timeline strip
+   ============================================================ */
+.deal-journey {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin: 2.5rem 0 3rem;
+}
+
+.journey-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1.1rem 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--stage-color, #1e3a8a);
+  background: #ffffff;
+  text-decoration: none !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.journey-stage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+}
+
+.journey-stage .stage-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--stage-color, #1e3a8a);
+}
+
+.journey-stage .stage-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.journey-stage .stage-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+@media (max-width: 1100px) {
+  .deal-journey {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .deal-journey {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Stage color tokens — shared by journey strip, badges & template cards */
+.st-qualify   { --stage-color: #475569; --stage-bg: #f1f5f9; }
+.st-discover  { --stage-color: #0369a1; --stage-bg: #e0f2fe; }
+.st-design    { --stage-color: #6d28d9; --stage-bg: #ede9fe; }
+.st-demo      { --stage-color: #b45309; --stage-bg: #fef3c7; }
+.st-poc       { --stage-color: #047857; --stage-bg: #d1fae5; }
+.st-commercial{ --stage-color: #be123c; --stage-bg: #ffe4e6; }
+.st-close     { --stage-color: #3730a3; --stage-bg: #e0e7ff; }
+
+/* ============================================================
+   Template & Artifact cards
+   ============================================================ */
+.stage-group-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2.5rem 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stage-color, #1e3a8a);
+}
+
+.stage-group-label::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--stage-bg, #e2e8f0);
+  border-radius: 2px;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.template-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.template-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--stage-color, #1e3a8a);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.1);
+}
+
+.stage-badge {
+  align-self: flex-start;
+  background: var(--stage-bg, #f0f7ff);
+  color: var(--stage-color, #1e3a8a);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.template-card .template-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+.template-card .template-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.template-card .template-format {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.template-card .template-format::before {
+  content: '📋 ';
+}
+
+/* Inline stage tag used at the top of individual template pages */
+.template-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+}
+
+/* ============================================================
+   Graduation tier cards
+   ============================================================ */
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.tier-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.tier-card .tier-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.tier-card.tier-1 .tier-label { background: #d1fae5; color: #047857; }
+.tier-card.tier-2 .tier-label { background: #fef3c7; color: #b45309; }
+.tier-card.tier-3 .tier-label { background: #e0e7ff; color: #3730a3; }
+
+.tier-card .tier-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.tier-card .tier-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .tier-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive fix: features grid previously overflowed on mobile */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
