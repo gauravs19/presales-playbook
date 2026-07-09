@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-qualify">Stage 01 · Qualify</span>
+  <a class="stage-badge" href="docs/13-templates/html/deal-qualification-scorecard.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Every hour spent on a dead deal is an hour stolen from a live one. This scorecard operationalises [Scoring Deal Quality in the First 15 Minutes](docs/02-deal-orchestration/scoring-deal-quality.md) and the [Fast No Framework](docs/02-deal-orchestration/fast-no-framework.md): eight weighted signals, three hard blockers, and a recommendation you can defend in the pipeline review.

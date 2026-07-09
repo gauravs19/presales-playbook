@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-close">Stage 07 · Close</span>
+  <a class="stage-badge" href="docs/13-templates/html/mutual-close-plan.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Deals don't die at the demo — they die in the ninety days between "we choose you" and a signature, in security reviews nobody scheduled and legal queues nobody owned. The mutual close plan is a shared, dated, named-owner timeline from today to go-live, built backwards from the prospect's own deadline. It operationalises [The Mutual Close Plan](docs/07-commercial-influence/mutual-close-plan.md), [Compressing 18-Month Procurement Cycles](docs/02-deal-orchestration/compressing-procurement-cycles.md), and [Security Reviews, InfoSec Questionnaires & Legal Red-Line](docs/07-commercial-influence/security-review-navigation.md).

@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-commercial">Stage 06 · Commercial</span>
+  <a class="stage-badge" href="docs/13-templates/html/rfp-response-matrix.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Most RFP losses happen at the decision to respond, not in the response. This two-part matrix forces the triage decision first, then structures the response so every answer is strategic rather than reflexive. It operationalises [Scoring an RFP's Real Win Probability](docs/07-commercial-influence/rfp-win-probability.md), [Deciding When to Refuse an RFP](docs/07-commercial-influence/when-to-refuse-rfp.md), [Answering Yes Strategically](docs/07-commercial-influence/strategic-yes.md), and the [RFP Response Triage Template](docs/07-commercial-influence/rfp-triage-template.md).

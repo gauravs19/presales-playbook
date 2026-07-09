@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-commercial">Stage 06 · Commercial</span>
+  <a class="stage-badge" href="docs/13-templates/html/business-case-one-pager.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 The CFO will never watch your demo. They will read one page — once — and decide whether this purchase is a risk or an obviousness. This template operationalises [Building a Defensible ROI Case](docs/03-discovery/roi-case-building.md), [Using TCO & ROI Models as Negotiation Weapons](docs/07-commercial-influence/tco-roi-as-weapons.md), and [Translating API Specs for the CFO Audience](docs/04-solution-design/translating-for-cfo.md).

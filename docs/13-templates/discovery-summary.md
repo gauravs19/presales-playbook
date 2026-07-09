@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-discover">Stage 02 · Discover</span>
+  <a class="stage-badge" href="docs/13-templates/html/discovery-summary.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Discovery that isn't documented didn't happen — three weeks later the prospect will deny half of what they told you, and your own demo team will build against the wrong pain. This template operationalises [Writing the Discovery Summary That Gets Read](docs/03-discovery/discovery-summary-writing.md) and [Documenting What You Heard vs. What They'll Deny](docs/03-discovery/discovery-documentation.md).

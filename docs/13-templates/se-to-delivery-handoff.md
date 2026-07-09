@@ -2,6 +2,7 @@
 
 <div class="template-meta">
   <span class="stage-badge st-close">Stage 07 · Close</span>
+  <a class="stage-badge" href="docs/13-templates/html/se-to-delivery-handoff.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
 Everything you learned in nine months of selling — the promises, the politics, the workaround you demoed but never mentioned again — evaporates the day the deal closes, unless you write it down. Delivery then rediscovers it the expensive way, and the customer's first ninety days pay the bill. This handoff protects the renewal you just sold. It connects to [Shadowing Post-Sales Implementations](docs/11-metrics/post-sales-shadowing.md) and [Protecting SE Bandwidth From Post-Sales](docs/12-scaling/protecting-se-bandwidth.md).
