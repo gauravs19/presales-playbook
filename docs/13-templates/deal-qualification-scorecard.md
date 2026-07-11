@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/deal-qualification-scorecard.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Every hour spent on a dead deal is an hour stolen from a live one. This scorecard operationalises [Scoring Deal Quality in the First 15 Minutes](docs/02-deal-orchestration/scoring-deal-quality.md) and the [Fast No Framework](docs/02-deal-orchestration/fast-no-framework.md): eight weighted signals, three hard blockers, and a recommendation you can defend in the pipeline review.
+Every hour spent on a dead deal is an hour stolen from a live one. This scorecard operationalises [Scoring Deal Quality in the First 15 Minutes](docs/02-deal-orchestration/reading-a-deal-before-discovery-starts.md?id=_211-scoring-deal-quality-in-the-first-15-minutes) and the [Fast No Framework](docs/02-deal-orchestration/reading-a-deal-before-discovery-starts.md?id=_212-the-fast-no-framework): eight weighted signals, three hard blockers, and a recommendation you can defend in the pipeline review.
 
 | | |
 |---|---|
@@ -61,7 +61,7 @@ Every hour spent on a dead deal is an hour stolen from a live one. This scorecar
 1. **Evidence column is mandatory.** A score without evidence is a mood. "Champion strength: 4 — Priya (VP Eng) forwarded our deck to the CIO unprompted" is a signal. "Seems keen" is not.
 2. **Score what you know today, not what you hope to learn.** Unknown = 1, not 3. The scorecard's job is to expose what you haven't verified — a row full of 1s is an agenda for the first discovery call.
 3. **Do it with the AE, not to the AE.** Present it as shared risk management: "Here's where the deal is strong, here's what we need to prove by the 15th." The scorecard depersonalises the disagreement.
-4. **Re-score at every stage gate.** A deal qualified in January can rot by March. Attach the delta to your [Weekly SE Deal Review](docs/02-deal-orchestration/weekly-se-deal-review.md).
+4. **Re-score at every stage gate.** A deal qualified in January can rot by March. Attach the delta to your [Weekly SE Deal Review](docs/02-deal-orchestration/portfolio-management.md?id=_242-the-weekly-se-deal-review).
 
 > **Failure Mode:** The SE who scores every deal 60+ because low scores feel like pessimism, or because the AE pushes back. If your last ten scorecards all said PURSUE, the instrument is broken — and your calendar is paying for it. The scorecard only protects your time if you let it say no.
 

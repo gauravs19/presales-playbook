@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/rfp-response-matrix.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Most RFP losses happen at the decision to respond, not in the response. This two-part matrix forces the triage decision first, then structures the response so every answer is strategic rather than reflexive. It operationalises [Scoring an RFP's Real Win Probability](docs/07-commercial-influence/rfp-win-probability.md), [Deciding When to Refuse an RFP](docs/07-commercial-influence/when-to-refuse-rfp.md), [Answering Yes Strategically](docs/07-commercial-influence/strategic-yes.md), and the [RFP Response Triage Template](docs/07-commercial-influence/rfp-triage-template.md).
+Most RFP losses happen at the decision to respond, not in the response. This two-part matrix forces the triage decision first, then structures the response so every answer is strategic rather than reflexive. It operationalises [Scoring an RFP's Real Win Probability](docs/07-commercial-influence/rfp-strategy.md?id=_724-scoring-an-rfps-real-win-probability), [Deciding When to Refuse an RFP](docs/07-commercial-influence/rfp-strategy.md?id=_721-deciding-when-to-refuse-an-rfp), [Answering Yes Strategically](docs/07-commercial-influence/rfp-strategy.md?id=_723-answering-yes-strategically), and the [RFP Response Triage Template](docs/07-commercial-influence/templates-accelerators.md?id=_754-the-rfp-response-triage-template).
 
 | | |
 |---|---|
@@ -73,6 +73,6 @@ Full: __ % · Config: __ % · Partner: __ % · Roadmap: __ % · No: __ %
 3. **Ban the naked "yes."** Every "yes" in Part B carries a mechanism, a timeframe, or a proof point. Unqualified yeses compound into an implementation gap that delivery inherits and your reputation pays for.
 4. **Track the No percentage with pride.** A response that's 95% "Full" reads as either a miracle or a lie, and evaluators assume the latter. Honest No's — with alternatives — are what make your yeses believable.
 
-> **Failure Mode:** The 100-hour response to a ghost-written RFP because "we can't afford to lose this logo." You didn't lose it during your response — you lost it six months earlier when the competitor [wrote the spec](docs/07-commercial-influence/ghost-writing-specs.md). The matrix exists to convert that sunk-cost reflex into a scored, defensible bid decision with names attached.
+> **Failure Mode:** The 100-hour response to a ghost-written RFP because "we can't afford to lose this logo." You didn't lose it during your response — you lost it six months earlier when the competitor [wrote the spec](docs/07-commercial-influence/rfp-strategy.md?id=_722-ghost-writing-specs-before-the-rfp-is-released). The matrix exists to convert that sunk-cost reflex into a scored, defensible bid decision with names attached.
 
 🟡 **Mid-Level** — The best RFP response is often the one you didn't write. The second best is one where every yes was strategic.

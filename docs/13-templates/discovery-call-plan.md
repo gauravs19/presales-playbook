@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/discovery-call-plan.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Improvisation in enterprise sales is a polite word for unpreparedness. This plan compresses [Pre-Call Research](docs/03-discovery/pre-call-research.md), [Hypothesis-Led Discovery](docs/03-discovery/hypothesis-led-discovery.md), and the [Pre-Flight AE Alignment Checklist](docs/03-discovery/ae-alignment-checklist.md) into one page you and the AE agree on before dialing in.
+Improvisation in enterprise sales is a polite word for unpreparedness. This plan compresses [Pre-Call Research](docs/03-discovery/preparation-hypothesis-led-entry.md?id=_311-pre-call-linkedin-earnings-transcript-recon), [Hypothesis-Led Discovery](docs/03-discovery/preparation-hypothesis-led-entry.md?id=_312-formulating-the-hypothesis-before-you-ask), and the [Pre-Flight AE Alignment Checklist](docs/03-discovery/preparation-hypothesis-led-entry.md?id=_314-the-pre-flight-ae-alignment-checklist) into one page you and the AE agree on before dialing in.
 
 | | |
 |---|---|
@@ -72,7 +72,7 @@ By the end of this call we will have: (1) ______ (2) ______ (3) proposed [next s
 
 1. **Research earns the right to ask.** The first question should prove you've done homework: "You mentioned scaling data pipelines in the Q3 earnings call — is that what's driving this evaluation?" beats "So, tell me about your environment."
 2. **A hypothesis you can't falsify is a pitch.** Write it so the prospect can say "no, that's wrong" — their correction is the most valuable data you'll collect all call.
-3. **Six questions maximum.** If your list has twenty, you've planned an [interrogation](docs/03-discovery/avoiding-interrogation-trap.md), not a conversation. The follow-ups come from listening, not the list.
+3. **Six questions maximum.** If your list has twenty, you've planned an [interrogation](docs/03-discovery/questioning-techniques.md?id=_323-avoiding-the-interrogation-trap), not a conversation. The follow-ups come from listening, not the list.
 4. **The role split is non-negotiable.** Two professionals talking over each other reads as one unprepared vendor.
 
 > **Failure Mode:** The SE who writes a beautiful plan and then abandons it 90 seconds in because the prospect opened with a feature question. The plan isn't a script — it's a compass. Answer briefly, then return: "Happy to go deep there. Before I do, can I test one assumption so the demo we eventually build is actually relevant?"

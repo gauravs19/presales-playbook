@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/executive-briefing-one-pager.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Executives decide whether a meeting matters before it starts — based on the pre-read. This one-pager is that pre-read: it frames the decision, not the product, and earns you a room where the conversation starts at altitude instead of climbing to it. It operationalises [Running an Executive Briefing](docs/09-executive-selling/running-executive-briefings.md), [Translating Technical Risk Into Business Risk](docs/09-executive-selling/technical-risk-as-business-risk.md), and [The One Diagram Every Executive Presentation Needs](docs/04-solution-design/one-diagram-executives-need.md).
+Executives decide whether a meeting matters before it starts — based on the pre-read. This one-pager is that pre-read: it frames the decision, not the product, and earns you a room where the conversation starts at altitude instead of climbing to it. It operationalises [Running an Executive Briefing](docs/09-executive-selling/owning-the-cxo-room.md?id=_911-running-an-executive-briefing), [Translating Technical Risk Into Business Risk](docs/09-executive-selling/owning-the-cxo-room.md?id=_912-translating-technical-risk-into-business-risk), and [The One Diagram Every Executive Presentation Needs](docs/04-solution-design/diagramming-visual-communication.md?id=_442-the-one-diagram-every-executive-presentation-needs).
 
 | | |
 |---|---|

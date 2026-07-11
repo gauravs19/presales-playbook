@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/se-to-delivery-handoff.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Everything you learned in nine months of selling — the promises, the politics, the workaround you demoed but never mentioned again — evaporates the day the deal closes, unless you write it down. Delivery then rediscovers it the expensive way, and the customer's first ninety days pay the bill. This handoff protects the renewal you just sold. It connects to [Shadowing Post-Sales Implementations](docs/11-metrics/post-sales-shadowing.md) and [Protecting SE Bandwidth From Post-Sales](docs/12-scaling/protecting-se-bandwidth.md).
+Everything you learned in nine months of selling — the promises, the politics, the workaround you demoed but never mentioned again — evaporates the day the deal closes, unless you write it down. Delivery then rediscovers it the expensive way, and the customer's first ninety days pay the bill. This handoff protects the renewal you just sold. It connects to [Shadowing Post-Sales Implementations](docs/11-metrics/personal-development-system.md?id=_1132-shadowing-post-sales-implementations) and [Protecting SE Bandwidth From Post-Sales](docs/12-scaling/leadership-culture.md?id=_1242-protecting-se-bandwidth-from-post-sales).
 
 | | |
 |---|---|
@@ -67,7 +67,7 @@ Success in THEIR words: "[verbatim from discovery/POC]".
 1. **Section 2 includes the implied promises.** The contract says what was sold; the customer remembers what was *said*. "The AE mentioned 'typically live in six weeks' on the March 3rd call" is exactly the expectation that detonates in week seven — hand it over armed with a date and context.
 2. **Section 3 is an act of honesty, not confession.** Every deal has demo-vs-production gaps. Documented, they're a configuration plan; discovered, they're an escalation with your name in the postmortem.
 3. **Section 6 is the reason this is a live session.** The red flags are judgment, not data — the champion's internal overpromise, the detractor waiting for a stumble. That transfers in conversation, with questions; it doesn't transfer by email.
-4. **Section 7 protects you as much as delivery.** Bounded, written continuity ("one architecture review, week 2, then done") is how you stay helpful without [becoming the unpaid implementation engineer](docs/12-scaling/protecting-se-bandwidth.md) for the next two quarters.
+4. **Section 7 protects you as much as delivery.** Bounded, written continuity ("one architecture review, week 2, then done") is how you stay helpful without [becoming the unpaid implementation engineer](docs/12-scaling/leadership-culture.md?id=_1242-protecting-se-bandwidth-from-post-sales) for the next two quarters.
 
 > **Failure Mode:** The handoff that consists of forwarding the proposal deck and adding delivery to a Slack channel. Six weeks later: delivery discovers the unverified SSO assumption, the customer repeats a promise nobody on the project has heard of, and the SE gets pulled back into the account anyway — mid-quarter, unplanned, for a deal that already paid out. Thirty minutes of writing now, or thirty hours of archaeology later. The renewal remembers which one you chose.
 

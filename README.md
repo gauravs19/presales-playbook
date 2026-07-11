@@ -1,11 +1,11 @@
 <div class="hero-dark">
-  <canvas id="hero-radar-canvas"></canvas>
+  <canvas id="hero-arch-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-pill">Open Source · Practitioner-Built · Always Free</div>
     <h1 class="hero-title">The Enterprise<br/><em>Presales Playbook</em></h1>
     <p class="hero-subtitle">The missing manual for technical sellers. Learn how to translate complex system architectures into undeniable commercial value — then execute with battle-tested templates for every stage of the deal.</p>
     <div class="cover-actions">
-      <a href="#/docs/00-start-here/what-is-presales" class="btn-hero-primary">Start Reading →</a>
+      <a href="#/docs/00-start-here/what-even-is-presales?id=_011-presales-in-plain-english" class="btn-hero-primary">Start Reading →</a>
       <a href="#/docs/13-templates/" class="btn-hero-ghost">Browse Templates</a>
     </div>
     <div class="hero-metrics">
@@ -25,37 +25,37 @@
 Every chapter maps to a moment in a live enterprise deal. Click a stage to jump straight into it.
 
 <div class="deal-journey">
-  <a class="journey-stage st-qualify" href="#/docs/02-deal-orchestration/scoring-deal-quality">
+  <a class="journey-stage st-qualify" href="#/docs/02-deal-orchestration/reading-a-deal-before-discovery-starts?id=_211-scoring-deal-quality-in-the-first-15-minutes">
     <span class="stage-num">STAGE 01</span>
     <span class="stage-name">Qualify</span>
     <span class="stage-desc">Score the deal in 15 minutes — before it consumes a quarter</span>
   </a>
-  <a class="journey-stage st-discover" href="#/docs/03-discovery/pre-call-research">
+  <a class="journey-stage st-discover" href="#/docs/03-discovery/preparation-hypothesis-led-entry?id=_311-pre-call-linkedin-earnings-transcript-recon">
     <span class="stage-num">STAGE 02</span>
     <span class="stage-name">Discover</span>
     <span class="stage-desc">Extract quantifiable pain, not feature checklists</span>
   </a>
-  <a class="journey-stage st-design" href="#/docs/04-solution-design/boat-framework">
+  <a class="journey-stage st-design" href="#/docs/04-solution-design/design-principles-for-deals?id=_411-minimum-viable-transformation-boat-framework">
     <span class="stage-num">STAGE 03</span>
     <span class="stage-name">Design</span>
     <span class="stage-desc">Turn messy requirements into a defensible blueprint</span>
   </a>
-  <a class="journey-stage st-demo" href="#/docs/05-demo-excellence/abolishing-harbor-tour">
+  <a class="journey-stage st-demo" href="#/docs/05-demo-excellence/demo-strategy?id=_511-abolishing-the-harbor-tour-forever">
     <span class="stage-num">STAGE 04</span>
     <span class="stage-name">Demo</span>
     <span class="stage-desc">Kill the harbor tour, land the aha in 5 minutes</span>
   </a>
-  <a class="journey-stage st-poc" href="#/docs/06-poc-execution/poc-vs-pov">
+  <a class="journey-stage st-poc" href="#/docs/06-poc/structuring-the-pov-proof-of-value?id=_621-poc-vs-pov-shifting-from-math-to-value">
     <span class="stage-num">STAGE 05</span>
     <span class="stage-name">Prove</span>
     <span class="stage-desc">Govern the POC and lock in the technical win</span>
   </a>
-  <a class="journey-stage st-commercial" href="#/docs/07-commercial-influence/margin-and-discount-literacy">
+  <a class="journey-stage st-commercial" href="#/docs/07-commercial-influence/pricing-commercials-literacy?id=_711-understanding-margin-discount-authority-deal-economics">
     <span class="stage-num">STAGE 06</span>
     <span class="stage-name">Commercial</span>
     <span class="stage-desc">Defend margin through RFPs, procurement & legal</span>
   </a>
-  <a class="journey-stage st-close" href="#/docs/09-executive-selling/running-executive-briefings">
+  <a class="journey-stage st-close" href="#/docs/09-executive-selling/owning-the-cxo-room?id=_911-running-an-executive-briefing">
     <span class="stage-num">STAGE 07</span>
     <span class="stage-name">Close</span>
     <span class="stage-desc">Win the CxO room and convert proof into revenue</span>
@@ -216,19 +216,19 @@ The content is organised into **14 sections** across **260+ individual topics**,
 
 | Section | Focus Area | What You Will Master |
 |---------|-------|-------------|
-| 0 | [Start Here](docs/00-start-here/what-is-presales.md) | **For Absolute Beginners:** Grasping the bare-bones definition of the SE role, baseline expectations, and what a "day in the life" actually looks like during an enterprise deal cycle. |
-| 1 | [Foundations](docs/01-foundations/se-as-revenue-architect.md) | **The Mindset Shift:** Evolving your identity from a reactive technical resource to a proactive Revenue Architect. Deep dive into career progression and the critical AE/SE partnership. |
-| 2 | [Deal Orchestration](docs/02-deal-orchestration/scoring-deal-quality.md) | **Active Selling:** Learning to grade evaluating criteria objectively, spotting pipeline liabilities before they hit the forecast, and actively driving the commercial close alongside the AE. |
-| 3 | [Discovery Framework](docs/03-discovery/pre-call-research.md) | **Root Cause Extraction:** Moving past generic feature checklists. Uncovering quantifiable pain points and establishing unshakeable technical credibility in the first five minutes of a call. |
-| 4 | [Solution Design](docs/04-solution-design/boat-framework.md) | **Architecture Decisions:** Translating unstructured business requirements into a defensible technical blueprint. Structuring architectures that outflank competitors early in the cycle. |
-| 5 | [Demo Excellence](docs/05-demo-excellence/abolishing-harbor-tour.md) | **Storytelling at Scale:** Abolishing the standard "harbor tour" format. Designing high-contrast narratives that map platform capabilities directly to executive mandates and business value. |
-| 6 | [POC Management](docs/06-poc-management/paid-vs-free-poc.md) | **Evaluation Governance:** Establishing rigid success criteria, averting scope creep, converting free engagements into paid evaluations, and definitively securing the Technical Win. |
-| 7 | [Commercial Influence](docs/07-commercial-influence/margin-and-discount-literacy.md) | **Protecting Margins:** Understanding SaaS pricing dynamics, responding to predatory RFPs strategically, and ensuring that technical recommendations never erode long-term deal margins. |
-| 8 | [Technical Depth](docs/08-technical-depth/cloud-platform-translation.md) | **System Fluency:** High-level translations of Cloud architectures, API/Integration standards, Security protocols, and separating real GenAI capabilities from transient market fluff. |
-| 9 | [Executive Selling](docs/09-executive-selling/running-executive-briefings.md) | **The C-Suite Pitch:** Adjusting altitude. How to talk to CIOs and CFOs, handling extreme objections gracefully, and projecting absolute confidence under intense executive scrutiny. |
-| 10 | [Tools & Analytics](docs/10-tools/revenue-intelligence-tools.md) | **The Tech Stack:** Exploring the platforms used by top-tier SEs (Gong, CRM integrations) to analyze win rates, optimize demo delivery, and surface actionable competitive intelligence. |
-| 11 | [Metrics & Improvement](docs/11-metrics/demo-to-poc-conversion.md) | **Data-Driven Growth:** Identifying which metrics actually matter (Demo-to-POC conversion, Technical Win Rate). Building a culture of continuous improvement through ruthless deal post-mortems. |
-| 12 | [Scaling Teams](docs/12-scaling/ae-to-se-ratio.md) | **For Leadership:** Defining optimal AE-to-SE ratios, implementing rigorous hiring templates for top-tier talent, performance management, and building robust technical enablement engines. |
+| 0 | [Start Here](docs/00-start-here/what-even-is-presales.md?id=_011-presales-in-plain-english) | **For Absolute Beginners:** Grasping the bare-bones definition of the SE role, baseline expectations, and what a "day in the life" actually looks like during an enterprise deal cycle. |
+| 1 | [Foundations](docs/01-foundations/what-is-presales-redefined.md?id=_111-the-se-as-revenue-architect-not-demo-monkey) | **The Mindset Shift:** Evolving your identity from a reactive technical resource to a proactive Revenue Architect. Deep dive into career progression and the critical AE/SE partnership. |
+| 2 | [Deal Orchestration](docs/02-deal-orchestration/reading-a-deal-before-discovery-starts.md?id=_211-scoring-deal-quality-in-the-first-15-minutes) | **Active Selling:** Learning to grade evaluating criteria objectively, spotting pipeline liabilities before they hit the forecast, and actively driving the commercial close alongside the AE. |
+| 3 | [Discovery Framework](docs/03-discovery/preparation-hypothesis-led-entry.md?id=_311-pre-call-linkedin-earnings-transcript-recon) | **Root Cause Extraction:** Moving past generic feature checklists. Uncovering quantifiable pain points and establishing unshakeable technical credibility in the first five minutes of a call. |
+| 4 | [Solution Design](docs/04-solution-design/design-principles-for-deals.md?id=_411-minimum-viable-transformation-boat-framework) | **Architecture Decisions:** Translating unstructured business requirements into a defensible technical blueprint. Structuring architectures that outflank competitors early in the cycle. |
+| 5 | [Demo Excellence](docs/05-demo-excellence/demo-strategy.md?id=_511-abolishing-the-harbor-tour-forever) | **Storytelling at Scale:** Abolishing the standard "harbor tour" format. Designing high-contrast narratives that map platform capabilities directly to executive mandates and business value. |
+| 6 | [POC Management](docs/06-poc/poc-philosophy.md?id=_614-paid-vs-free-poc) | **Evaluation Governance:** Establishing rigid success criteria, averting scope creep, converting free engagements into paid evaluations, and definitively securing the Technical Win. |
+| 7 | [Commercial Influence](docs/07-commercial-influence/pricing-commercials-literacy.md?id=_711-understanding-margin-discount-authority-deal-economics) | **Protecting Margins:** Understanding SaaS pricing dynamics, responding to predatory RFPs strategically, and ensuring that technical recommendations never erode long-term deal margins. |
+| 8 | [Technical Depth](docs/08-technical-depth/cloud-platforms.md?id=_811-aws-vs-azure-vs-gcp-translating-nomenclature) | **System Fluency:** High-level translations of Cloud architectures, API/Integration standards, Security protocols, and separating real GenAI capabilities from transient market fluff. |
+| 9 | [Executive Selling](docs/09-executive-selling/owning-the-cxo-room.md?id=_911-running-an-executive-briefing) | **The C-Suite Pitch:** Adjusting altitude. How to talk to CIOs and CFOs, handling extreme objections gracefully, and projecting absolute confidence under intense executive scrutiny. |
+| 10 | [Tools & Analytics](docs/10-tools/presales-tech-stack.md?id=_1011-revenue-intelligence-gong-chorus) | **The Tech Stack:** Exploring the platforms used by top-tier SEs (Gong, CRM integrations) to analyze win rates, optimize demo delivery, and surface actionable competitive intelligence. |
+| 11 | [Metrics & Improvement](docs/11-metrics/kpis-that-actually-matter.md?id=_1111-demo-to-poc-conversion-rate) | **Data-Driven Growth:** Identifying which metrics actually matter (Demo-to-POC conversion, Technical Win Rate). Building a culture of continuous improvement through ruthless deal post-mortems. |
+| 12 | [Scaling Teams](docs/12-scaling/team-architecture-hiring.md?id=_1211-the-ae-to-se-hiring-ratio) | **For Leadership:** Defining optimal AE-to-SE ratios, implementing rigorous hiring templates for top-tier talent, performance management, and building robust technical enablement engines. |
 | 13 | [Templates & Artifacts](docs/13-templates/README.md) | **Execution Kit:** Twelve copy-paste artifacts — one for every deal stage. Qualification scorecards, discovery plans, POC contracts, business cases, close plans, and delivery handoffs. |
 
 </div>
@@ -269,5 +269,5 @@ The playbook uses a three-tier progression system. Each section is tagged with i
 4. **Team enablement** — If you're a manager, assign specific sections as pre-reading before deal reviews, SKOs, or onboarding programmes.
 
 <div class="cta-wrapper">
-  <a href="#/docs/00-start-here/what-is-presales" class="cta-button">Start Reading the Playbook →</a>
+  <a href="#/docs/00-start-here/what-even-is-presales?id=_011-presales-in-plain-english" class="cta-button">Start Reading the Playbook →</a>
 </div>

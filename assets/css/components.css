@@ -702,12 +702,16 @@
   color: transparent !important;
 }
 
-.hero-subtitle {
+/* .hero-dark scope beats the theme's `.markdown-section p` margin rule,
+   which otherwise overrides `auto` and left-anchors the capped-width box */
+.hero-dark .hero-subtitle {
   font-size: 1.2rem;
   color: #cbd5e1;
   line-height: 1.65;
   max-width: 680px;
   margin: 0 auto 36px;
+  text-align: center;
+  text-wrap: balance; /* even out ragged line lengths when centered */
 }
 
 .btn-hero-primary {

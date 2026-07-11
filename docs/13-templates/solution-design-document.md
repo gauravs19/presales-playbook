@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/solution-design-document.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-A deal-grade design document is not an implementation spec — it's a persuasion instrument with an audit trail. It must survive three audiences: the architect who attacks it, the CFO who skims it, and the delivery team who inherits it. This template operationalises the [B.O.A.T. Framework](docs/04-solution-design/boat-framework.md), [Defending Your Design Choices](docs/04-solution-design/defending-design-choices.md), and [Version Controlling Designs Across a Long Sales Cycle](docs/04-solution-design/version-controlling-designs.md).
+A deal-grade design document is not an implementation spec — it's a persuasion instrument with an audit trail. It must survive three audiences: the architect who attacks it, the CFO who skims it, and the delivery team who inherits it. This template operationalises the [B.O.A.T. Framework](docs/04-solution-design/design-principles-for-deals.md?id=_411-minimum-viable-transformation-boat-framework), [Defending Your Design Choices](docs/04-solution-design/design-principles-for-deals.md?id=_413-defending-your-design-choices), and [Version Controlling Designs Across a Long Sales Cycle](docs/04-solution-design/technical-documentation-that-moves-deals.md?id=_434-version-controlling-designs-across-a-long-sales-cycle).
 
 | | |
 |---|---|
@@ -78,7 +78,7 @@ Decision requested: [what you need them to approve].
 1. **The decision log is your armor.** When their architect asks "why not event-driven?", the answer is already written in section 5 — considered, rejected, reasons documented. Nothing builds technical trust faster than showing you rejected your own first idea.
 2. **The assumptions register is your insurance.** Every unverified assumption gets a name and a date. When scope explodes in month four because SSO turned out to be a custom LDAP fork, the register proves it was flagged in month one.
 3. **Out-of-scope is a commercial clause.** Section 4's exclusion line is what your AE points at when the prospect asks for "one small addition." Write it as specifically as the inclusions.
-4. **Version on every change.** A design that silently mutates across a nine-month cycle is a [Frankenstein build](docs/04-solution-design/avoiding-frankenstein-builds.md) in progress. The version log makes drift visible and negotiable.
+4. **Version on every change.** A design that silently mutates across a nine-month cycle is a [Frankenstein build](docs/04-solution-design/reference-architectures-that-win.md?id=_422-avoiding-custom-code-frankenstein-builds) in progress. The version log makes drift visible and negotiable.
 
 > **Failure Mode:** The design doc written to impress engineers instead of moving the deal — forty pages, nine diagrams, zero connection to the discovered pains. The prospect's architect enjoys it; the economic buyer never opens it; the deal stalls. Every section above must trace back to a pain with a number on it, or it's decoration.
 
