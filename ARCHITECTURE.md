@@ -14,122 +14,50 @@ The Presales Playbook is a comprehensive, GitBook-style guide designed for GitHu
 
 ## Repository Structure
 
+The playbook uses a **two-level structure**: each section folder contains one markdown
+file per subsection (e.g. `3.2 Questioning Techniques` is a single file whose topics
+are `##` headings). Deep links use Docsify anchors (`file.md?id=...`). Old three-level
+page URLs are redirected via `redirects.js` (Docsify `alias` config).
+
 ```
 presales-playbook/
+├── index.html                          # Docsify shell + config
 ├── README.md                           # Landing page & introduction
+├── _sidebar.md                         # Navigation (2 levels: section → subsection)
+├── redirects.js                        # Old page routes → merged pages (alias map)
 ├── ARCHITECTURE.md                     # This file
 ├── CONTRIBUTING.md                     # Contribution guidelines
 │
-├── docs/                               # Main content directory
-│   ├── _sidebar.md                     # Navigation sidebar config
-│   ├── index.md                        # Documentation home
-│   │
-│   ├── 01-foundations/                 # Chapter 1: Foundations
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── what-is-presales.md         # Role definition
-│   │   ├── presales-vs-sales.md        # Key differences
-│   │   ├── skills-matrix.md            # Required skills
-│   │   └── career-path.md              # Growth trajectory
-│   │
-│   ├── 02-methodology/                 # Chapter 2: Presales Process
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── discovery.md                # Discovery phase
-│   │   ├── qualification.md            # Opportunity qualification
-│   │   ├── solution-design.md          # Solution development
-│   │   ├── demonstration.md            # Demo delivery
-│   │   ├── proof-of-concept.md         # POC execution
-│   │   └── proposal.md                 # Proposal creation
-│   │
-│   ├── 03-discovery/                   # Chapter 3: Discovery Framework
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── preparation.md              # Pre-call preparation
-│   │   ├── questioning-techniques.md   # SPIN, MEDDIC, BANT
-│   │   ├── stakeholder-mapping.md      # Identifying decision makers
-│   │   ├── pain-point-analysis.md      # Problem identification
-│   │   └── requirements-gathering.md   # Technical requirements
-│   │
-│   ├── 04-solution-design/             # Chapter 4: Solution Architecture
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── design-principles.md        # Architecture principles
-│   │   ├── reference-architectures.md  # Common patterns (links to presales/)
-│   │   ├── technical-documentation.md  # Documentation best practices
-│   │   ├── diagramming.md              # Creating effective diagrams
-│   │   └── case-studies.md             # Real-world examples (links to presales/)
-│   │
-│   ├── 05-demonstration/               # Chapter 5: Demo Excellence
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── demo-strategy.md            # Planning effective demos
-│   │   ├── storytelling.md             # Narrative techniques
-│   │   ├── handling-objections.md      # Overcoming resistance
-│   │   ├── technical-demos.md          # Technical demo delivery
-│   │   └── demo-environments.md        # Environment management
-│   │
-│   ├── 06-proof-of-concept/            # Chapter 6: POC Management
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── poc-planning.md             # Scoping and planning
-│   │   ├── success-criteria.md         # Defining success metrics
-│   │   ├── execution.md                # POC execution
-│   │   ├── evaluation.md               # Results assessment
-│   │   └── demo-projects.md            # Example POCs (links to presales/)
-│   │
-│   ├── 07-proposals/                   # Chapter 7: Winning Proposals
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── rfp-response.md             # RFP strategy
-│   │   ├── proposal-structure.md       # Document structure
-│   │   ├── technical-writing.md        # Writing best practices
-│   │   ├── pricing-strategy.md         # Pricing considerations
-│   │   └── templates.md                # Proposal templates (links to presales/)
-│   │
-│   ├── 08-technical-skills/            # Chapter 8: Technical Competencies
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── cloud-platforms.md          # AWS, Azure, GCP
-│   │   ├── integration-patterns.md     # API, microservices
-│   │   ├── data-analytics.md           # Analytics solutions
-│   │   ├── ai-ml.md                    # AI/ML solutions
-│   │   └── security.md                 # Security considerations
-│   │
-│   ├── 09-soft-skills/                 # Chapter 9: Communication & Collaboration
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── stakeholder-management.md   # Managing relationships
-│   │   ├── presentation-skills.md      # Effective presenting
-│   │   ├── negotiation.md              # Negotiation techniques
-│   │   ├── cross-functional.md         # Working with teams
-│   │   └── customer-empathy.md         # Understanding customers
-│   │
-│   ├── 10-tools-resources/             # Chapter 10: Tools & Templates
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── presales-stack.md           # Essential tools
-│   │   ├── crm-systems.md              # CRM best practices
-│   │   ├── demo-environments.md        # Demo infrastructure
-│   │   ├── templates-library.md        # Template collection (links to presales/)
-│   │   └── automation.md               # Automation opportunities
-│   │
-│   ├── 11-metrics-measurement/         # Chapter 11: Success Metrics
-│   │   ├── README.md                   # Chapter overview
-│   │   ├── kpis.md                     # Key performance indicators
-│   │   ├── roi-analysis.md             # ROI calculation
-│   │   ├── win-loss.md                 # Win/loss analysis
-│   │   └── continuous-improvement.md   # Improvement practices
-│   │
-│   └── 12-advanced-topics/             # Chapter 12: Advanced Strategies
-│       ├── README.md                   # Chapter overview
-│       ├── enterprise-sales.md         # Enterprise strategies
-│       ├── multi-threading.md          # Multiple stakeholders
-│       ├── competitive-positioning.md  # Competitive strategy
-│       ├── value-selling.md            # Value-based selling
-│       └── scaling-presales.md         # Scaling teams
+├── docs/
+│   ├── 00-start-here/                  # 0. Start Here (incl. graduation checkpoint)
+│   ├── 01-foundations/                 # 1. Foundations
+│   ├── 02-deal-orchestration/          # 2. Deal Orchestration
+│   ├── 03-discovery/                   # 3. Discovery Framework
+│   ├── 04-solution-design/             # 4. Solution Design
+│   ├── 05-demo-excellence/             # 5. Demo Excellence
+│   ├── 06-poc/                         # 6. POC Execution & Management
+│   ├── 07-commercial-influence/        # 7. Commercial Influence
+│   ├── 08-technical-depth/             # 8. Technical Depth
+│   ├── 09-executive-selling/           # 9. Executive Selling & Soft Skills
+│   ├── 10-tools/                       # 10. Tools & Infrastructure
+│   ├── 11-metrics/                     # 11. Metrics & Continuous Improvement
+│   ├── 12-scaling/                     # 12. Scaling Presales Teams
+│   └── 13-templates/                   # 13. Templates & Artifacts (one file per template)
 │
-├── .github/                            # GitHub configuration
-│   └── workflows/
-│       ├── deploy-pages.yml            # GitHub Pages deployment
-│       └── validate-links.yml          # Link validation
-│
-├── assets/                             # Static assets
-│   ├── images/                         # Images and diagrams
-│   ├── css/                            # Custom styling
-│   └── js/                             # JavaScript enhancements
-│
-└── _config.yml                         # GitHub Pages config (Jekyll)
+├── assets/                             # Static assets (css, js)
+└── .github/                            # Issue templates, workflows
+```
+
+Each subsection file follows this shape:
+
+```markdown
+# 3.2 Questioning Techniques
+
+## 3.2.1 The Layered Diagnostic — D.A.R.T. Framework
+...
+
+## 3.2.2 Peeling the Pain Onion
+...
 ```
 
 ## Content Strategy
@@ -226,25 +154,20 @@ Each chapter follows this structure:
 
 ### Navigation Structure
 
-**_sidebar.md** for Docsify:
+**_sidebar.md** for Docsify (2 levels — sections and subsections only; the current
+page's topics appear as expandable H2 entries via `subMaxLevel: 2`):
 ```markdown
 * [Home](/)
 
-* **1. Foundations**
-  * [What is Presales?](docs/01-foundations/what-is-presales.md)
-  * [Presales vs Sales](docs/01-foundations/presales-vs-sales.md)
-  * [Skills Matrix](docs/01-foundations/skills-matrix.md)
-  * [Career Path](docs/01-foundations/career-path.md)
+* **3. Discovery Framework**
+  * [3.1 Preparation & Hypothesis-Led Entry](docs/03-discovery/preparation-hypothesis-led-entry.md)
+  * [3.2 Questioning Techniques](docs/03-discovery/questioning-techniques.md)
+  * [3.3 Technical Discovery](docs/03-discovery/technical-discovery.md)
+  * [3.4 Stakeholder Mapping](docs/03-discovery/stakeholder-mapping.md)
+  * [3.5 Pain Quantification](docs/03-discovery/pain-quantification.md)
+  * [3.6 Discovery Output & Handoff](docs/03-discovery/discovery-output-handoff.md)
 
-* **2. Methodology**
-  * [Discovery Phase](docs/02-methodology/discovery.md)
-  * [Qualification](docs/02-methodology/qualification.md)
-  * [Solution Design](docs/02-methodology/solution-design.md)
-  * [Demonstration](docs/02-methodology/demonstration.md)
-  * [Proof of Concept](docs/02-methodology/proof-of-concept.md)
-  * [Proposal](docs/02-methodology/proposal.md)
-
-[... continues for all chapters ...]
+[... continues for all sections ...]
 ```
 
 ## Integration with Existing Presales Resources

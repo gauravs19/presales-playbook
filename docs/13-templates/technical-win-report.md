@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/technical-win-report.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-A POC that ends without a formal verdict just... evaporates — and with it, all the momentum you built. The Technical Win Report converts evaluation results into a commercial forcing function. It operationalises [The Formal Technical Win Declaration](docs/06-poc-execution/technical-win-declaration.md) and [Turning the Technical Win Into Commercial Momentum](docs/06-poc-execution/win-to-commercial-momentum.md).
+A POC that ends without a formal verdict just... evaporates — and with it, all the momentum you built. The Technical Win Report converts evaluation results into a commercial forcing function. It operationalises [The Formal Technical Win Declaration](docs/06-poc/securing-the-technical-win.md?id=_641-the-formal-technical-win-declaration) and [Turning the Technical Win Into Commercial Momentum](docs/06-poc/securing-the-technical-win.md?id=_642-turning-the-technical-win-into-commercial-momentum).
 
 | | |
 |---|---|

@@ -72,13 +72,15 @@
 
 <body>
   <div id="app"></div>
+  <script src="redirects.js"></script>
   <script>
     window.$docsify = {
       name: 'Presales Playbook',
       themeColor: '#1e3a8a', // Portfolio professional blue accent
       loadSidebar: true,
-      subMaxLevel: 0, // Disabled: sidebar now strictly mirrors _sidebar.md without injecting H2/H3 tags
-      sidebarDisplayLevel: 1, // Show top two levels, collapse the deeply nested 1.1.1 sections
+      subMaxLevel: 2, // Sidebar is 2 levels (section > subsection); the open page's H2 topics expand beneath it
+      sidebarDisplayLevel: 1, // Sections expanded, subsections collapsed until visited
+      alias: window.PLAYBOOK_ALIASES || {}, // redirects.js: pre-2026 three-level page routes -> merged pages
       search: 'auto',
       notFoundPage: '_404.md',
       progress: {

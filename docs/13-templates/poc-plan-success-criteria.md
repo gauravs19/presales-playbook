@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/poc-plan-success-criteria.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-An unstructured POC is free consulting with a deadline nobody agreed to. This document is the evaluation's contract: what will be proven, how success is measured, who does what, and what happens when it ends. It operationalises the [3-Mandatory-Requirements Rule](docs/06-poc-execution/3-mandatory-requirements.md), [Locking the Sandbox](docs/06-poc-management/locking-the-sandbox.md), [POC vs POV](docs/06-poc-execution/poc-vs-pov.md), and [Prospect Resource Accountability](docs/06-poc-execution/prospect-accountability.md).
+An unstructured POC is free consulting with a deadline nobody agreed to. This document is the evaluation's contract: what will be proven, how success is measured, who does what, and what happens when it ends. It operationalises the [3-Mandatory-Requirements Rule](docs/06-poc/structuring-the-pov-proof-of-value.md?id=_622-the-3-mandatory-requirements-rule), [Locking the Sandbox](docs/06-poc/structuring-the-pov-proof-of-value.md?id=_623-locking-the-sandbox-so-goalposts-cant-move), [POC vs POV](docs/06-poc/structuring-the-pov-proof-of-value.md?id=_621-poc-vs-pov-shifting-from-math-to-value), and [Prospect Resource Accountability](docs/06-poc/poc-execution-control.md?id=_632-forcing-prospect-resource-accountability).
 
 | | |
 |---|---|
@@ -78,9 +78,9 @@ Vendor SE: ______ [date] · Prospect evaluation lead: ______ [date]
 ## How to Fill It In
 
 1. **Three criteria, never ten.** Ten criteria means nobody agreed what matters; three means you forced the prioritisation conversation *before* the clock started. Everything else is a demo topic, not an evaluation gate.
-2. **The decision link in section 1 is the whole document.** A POC that ends in "great, we'll discuss internally" was never an evaluation — it was a free pilot. Get the if-then in writing or [refuse the POC](docs/06-poc-execution/true-cost-free-poc.md).
+2. **The decision link in section 1 is the whole document.** A POC that ends in "great, we'll discuss internally" was never an evaluation — it was a free pilot. Get the if-then in writing or [refuse the POC](docs/06-poc/poc-philosophy.md?id=_611-the-true-cost-of-a-free-poc).
 3. **Make their commitments as visible as yours.** Section 5 with named humans and hours is what turns "we couldn't find time to load the data" from your problem into a jointly owned slip with executive visibility.
-4. **Signature is the point.** Unsigned, this is a wish list. Signed, it's the artifact that stops [moving goalposts](docs/06-poc-execution/moving-goalposts.md) — when a new requirement appears in week 2, you point at the lock clause and route it through change control, cheerfully.
+4. **Signature is the point.** Unsigned, this is a wish list. Signed, it's the artifact that stops [moving goalposts](docs/06-poc/when-pocs-go-wrong.md?id=_652-when-the-prospect-moves-the-goalposts) — when a new requirement appears in week 2, you point at the lock clause and route it through change control, cheerfully.
 
 > **Failure Mode:** The SE who starts building "just to keep momentum" while the plan is "being reviewed." Momentum without a signed plan is how a 3-week POC becomes a 4-month unpaid implementation with new stakeholders arriving monthly, each carrying a new requirement. The sandbox opens when the signatures land. Hold the line — the deal respects the SE who does.
 

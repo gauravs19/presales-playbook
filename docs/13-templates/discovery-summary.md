@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/discovery-summary.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-Discovery that isn't documented didn't happen — three weeks later the prospect will deny half of what they told you, and your own demo team will build against the wrong pain. This template operationalises [Writing the Discovery Summary That Gets Read](docs/03-discovery/discovery-summary-writing.md) and [Documenting What You Heard vs. What They'll Deny](docs/03-discovery/discovery-documentation.md).
+Discovery that isn't documented didn't happen — three weeks later the prospect will deny half of what they told you, and your own demo team will build against the wrong pain. This template operationalises [Writing the Discovery Summary That Gets Read](docs/03-discovery/discovery-output-handoff.md?id=_361-writing-the-discovery-summary-that-gets-read) and [Documenting What You Heard vs. What They'll Deny](docs/03-discovery/pain-quantification.md?id=_354-documenting-what-you-heard-vs-what-theyll-deny).
 
 | | |
 |---|---|
@@ -67,7 +67,7 @@ If nothing forces a decision → flag to AE: this is a research project, not a d
 
 1. **Two versions, one source.** The external version (sections 1, 4, 5, 7) goes to your champion with "Did I capture this correctly?" — their corrections are free discovery, and their silence is written confirmation. The internal version keeps sections 3 and 6.
 2. **Verbatim quotes are the asset.** "We lose about forty engineer-hours a month to pipeline failures" survives a champion change, a procurement review, and a CFO challenge. Your paraphrase survives none of them.
-3. **A number in every pain row.** If a pain has no cost attached, it's not yet a pain — it's a topic. Go back and [quantify it](docs/03-discovery/pain-quantification.md) before you build anything.
+3. **A number in every pain row.** If a pain has no cost attached, it's not yet a pain — it's a topic. Go back and [quantify it](docs/03-discovery/pain-quantification.md?id=_351-translating-its-slow-into-dollar-metrics) before you build anything.
 4. **Section 5 is the long game.** Decision criteria captured in week 2 become the anti-goalpost-moving clause of your [POC Plan](docs/13-templates/poc-plan-success-criteria.md) in week 8.
 
 > **Failure Mode:** The ten-page discovery novel nobody reads. The summary's power is that an executive can absorb it in ninety seconds and a demo engineer can build from it without a meeting. If it doesn't fit on one page, you haven't finished thinking — you've just transcribed.

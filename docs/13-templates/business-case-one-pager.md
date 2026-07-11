@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/business-case-one-pager.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-The CFO will never watch your demo. They will read one page — once — and decide whether this purchase is a risk or an obviousness. This template operationalises [Building a Defensible ROI Case](docs/03-discovery/roi-case-building.md), [Using TCO & ROI Models as Negotiation Weapons](docs/07-commercial-influence/tco-roi-as-weapons.md), and [Translating API Specs for the CFO Audience](docs/04-solution-design/translating-for-cfo.md).
+The CFO will never watch your demo. They will read one page — once — and decide whether this purchase is a risk or an obviousness. This template operationalises [Building a Defensible ROI Case](docs/03-discovery/pain-quantification.md?id=_352-building-a-defensible-roi-case), [Using TCO & ROI Models as Negotiation Weapons](docs/07-commercial-influence/pricing-commercials-literacy.md?id=_713-using-tco-roi-models-as-negotiation-weapons), and [Translating API Specs for the CFO Audience](docs/04-solution-design/technical-documentation-that-moves-deals.md?id=_432-translating-api-specs-for-the-cfo-audience).
 
 | | |
 |---|---|

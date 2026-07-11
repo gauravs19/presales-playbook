@@ -5,7 +5,7 @@
   <a class="stage-badge" href="docs/13-templates/html/demo-storyboard.html" target="_blank" style="text-decoration:none">&#128424;&#65039; Printable HTML version</a>
 </div>
 
-A demo without a storyboard defaults to a harbor tour — every feature gets thirty seconds, and no feature gets remembered. This template operationalises [Abolishing the Harbor Tour](docs/05-demo-excellence/abolishing-harbor-tour.md), the [5-Minute Aha! Rule](docs/05-demo-excellence/aha-moment.md), [Day in the Life Narrative Construction](docs/05-demo-excellence/day-in-the-life-narrative.md), and the [30-Minute Pre-Flight Checklist](docs/05-demo-excellence/pre-flight-checklist.md).
+A demo without a storyboard defaults to a harbor tour — every feature gets thirty seconds, and no feature gets remembered. This template operationalises [Abolishing the Harbor Tour](docs/05-demo-excellence/demo-strategy.md?id=_511-abolishing-the-harbor-tour-forever), the [5-Minute Aha! Rule](docs/05-demo-excellence/demo-strategy.md?id=_513-the-5-minute-aha-rule), [Day in the Life Narrative Construction](docs/05-demo-excellence/storytelling-persona-binding.md?id=_521-day-in-the-life-narrative-construction), and the [30-Minute Pre-Flight Checklist](docs/05-demo-excellence/demo-environment-logistics.md?id=_551-the-30-minute-pre-flight-checklist).
 
 | | |
 |---|---|
@@ -68,7 +68,7 @@ Self-score (see 5.6.1): Narrative /5 · Aha timing /5 · Objection handling /5
 1. **Scenes, not features.** Each row is a moment in *their* workday — "Priya's Monday-morning pipeline triage" — not a module name. If you can't name the persona who lives in the scene, cut the scene.
 2. **The aha is a design constraint, not a hope.** Decide what it is, then ruthlessly clear everything in front of it. If your aha lands at minute 20, the executives have already mentally left the room.
 3. **Section 4 is where discipline lives.** Every capability you cut is a capability that can't dilute the message. The strongest demos are defined by what they refuse to show.
-4. **Rehearse the crash, not just the demo.** You don't get to choose whether the environment fails; you only choose whether you've [rehearsed the recovery](docs/05-demo-excellence/crash-recovery.md).
+4. **Rehearse the crash, not just the demo.** You don't get to choose whether the environment fails; you only choose whether you've [rehearsed the recovery](docs/05-demo-excellence/demo-environment-logistics.md?id=_553-graceful-recovery-from-a-live-software-crash).
 
 > **Failure Mode:** The storyboard that dies on contact with the first question. A stakeholder interrupts in scene 1, the SE follows them down a rabbit hole, and scenes 2–3 never happen. The storyboard includes your return path: answer, bridge — "and that connects to exactly what I'm about to show" — and get back on the arc. You own the narrative; questions are guests in it.
 
