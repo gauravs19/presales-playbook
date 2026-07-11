@@ -170,6 +170,7 @@
         const ctx = canvas.getContext('2d');
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const INK = '147, 197, 253';        // blue-300, matches previous hero accent
+        const DIM = 0.5;                    // global opacity multiplier — keep it faint
         const BOX_MS = 550, BOX_STAGGER = 320;
         const EDGE_MS = 750, EDGE_STAGGER = 420;
         const HOLD_MS = 6500, FADE_MS = 1400;
@@ -207,12 +208,16 @@
             const j = Math.floor(Math.random() * (i + 1));
             const t = slots[i]; slots[i] = slots[j]; slots[j] = t;
           }
-          const boxes = slots.slice(0, 6).map((s) => ({
-            x: s.x + (Math.random() - 0.5) * W * 0.03,
-            y: s.y + (Math.random() - 0.5) * H * 0.04,
-            w: 84 + Math.random() * 56,
-            h: 44 + Math.random() * 22,
-          }));
+          const PAD = 16; // keep boxes fully inside the hero (no edge clipping)
+          const boxes = slots.slice(0, 6).map((s) => {
+            const w = 84 + Math.random() * 56;
+            const h = 44 + Math.random() * 22;
+            let x = s.x + (Math.random() - 0.5) * W * 0.03;
+            let y = s.y + (Math.random() - 0.5) * H * 0.04;
+            x = Math.min(Math.max(x, PAD + w / 2), W - PAD - w / 2);
+            y = Math.min(Math.max(y, PAD + h / 2), H - PAD - h / 2);
+            return { x, y, w, h };
+          });
           // spanning tree so every box is connected, no clutter
           const edges = [];
           for (let i = 1; i < boxes.length; i++) {
@@ -263,7 +268,7 @@
           const r = 6, x = b.x - b.w / 2, y = b.y - b.h / 2;
           const per = 2 * (b.w + b.h);
           ctx.save();
-          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.28 * alpha + ')';
+          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.28 * alpha * DIM + ')';
           ctx.lineWidth = 1.2;
           ctx.setLineDash([per * frac, per]);
           ctx.beginPath();
@@ -273,12 +278,12 @@
           ctx.setLineDash([]);
           if (frac >= 1) {
             // title bar + two faint "component" lines once fully drawn
-            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.16 * alpha + ')';
+            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.16 * alpha * DIM + ')';
             ctx.beginPath(); ctx.moveTo(x + 1, y + 14); ctx.lineTo(x + b.w - 1, y + 14); ctx.stroke();
-            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.1 * alpha + ')';
+            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.1 * alpha * DIM + ')';
             ctx.beginPath(); ctx.moveTo(x + 10, y + 26); ctx.lineTo(x + b.w * 0.6, y + 26); ctx.stroke();
             ctx.beginPath(); ctx.moveTo(x + 10, y + 34); ctx.lineTo(x + b.w * 0.45, y + 34); ctx.stroke();
-            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.35 * alpha + ')';
+            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.35 * alpha * DIM + ')';
             ctx.beginPath(); ctx.arc(x + 8, y + 7.5, 1.6, 0, Math.PI * 2); ctx.fill();
           }
           ctx.restore();
@@ -286,7 +291,7 @@
 
         const drawEdge = (e, frac, alpha) => {
           ctx.save();
-          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.2 * alpha + ')';
+          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.2 * alpha * DIM + ')';
           ctx.lineWidth = 1;
           ctx.setLineDash([e.len * frac, e.len]);
           ctx.beginPath();
@@ -299,7 +304,7 @@
             const [x1, y1] = e.pts[e.pts.length - 1];
             const [x0, y0] = e.pts[e.pts.length - 2];
             const ang = Math.atan2(y1 - y0, x1 - x0);
-            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.3 * alpha + ')';
+            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.3 * alpha * DIM + ')';
             ctx.beginPath();
             ctx.moveTo(x1, y1);
             ctx.lineTo(x1 - 6 * Math.cos(ang - 0.45), y1 - 6 * Math.sin(ang - 0.45));
@@ -311,7 +316,7 @@
         };
 
         const drawGridDots = () => {
-          ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+          ctx.fillStyle = 'rgba(255, 255, 255, ' + 0.03 * DIM + ')';
           const step = 42;
           for (let x = step / 2; x < W; x += step) {
             for (let y = step / 2; y < H; y += step) {
@@ -358,7 +363,7 @@
               const e = dia.edges[k % dia.edges.length];
               const [px, py] = pointAt(e, pf);
               const g = ctx.createRadialGradient(px, py, 0, px, py, 7);
-              g.addColorStop(0, 'rgba(' + INK + ', ' + 0.55 * alpha + ')');
+              g.addColorStop(0, 'rgba(' + INK + ', ' + 0.55 * alpha * DIM + ')');
               g.addColorStop(1, 'rgba(' + INK + ', 0)');
               ctx.fillStyle = g;
               ctx.beginPath(); ctx.arc(px, py, 7, 0, Math.PI * 2); ctx.fill();
