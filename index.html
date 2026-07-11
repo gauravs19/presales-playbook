@@ -78,6 +78,8 @@
       name: 'Presales Playbook',
       themeColor: '#1e3a8a', // Portfolio professional blue accent
       loadSidebar: true,
+      auto2top: true, // Scroll to top on every route change (long merged pages otherwise keep old scroll position)
+      topMargin: 16, // Breathing room above headings when jumping to ?id= anchors
       subMaxLevel: 2, // Sidebar is 2 levels (section > subsection); the open page's H2 topics expand beneath it
       sidebarDisplayLevel: 1, // Sections expanded, subsections collapsed until visited
       alias: window.PLAYBOOK_ALIASES || {}, // redirects.js: pre-2026 three-level page routes -> merged pages
@@ -122,6 +124,33 @@
 
       hook.afterEach(function (html) {
         return html + footer;
+      });
+
+      // Fresh-tab deep links: on the very first render the ?id= scroll races
+      // auto2top's scroll-to-0 and can lose. Re-apply it a few times after the
+      // initial page renders; stop as soon as the user scrolls on their own.
+      var initialAnchorDone = false;
+      hook.doneEach(function () {
+        if (initialAnchorDone) return;
+        initialAnchorDone = true;
+        var id = vm.route.query && vm.route.query.id;
+        if (!id) return;
+        var userScrolled = false;
+        var onUser = function () { userScrolled = true; };
+        window.addEventListener('wheel', onUser, { passive: true });
+        window.addEventListener('touchmove', onUser, { passive: true });
+        [150, 600, 1400].forEach(function (delay) {
+          setTimeout(function () {
+            var el = document.getElementById(id);
+            if (el && !userScrolled) {
+              window.scrollTo(0, el.getBoundingClientRect().top + window.pageYOffset - 16);
+            }
+          }, delay);
+        });
+        setTimeout(function () {
+          window.removeEventListener('wheel', onUser);
+          window.removeEventListener('touchmove', onUser);
+        }, 1500);
       });
     }, window.$docsify.plugins);
   </script>
