@@ -5,7 +5,7 @@
     <h1 class="hero-title">The Enterprise<br/><em>Presales Playbook</em></h1>
     <p class="hero-subtitle">The missing manual for technical sellers. Learn how to translate complex system architectures into undeniable commercial value — then execute with battle-tested templates for every stage of the deal.</p>
     <div class="cover-actions">
-      <a href="#/docs/00-start-here/what-is-presales" class="btn-hero-primary">Start Reading →</a>
+      <a href="#/docs/00-start-here/what-even-is-presales?id=_011-presales-in-plain-english" class="btn-hero-primary">Start Reading →</a>
       <a href="#/docs/13-templates/" class="btn-hero-ghost">Browse Templates</a>
     </div>
     <div class="hero-metrics">
@@ -25,37 +25,37 @@
 Every chapter maps to a moment in a live enterprise deal. Click a stage to jump straight into it.
 
 <div class="deal-journey">
-  <a class="journey-stage st-qualify" href="#/docs/02-deal-orchestration/scoring-deal-quality">
+  <a class="journey-stage st-qualify" href="#/docs/02-deal-orchestration/reading-a-deal-before-discovery-starts?id=_211-scoring-deal-quality-in-the-first-15-minutes">
     <span class="stage-num">STAGE 01</span>
     <span class="stage-name">Qualify</span>
     <span class="stage-desc">Score the deal in 15 minutes — before it consumes a quarter</span>
   </a>
-  <a class="journey-stage st-discover" href="#/docs/03-discovery/pre-call-research">
+  <a class="journey-stage st-discover" href="#/docs/03-discovery/preparation-hypothesis-led-entry?id=_311-pre-call-linkedin-earnings-transcript-recon">
     <span class="stage-num">STAGE 02</span>
     <span class="stage-name">Discover</span>
     <span class="stage-desc">Extract quantifiable pain, not feature checklists</span>
   </a>
-  <a class="journey-stage st-design" href="#/docs/04-solution-design/boat-framework">
+  <a class="journey-stage st-design" href="#/docs/04-solution-design/design-principles-for-deals?id=_411-minimum-viable-transformation-boat-framework">
     <span class="stage-num">STAGE 03</span>
     <span class="stage-name">Design</span>
     <span class="stage-desc">Turn messy requirements into a defensible blueprint</span>
   </a>
-  <a class="journey-stage st-demo" href="#/docs/05-demo-excellence/abolishing-harbor-tour">
+  <a class="journey-stage st-demo" href="#/docs/05-demo-excellence/demo-strategy?id=_511-abolishing-the-harbor-tour-forever">
     <span class="stage-num">STAGE 04</span>
     <span class="stage-name">Demo</span>
     <span class="stage-desc">Kill the harbor tour, land the aha in 5 minutes</span>
   </a>
-  <a class="journey-stage st-poc" href="#/docs/06-poc-execution/poc-vs-pov">
+  <a class="journey-stage st-poc" href="#/docs/06-poc/structuring-the-pov-proof-of-value?id=_621-poc-vs-pov-shifting-from-math-to-value">
     <span class="stage-num">STAGE 05</span>
     <span class="stage-name">Prove</span>
     <span class="stage-desc">Govern the POC and lock in the technical win</span>
   </a>
-  <a class="journey-stage st-commercial" href="#/docs/07-commercial-influence/margin-and-discount-literacy">
+  <a class="journey-stage st-commercial" href="#/docs/07-commercial-influence/pricing-commercials-literacy?id=_711-understanding-margin-discount-authority-deal-economics">
     <span class="stage-num">STAGE 06</span>
     <span class="stage-name">Commercial</span>
     <span class="stage-desc">Defend margin through RFPs, procurement & legal</span>
   </a>
-  <a class="journey-stage st-close" href="#/docs/09-executive-selling/running-executive-briefings">
+  <a class="journey-stage st-close" href="#/docs/09-executive-selling/owning-the-cxo-room?id=_911-running-an-executive-briefing">
     <span class="stage-num">STAGE 07</span>
     <span class="stage-name">Close</span>
     <span class="stage-desc">Win the CxO room and convert proof into revenue</span>
@@ -269,5 +269,5 @@ The playbook uses a three-tier progression system. Each section is tagged with i
 4. **Team enablement** — If you're a manager, assign specific sections as pre-reading before deal reviews, SKOs, or onboarding programmes.
 
 <div class="cta-wrapper">
-  <a href="#/docs/00-start-here/what-is-presales" class="cta-button">Start Reading the Playbook →</a>
+  <a href="#/docs/00-start-here/what-even-is-presales?id=_011-presales-in-plain-english" class="cta-button">Start Reading the Playbook →</a>
 </div>
