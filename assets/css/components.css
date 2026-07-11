@@ -702,7 +702,9 @@
   color: transparent !important;
 }
 
-.hero-subtitle {
+/* .hero-dark scope beats the theme's `.markdown-section p` margin rule,
+   which otherwise overrides `auto` and left-anchors the capped-width box */
+.hero-dark .hero-subtitle {
   font-size: 1.2rem;
   color: #cbd5e1;
   line-height: 1.65;
