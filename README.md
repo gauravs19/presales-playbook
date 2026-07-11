@@ -1,5 +1,5 @@
 <div class="hero-dark">
-  <canvas id="hero-radar-canvas"></canvas>
+  <canvas id="hero-arch-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-pill">Open Source · Practitioner-Built · Always Free</div>
     <h1 class="hero-title">The Enterprise<br/><em>Presales Playbook</em></h1>

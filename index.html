@@ -155,24 +155,26 @@
     }, window.$docsify.plugins);
   </script>
 
-  <!-- Custom Hero Script for Landing Page: radar sweep animation -->
+  <!-- Custom Hero Script for Landing Page: self-drawing architecture diagram -->
   <script>
     window.$docsify.plugins = [].concat(window.$docsify.plugins, function (hook) {
       hook.doneEach(function () {
-        // Radar sweep: a slow rotating beam over faint range rings; blips (deals)
-        // light up as the beam passes them, then fade until the next revolution.
-        const canvas = document.getElementById('hero-radar-canvas');
+        // Blueprint architecture diagram that draws itself in: boxes stroke on
+        // one by one, orthogonal connectors trace between them, the finished
+        // diagram holds (with occasional pulses travelling a connector), fades,
+        // then a new random layout draws in. Respects prefers-reduced-motion.
+        const canvas = document.getElementById('hero-arch-canvas');
         if (!canvas || canvas.dataset.initialized) return;
         canvas.dataset.initialized = 'true';
 
         const ctx = canvas.getContext('2d');
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const REV_MS = 18000;          // one revolution ~18s
-        const TAU = Math.PI * 2;
-        const BLIP_COUNT = 14;
+        const INK = '147, 197, 253';        // blue-300, matches previous hero accent
+        const BOX_MS = 550, BOX_STAGGER = 320;
+        const EDGE_MS = 750, EDGE_STAGGER = 420;
+        const HOLD_MS = 6500, FADE_MS = 1400;
 
-        let W = 0, H = 0, CX = 0, CY = 0, R = 0;
-
+        let W = 0, H = 0;
         const resize = () => {
           const dpr = window.devicePixelRatio || 1;
           W = canvas.parentElement.offsetWidth;
@@ -182,105 +184,200 @@
           canvas.style.width = W + 'px';
           canvas.style.height = H + 'px';
           ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-          CX = W / 2;
-          CY = H / 2;
-          R = Math.sqrt(CX * CX + CY * CY); // reach the hero corners
         };
         window.addEventListener('resize', resize);
         resize();
 
-        // Blips: fixed polar positions, re-randomized occasionally on wrap
-        const blips = Array.from({ length: BLIP_COUNT }, () => ({
-          angle: Math.random() * TAU,
-          radius: 0.25 + Math.random() * 0.68, // fraction of R
-          size: 1.6 + Math.random() * 1.6,
-        }));
-
-        const drawStatic = () => {
-          // Range rings
-          ctx.lineWidth = 1;
-          [0.22, 0.42, 0.62, 0.82].forEach((f) => {
-            ctx.beginPath();
-            ctx.arc(CX, CY, R * f, 0, TAU);
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.055)';
-            ctx.stroke();
-          });
-          // Crosshair lines
-          ctx.strokeStyle = 'rgba(255, 255, 255, 0.035)';
-          ctx.beginPath(); ctx.moveTo(0, CY); ctx.lineTo(W, CY); ctx.stroke();
-          ctx.beginPath(); ctx.moveTo(CX, 0); ctx.lineTo(CX, H); ctx.stroke();
+        // --- diagram generation -------------------------------------------
+        // Candidate slots avoid the central hero-text zone.
+        const genDiagram = () => {
+          const cx = W / 2, cy = H / 2;
+          const slots = [];
+          const COLS = 6, ROWS = 4;
+          for (let r = 0; r < ROWS; r++) {
+            for (let c = 0; c < COLS; c++) {
+              const x = W * (0.08 + (0.84 * c) / (COLS - 1));
+              const y = H * (0.12 + (0.76 * r) / (ROWS - 1));
+              if (Math.abs(x - cx) < W * 0.26 && Math.abs(y - cy) < H * 0.34) continue;
+              slots.push({ x, y });
+            }
+          }
+          // shuffle
+          for (let i = slots.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const t = slots[i]; slots[i] = slots[j]; slots[j] = t;
+          }
+          const boxes = slots.slice(0, 6).map((s) => ({
+            x: s.x + (Math.random() - 0.5) * W * 0.03,
+            y: s.y + (Math.random() - 0.5) * H * 0.04,
+            w: 84 + Math.random() * 56,
+            h: 44 + Math.random() * 22,
+          }));
+          // spanning tree so every box is connected, no clutter
+          const edges = [];
+          for (let i = 1; i < boxes.length; i++) {
+            edges.push(makeEdge(boxes[i], boxes[Math.floor(Math.random() * i)]));
+          }
+          return { boxes, edges };
         };
 
-        const drawFrame = (t) => {
-          ctx.clearRect(0, 0, W, H);
-          drawStatic();
-
-          const beam = reducedMotion ? TAU * 0.12 : ((t % REV_MS) / REV_MS) * TAU;
-
-          if (!reducedMotion) {
-            // Sweep wedge: thin trailing gradient behind the beam edge
-            const TRAIL = TAU * 0.16;
-            const STEPS = 26;
-            for (let s = 0; s < STEPS; s++) {
-              const a0 = beam - (TRAIL * (s + 1)) / STEPS;
-              const a1 = beam - (TRAIL * s) / STEPS;
-              ctx.beginPath();
-              ctx.moveTo(CX, CY);
-              ctx.arc(CX, CY, R, a0, a1);
-              ctx.closePath();
-              ctx.fillStyle = 'rgba(147, 197, 253, ' + (0.05 * (1 - s / STEPS)) + ')';
-              ctx.fill();
-            }
-            // Beam leading edge
-            ctx.beginPath();
-            ctx.moveTo(CX, CY);
-            ctx.lineTo(CX + Math.cos(beam) * R, CY + Math.sin(beam) * R);
-            ctx.strokeStyle = 'rgba(191, 219, 254, 0.28)';
-            ctx.lineWidth = 1.5;
-            ctx.stroke();
+        // Orthogonal elbow path between two box borders, with segment lengths
+        const makeEdge = (a, b) => {
+          const pts = [];
+          if (Math.abs(a.x - b.x) > Math.abs(a.y - b.y)) {
+            const dir = b.x > a.x ? 1 : -1;
+            const x1 = a.x + (dir * a.w) / 2, x2 = b.x - (dir * b.w) / 2;
+            const xm = (x1 + x2) / 2;
+            pts.push([x1, a.y], [xm, a.y], [xm, b.y], [x2, b.y]);
+          } else {
+            const dir = b.y > a.y ? 1 : -1;
+            const y1 = a.y + (dir * a.h) / 2, y2 = b.y - (dir * b.h) / 2;
+            const ym = (y1 + y2) / 2;
+            pts.push([a.x, y1], [a.x, ym], [b.x, ym], [b.x, y2]);
           }
+          let len = 0;
+          const segs = [];
+          for (let i = 1; i < pts.length; i++) {
+            const l = Math.abs(pts[i][0] - pts[i - 1][0]) + Math.abs(pts[i][1] - pts[i - 1][1]);
+            segs.push(l); len += l;
+          }
+          return { pts, segs, len };
+        };
 
-          // Blips: brightest just after the beam passes, fading until next pass
-          blips.forEach((b) => {
-            const x = CX + Math.cos(b.angle) * R * b.radius;
-            const y = CY + Math.sin(b.angle) * R * b.radius;
-            let alpha;
-            if (reducedMotion) {
-              alpha = 0.3;
-            } else {
-              let behind = beam - b.angle;         // how far past the blip the beam is
-              behind = ((behind % TAU) + TAU) % TAU;
-              alpha = Math.max(0, 0.85 * (1 - behind / (TAU * 0.55)));
+        const pointAt = (e, frac) => {
+          let d = frac * e.len;
+          for (let i = 0; i < e.segs.length; i++) {
+            if (d <= e.segs[i] || i === e.segs.length - 1) {
+              const [x0, y0] = e.pts[i], [x1, y1] = e.pts[i + 1];
+              const f = e.segs[i] ? d / e.segs[i] : 1;
+              return [x0 + (x1 - x0) * f, y0 + (y1 - y0) * f];
             }
-            if (alpha <= 0.02) return;
-            const glow = ctx.createRadialGradient(x, y, 0, x, y, b.size * 5);
-            glow.addColorStop(0, 'rgba(147, 197, 253, ' + alpha * 0.5 + ')');
-            glow.addColorStop(1, 'rgba(147, 197, 253, 0)');
-            ctx.fillStyle = glow;
-            ctx.beginPath();
-            ctx.arc(x, y, b.size * 5, 0, TAU);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(x, y, b.size, 0, TAU);
-            ctx.fillStyle = 'rgba(255, 255, 255, ' + alpha + ')';
-            ctx.fill();
-          });
+            d -= e.segs[i];
+          }
+          return e.pts[e.pts.length - 1];
+        };
 
-          // Center hub
+        // --- drawing -------------------------------------------------------
+        const drawBox = (b, frac, alpha) => {
+          // stroke the rounded rect progressively (perimeter dash trick)
+          const r = 6, x = b.x - b.w / 2, y = b.y - b.h / 2;
+          const per = 2 * (b.w + b.h);
+          ctx.save();
+          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.28 * alpha + ')';
+          ctx.lineWidth = 1.2;
+          ctx.setLineDash([per * frac, per]);
           ctx.beginPath();
-          ctx.arc(CX, CY, 2.5, 0, TAU);
-          ctx.fillStyle = 'rgba(255, 255, 255, 0.18)';
-          ctx.fill();
+          if (ctx.roundRect) ctx.roundRect(x, y, b.w, b.h, r);
+          else ctx.rect(x, y, b.w, b.h);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          if (frac >= 1) {
+            // title bar + two faint "component" lines once fully drawn
+            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.16 * alpha + ')';
+            ctx.beginPath(); ctx.moveTo(x + 1, y + 14); ctx.lineTo(x + b.w - 1, y + 14); ctx.stroke();
+            ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.1 * alpha + ')';
+            ctx.beginPath(); ctx.moveTo(x + 10, y + 26); ctx.lineTo(x + b.w * 0.6, y + 26); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(x + 10, y + 34); ctx.lineTo(x + b.w * 0.45, y + 34); ctx.stroke();
+            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.35 * alpha + ')';
+            ctx.beginPath(); ctx.arc(x + 8, y + 7.5, 1.6, 0, Math.PI * 2); ctx.fill();
+          }
+          ctx.restore();
+        };
+
+        const drawEdge = (e, frac, alpha) => {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(' + INK + ', ' + 0.2 * alpha + ')';
+          ctx.lineWidth = 1;
+          ctx.setLineDash([e.len * frac, e.len]);
+          ctx.beginPath();
+          ctx.moveTo(e.pts[0][0], e.pts[0][1]);
+          for (let i = 1; i < e.pts.length; i++) ctx.lineTo(e.pts[i][0], e.pts[i][1]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          if (frac >= 1) {
+            // arrowhead
+            const [x1, y1] = e.pts[e.pts.length - 1];
+            const [x0, y0] = e.pts[e.pts.length - 2];
+            const ang = Math.atan2(y1 - y0, x1 - x0);
+            ctx.fillStyle = 'rgba(' + INK + ', ' + 0.3 * alpha + ')';
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x1 - 6 * Math.cos(ang - 0.45), y1 - 6 * Math.sin(ang - 0.45));
+            ctx.lineTo(x1 - 6 * Math.cos(ang + 0.45), y1 - 6 * Math.sin(ang + 0.45));
+            ctx.closePath();
+            ctx.fill();
+          }
+          ctx.restore();
+        };
+
+        const drawGridDots = () => {
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+          const step = 42;
+          for (let x = step / 2; x < W; x += step) {
+            for (let y = step / 2; y < H; y += step) {
+              ctx.fillRect(x, y, 1, 1);
+            }
+          }
+        };
+
+        // --- animation state machine ----------------------------------------
+        let dia = genDiagram();
+        let cycleStart = null;
+        const easeOut = (f) => 1 - Math.pow(1 - f, 2);
+
+        const drawFrame = (t) => {
+          if (cycleStart === null) cycleStart = t;
+          let el = t - cycleStart;
+          const boxesDone = dia.boxes.length * BOX_STAGGER + BOX_MS;
+          const edgesDone = boxesDone + dia.edges.length * EDGE_STAGGER + EDGE_MS;
+          const fadeStart = edgesDone + HOLD_MS;
+          const cycleEnd = fadeStart + FADE_MS;
+          if (el >= cycleEnd) {
+            dia = genDiagram();
+            cycleStart = t;
+            el = 0;
+          }
+          const alpha = el > fadeStart ? Math.max(0, 1 - (el - fadeStart) / FADE_MS) : 1;
+
+          ctx.clearRect(0, 0, W, H);
+          drawGridDots();
+          dia.boxes.forEach((b, i) => {
+            const f = Math.min(1, Math.max(0, (el - i * BOX_STAGGER) / BOX_MS));
+            if (f > 0) drawBox(b, easeOut(f), alpha);
+          });
+          dia.edges.forEach((e, i) => {
+            const f = Math.min(1, Math.max(0, (el - boxesDone - i * EDGE_STAGGER) / EDGE_MS));
+            if (f > 0) drawEdge(e, easeOut(f), alpha);
+          });
+          // pulses travelling a connector during hold
+          if (el > edgesDone && el < fadeStart) {
+            const PULSE_EVERY = 2200, PULSE_MS = 1500;
+            const k = Math.floor((el - edgesDone) / PULSE_EVERY);
+            const pf = ((el - edgesDone) % PULSE_EVERY) / PULSE_MS;
+            if (pf <= 1 && dia.edges.length) {
+              const e = dia.edges[k % dia.edges.length];
+              const [px, py] = pointAt(e, pf);
+              const g = ctx.createRadialGradient(px, py, 0, px, py, 7);
+              g.addColorStop(0, 'rgba(' + INK + ', ' + 0.55 * alpha + ')');
+              g.addColorStop(1, 'rgba(' + INK + ', 0)');
+              ctx.fillStyle = g;
+              ctx.beginPath(); ctx.arc(px, py, 7, 0, Math.PI * 2); ctx.fill();
+            }
+          }
         };
 
         if (reducedMotion) {
-          drawFrame(0); // static frame: rings, crosshair, resting blips
+          // one static, fully drawn diagram — no animation
+          ctx.clearRect(0, 0, W, H);
+          drawGridDots();
+          dia.boxes.forEach((b) => drawBox(b, 1, 1));
+          dia.edges.forEach((e) => drawEdge(e, 1, 1));
           return;
         }
 
         const animate = (t) => {
           // Stop cleanly if the user navigated away from the landing page
-          if (!document.getElementById('hero-radar-canvas')) return;
+          if (!document.getElementById('hero-arch-canvas')) return;
           drawFrame(t);
           requestAnimationFrame(animate);
         };
